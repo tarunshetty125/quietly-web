@@ -1,0 +1,3130 @@
+{
+  "desktopInteractive": {
+    "ctaButtons": [
+      {
+        "className": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "styles": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "12px",
+          "boxShadow": "rgba(148, 172, 243, 0.4) 20px 20px 24px 0px, rgba(191, 229, 251, 0.4) -3px -3px 4px 0px inset, rgba(19, 26, 228, 0.1) 4px 4px 4px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "none",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "10px 20px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "transform 0.16s ease-out"
+        },
+        "tag": "button",
+        "text": "Get the desktop app"
+      },
+      {
+        "className": "purple-gradient-button rounded-[10px] items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative hidden overflow-hidden sm:flex",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "styles": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "12px",
+          "boxShadow": "rgba(148, 172, 243, 0.4) 20px 20px 24px 0px, rgba(191, 229, 251, 0.4) -3px -3px 4px 0px inset, rgba(19, 26, 228, 0.1) 4px 4px 4px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "10px 20px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "transform 0.16s ease-out"
+        },
+        "tag": "a",
+        "text": "Get for Mac"
+      },
+      {
+        "className": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "styles": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "12px",
+          "boxShadow": "rgba(148, 172, 243, 0.4) 20px 20px 24px 0px, rgba(191, 229, 251, 0.4) -3px -3px 4px 0px inset, rgba(19, 26, 228, 0.1) 4px 4px 4px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "none",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "10px 20px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "transform 0.16s ease-out"
+        },
+        "tag": "button",
+        "text": "Get the desktop app"
+      },
+      {
+        "className": "purple-gradient-button rounded-[10px] items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative hidden overflow-hidden sm:flex",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 638,
+          "y": 424
+        },
+        "styles": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "12px",
+          "boxShadow": "rgba(148, 172, 243, 0.4) 20px 20px 24px 0px, rgba(191, 229, 251, 0.4) -3px -3px 4px 0px inset, rgba(19, 26, 228, 0.1) 4px 4px 4px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "10px 20px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "transform 0.16s ease-out"
+        },
+        "tag": "a",
+        "text": "Get for Mac"
+      },
+      {
+        "className": "lg:h-11 px-3 md:w-[178px] w-fit h-10 rounded-[6px] relative font-semibold text-white inline-flex items-center justify-center lg:w-[199px] text-base leading-none blue-gradient-button",
+        "rect": {
+          "h": 44,
+          "w": 199,
+          "x": 105,
+          "y": 6312
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "6px",
+          "boxShadow": "rgba(0, 15, 154, 0.65) -1px -1px 4px 0px inset, rgba(119, 133, 164, 0.43) 5px 7px 7px 0px, rgba(0, 0, 0, 0.2) 1px 1px 3px 0px, rgba(255, 255, 255, 0.35) -0.5px -0.5px 1px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "16px",
+          "opacity": "1",
+          "padding": "0px 12px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "a",
+        "text": "Get for Mac"
+      }
+    ],
+    "dataState": [
+      {
+        "className": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "12px",
+          "boxShadow": "rgba(148, 172, 243, 0.4) 20px 20px 24px 0px, rgba(191, 229, 251, 0.4) -3px -3px 4px 0px inset, rgba(19, 26, 228, 0.1) 4px 4px 4px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "none",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "10px 20px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "transform 0.16s ease-out"
+        },
+        "tag": "button",
+        "text": "Get the desktop app"
+      },
+      {
+        "className": "relative ml-4 flex size-6 text-foreground outline-hidden md:hidden",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(255, 255, 255)",
+          "display": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "button",
+        "text": "TriggerOpen menu"
+      },
+      {
+        "className": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "12px",
+          "boxShadow": "rgba(148, 172, 243, 0.4) 20px 20px 24px 0px, rgba(191, 229, 251, 0.4) -3px -3px 4px 0px inset, rgba(19, 26, 228, 0.1) 4px 4px 4px 0px inset",
+          "color": "rgb(255, 255, 255)",
+          "display": "none",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "10px 20px",
+          "position": "relative",
+          "transform": "none",
+          "transition": "transform 0.16s ease-out"
+        },
+        "tag": "button",
+        "text": "Get the desktop app"
+      },
+      {
+        "className": "border-b last:border-b-0",
+        "rect": {
+          "h": 69,
+          "w": 1216,
+          "x": 105,
+          "y": 5453
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": "Why real-time vs. a regular AI notetaker?"
+      },
+      {
+        "className": "flex",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5453
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "h3",
+        "text": "Why real-time vs. a regular AI notetaker?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5453
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Why real-time vs. a regular AI notetaker?"
+      },
+      {
+        "className": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "border-b last:border-b-0",
+        "rect": {
+          "h": 69,
+          "w": 1216,
+          "x": 105,
+          "y": 5522
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": "Who is Cluely for?"
+      },
+      {
+        "className": "flex",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5522
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "h3",
+        "text": "Who is Cluely for?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5522
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Who is Cluely for?"
+      },
+      {
+        "className": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "border-b last:border-b-0",
+        "rect": {
+          "h": 69,
+          "w": 1216,
+          "x": 105,
+          "y": 5591
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": "Is Cluely free?"
+      },
+      {
+        "className": "flex",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5591
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "h3",
+        "text": "Is Cluely free?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5591
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Is Cluely free?"
+      },
+      {
+        "className": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "border-b last:border-b-0",
+        "rect": {
+          "h": 69,
+          "w": 1216,
+          "x": 105,
+          "y": 5660
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": "How is it undetectable in meetings?"
+      },
+      {
+        "className": "flex",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5660
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "h3",
+        "text": "How is it undetectable in meetings?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5660
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "How is it undetectable in meetings?"
+      },
+      {
+        "className": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "border-b last:border-b-0",
+        "rect": {
+          "h": 69,
+          "w": 1216,
+          "x": 105,
+          "y": 5729
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": "What languages and apps are supported?"
+      },
+      {
+        "className": "flex",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5729
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "h3",
+        "text": "What languages and apps are supported?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5729
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "What languages and apps are supported?"
+      },
+      {
+        "className": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "last:border-b-0 border-b-0",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5798
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "block",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": "Can I talk to customer support?"
+      },
+      {
+        "className": "flex",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5798
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "h3",
+        "text": "Can I talk to customer support?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5798
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Can I talk to customer support?"
+      },
+      {
+        "className": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "state": "closed",
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "all"
+        },
+        "tag": "div",
+        "text": ""
+      }
+    ],
+    "faqButtons": [
+      {
+        "className": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "rect": {
+          "h": 24,
+          "w": 110,
+          "x": 588,
+          "y": 1109
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "1.67772e+07px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "12px",
+          "opacity": "1",
+          "padding": "8px 8px 8px 6px",
+          "position": "static",
+          "transform": "none",
+          "transition": "color 0.075s cubic-bezier(0, 0, 0.2, 1), background-color 0.075s cubic-bezier(0, 0, 0.2, 1), border-color 0.075s cubic-bezier(0, 0, 0.2, 1), outline-color 0.075s cubic-bezier(0, 0, 0.2, 1), text-decoration-color 0.075s cubic-bezier(0, 0, 0.2, 1), fill 0.075s cubic-bezier(0, 0, 0.2, 1), stroke 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-from 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-via 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-to 0.075s cubic-bezier(0, 0, 0.2, 1), opacity 0.075s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.075s cubic-bezier(0, 0, 0.2, 1), transform 0.075s cubic-bezier(0, 0, 0.2, 1), translate 0.075s cubic-bezier(0, 0, 0.2, 1), scale 0.075s cubic-bezier(0, 0, 0.2, 1), rotate 0.075s cubic-bezier(0, 0, 0.2, 1), filter 0.075s cubic-bezier(0, 0, 0.2, 1), -webkit-backdrop-filter 0.075s cubic-bezier(0, 0, 0.2, 1), backdrop-filter 0.075s cubic-bezier(0, 0, 0.2, 1), display 0.075s cubic-bezier(0, 0, 0.2, 1), visibility 0.075s cubic-bezier(0, 0, 0.2, 1), content-visibility 0.075s cubic-bezier(0, 0, 0.2, 1), overlay 0.075s cubic-bezier(0, 0, 0.2, 1), pointer-events 0.075s cubic-bezier(0, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "What should I say?"
+      },
+      {
+        "className": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "rect": {
+          "h": 30,
+          "w": 120,
+          "x": 253,
+          "y": 1993
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "1.67772e+07px",
+          "boxShadow": "none",
+          "color": "rgb(255, 255, 255)",
+          "display": "flex",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "12px",
+          "opacity": "1",
+          "padding": "8px 8px 8px 6px",
+          "position": "static",
+          "transform": "none",
+          "transition": "color 0.075s cubic-bezier(0, 0, 0.2, 1), background-color 0.075s cubic-bezier(0, 0, 0.2, 1), border-color 0.075s cubic-bezier(0, 0, 0.2, 1), outline-color 0.075s cubic-bezier(0, 0, 0.2, 1), text-decoration-color 0.075s cubic-bezier(0, 0, 0.2, 1), fill 0.075s cubic-bezier(0, 0, 0.2, 1), stroke 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-from 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-via 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-to 0.075s cubic-bezier(0, 0, 0.2, 1), opacity 0.075s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.075s cubic-bezier(0, 0, 0.2, 1), transform 0.075s cubic-bezier(0, 0, 0.2, 1), translate 0.075s cubic-bezier(0, 0, 0.2, 1), scale 0.075s cubic-bezier(0, 0, 0.2, 1), rotate 0.075s cubic-bezier(0, 0, 0.2, 1), filter 0.075s cubic-bezier(0, 0, 0.2, 1), -webkit-backdrop-filter 0.075s cubic-bezier(0, 0, 0.2, 1), backdrop-filter 0.075s cubic-bezier(0, 0, 0.2, 1), display 0.075s cubic-bezier(0, 0, 0.2, 1), visibility 0.075s cubic-bezier(0, 0, 0.2, 1), content-visibility 0.075s cubic-bezier(0, 0, 0.2, 1), overlay 0.075s cubic-bezier(0, 0, 0.2, 1), pointer-events 0.075s cubic-bezier(0, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "What should I say?"
+      },
+      {
+        "className": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "rect": {
+          "h": 30,
+          "w": 138,
+          "x": 871,
+          "y": 2004
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "1.67772e+07px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "12px",
+          "opacity": "1",
+          "padding": "8px 8px 8px 6px",
+          "position": "static",
+          "transform": "none",
+          "transition": "color 0.075s cubic-bezier(0, 0, 0.2, 1), background-color 0.075s cubic-bezier(0, 0, 0.2, 1), border-color 0.075s cubic-bezier(0, 0, 0.2, 1), outline-color 0.075s cubic-bezier(0, 0, 0.2, 1), text-decoration-color 0.075s cubic-bezier(0, 0, 0.2, 1), fill 0.075s cubic-bezier(0, 0, 0.2, 1), stroke 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-from 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-via 0.075s cubic-bezier(0, 0, 0.2, 1), --tw-gradient-to 0.075s cubic-bezier(0, 0, 0.2, 1), opacity 0.075s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.075s cubic-bezier(0, 0, 0.2, 1), transform 0.075s cubic-bezier(0, 0, 0.2, 1), translate 0.075s cubic-bezier(0, 0, 0.2, 1), scale 0.075s cubic-bezier(0, 0, 0.2, 1), rotate 0.075s cubic-bezier(0, 0, 0.2, 1), filter 0.075s cubic-bezier(0, 0, 0.2, 1), -webkit-backdrop-filter 0.075s cubic-bezier(0, 0, 0.2, 1), backdrop-filter 0.075s cubic-bezier(0, 0, 0.2, 1), display 0.075s cubic-bezier(0, 0, 0.2, 1), visibility 0.075s cubic-bezier(0, 0, 0.2, 1), content-visibility 0.075s cubic-bezier(0, 0, 0.2, 1), overlay 0.075s cubic-bezier(0, 0, 0.2, 1), pointer-events 0.075s cubic-bezier(0, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "What should I say?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5453
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Why real-time vs. a regular AI notetaker?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5522
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Who is Cluely for?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5591
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Is Cluely free?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5660
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "How is it undetectable in meetings?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5729
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "What languages and apps are supported?"
+      },
+      {
+        "className": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 hover:no-underline sm:py-4 md:py-[19px] lg:py-5 [&_svg]:size-7",
+        "rect": {
+          "h": 68,
+          "w": 1216,
+          "x": 105,
+          "y": 5798
+        },
+        "styles": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "border": "0px solid rgb(228, 228, 231)",
+          "borderRadius": "4px",
+          "boxShadow": "none",
+          "color": "rgb(0, 0, 0)",
+          "display": "flex",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "lineHeight": "20px",
+          "opacity": "1",
+          "padding": "20px 0px",
+          "position": "static",
+          "transform": "none",
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "tag": "button",
+        "text": "Can I talk to customer support?"
+      }
+    ]
+  },
+  "faqAnswers": [
+    {
+      "itemText": "Why real-time vs. a regular AI notetaker?",
+      "label": "Why real-time vs. a regular AI notetaker?",
+      "openStates": [
+        {
+          "cls": "border-b last:border-b-0",
+          "tag": "div",
+          "text": "Why real-time vs. a regular AI notetaker?Unlike regular AI notetakers like Otter or Granola that work after your meeting ends, Cluely provides real-time meeting intelligence during your calls. While other AI meeting assistants create meeting summaries afterward, Cluely helps you answer technical questions, handle objections, and perform better during high-stakes conversations."
+        },
+        {
+          "cls": "flex",
+          "tag": "h3",
+          "text": "Why real-time vs. a regular AI notetaker?"
+        },
+        {
+          "cls": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 h",
+          "tag": "button",
+          "text": "Why real-time vs. a regular AI notetaker?"
+        },
+        {
+          "cls": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          "tag": "div",
+          "text": "Unlike regular AI notetakers like Otter or Granola that work after your meeting ends, Cluely provides real-time meeting intelligence during your calls. While other AI meeting assistants create meeting summaries afterward, Cluely helps you answer technical questions, handle objections, and perform better during high-stakes conversations."
+        }
+      ]
+    },
+    {
+      "itemText": "Who is Cluely for?",
+      "label": "Who is Cluely for?",
+      "openStates": [
+        {
+          "cls": "border-b last:border-b-0",
+          "tag": "div",
+          "text": "Who is Cluely for?Cluely is perfect for students, professionals, sales teams, recruiters, consultants, executives, and anyone who needs to perform well in meetings. If you're in back-to-back sales calls, lectures, or client meetings where you can't afford to look unprepared, Cluely delivers you answers at moments when you most need them."
+        },
+        {
+          "cls": "flex",
+          "tag": "h3",
+          "text": "Who is Cluely for?"
+        },
+        {
+          "cls": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 h",
+          "tag": "button",
+          "text": "Who is Cluely for?"
+        },
+        {
+          "cls": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          "tag": "div",
+          "text": "Cluely is perfect for students, professionals, sales teams, recruiters, consultants, executives, and anyone who needs to perform well in meetings. If you're in back-to-back sales calls, lectures, or client meetings where you can't afford to look unprepared, Cluely delivers you answers at moments when you most need them."
+        }
+      ]
+    },
+    {
+      "itemText": "Is Cluely free?",
+      "label": "Is Cluely free?",
+      "openStates": [
+        {
+          "cls": "border-b last:border-b-0",
+          "tag": "div",
+          "text": "Is Cluely free?Yes, you can use Cluely's AI meeting assistant for free, and you will have limited access to all core Cluely features. The pro plan gives you access to unlimited meeting notes and unlimited AI responses with Cluely."
+        },
+        {
+          "cls": "flex",
+          "tag": "h3",
+          "text": "Is Cluely free?"
+        },
+        {
+          "cls": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 h",
+          "tag": "button",
+          "text": "Is Cluely free?"
+        },
+        {
+          "cls": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          "tag": "div",
+          "text": "Yes, you can use Cluely's AI meeting assistant for free, and you will have limited access to all core Cluely features. The pro plan gives you access to unlimited meeting notes and unlimited AI responses with Cluely."
+        }
+      ]
+    },
+    {
+      "itemText": "How is it undetectable in meetings?",
+      "label": "How is it undetectable in meetings?",
+      "openStates": [
+        {
+          "cls": "border-b last:border-b-0",
+          "tag": "div",
+          "text": "How is it undetectable in meetings?Unlike other meeting AI tools, it never joins your calls as a participant, doesn't appear in meeting recordings, and won't show up in screen shares (limitations here). It captures meeting audio in the background and provides a discreet, translucent overlay that only you can see—making it completely undetectable to other meeting participants."
+        },
+        {
+          "cls": "flex",
+          "tag": "h3",
+          "text": "How is it undetectable in meetings?"
+        },
+        {
+          "cls": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 h",
+          "tag": "button",
+          "text": "How is it undetectable in meetings?"
+        },
+        {
+          "cls": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          "tag": "div",
+          "text": "Unlike other meeting AI tools, it never joins your calls as a participant, doesn't appear in meeting recordings, and won't show up in screen shares (limitations here). It captures meeting audio in the background and provides a discreet, translucent overlay that only you can see—making it completely undetectable to other meeting participants."
+        }
+      ]
+    },
+    {
+      "itemText": "What languages and apps are supported?",
+      "label": "What languages and apps are supported?",
+      "openStates": [
+        {
+          "cls": "border-b last:border-b-0",
+          "tag": "div",
+          "text": "What languages and apps are supported?Cluely's AI meeting assistant works with all major meeting platforms including Zoom, Microsoft Teams, Webex, and Slack calls. It supports English and major international languages for meeting transcription and real-time insights."
+        },
+        {
+          "cls": "flex",
+          "tag": "h3",
+          "text": "What languages and apps are supported?"
+        },
+        {
+          "cls": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 h",
+          "tag": "button",
+          "text": "What languages and apps are supported?"
+        },
+        {
+          "cls": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          "tag": "div",
+          "text": "Cluely's AI meeting assistant works with all major meeting platforms including Zoom, Microsoft Teams, Webex, and Slack calls. It supports English and major international languages for meeting transcription and real-time insights."
+        }
+      ]
+    },
+    {
+      "itemText": "Can I talk to customer support?",
+      "label": "Can I talk to customer support?",
+      "openStates": [
+        {
+          "cls": "last:border-b-0 border-b-0",
+          "tag": "div",
+          "text": "Can I talk to customer support?Yes, our support team is available to help you get the most out of your AI meeting assistant. You can reach out via live chat, email, or through the support center. We provide technical support and help with optimizing Cluely for your specific meeting and sales workflows."
+        },
+        {
+          "cls": "flex",
+          "tag": "h3",
+          "text": "Can I talk to customer support?"
+        },
+        {
+          "cls": "flex flex-1 items-center justify-between rounded py-4 text-sm font-medium transition-all [&[data-state=open]>svg]:rotate-180 gap-x-4 text-left tracking-tight text-foreground hover:text-foreground/80 h",
+          "tag": "button",
+          "text": "Can I talk to customer support?"
+        },
+        {
+          "cls": "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          "tag": "div",
+          "text": "Yes, our support team is available to help you get the most out of your AI meeting assistant. You can reach out via live chat, email, or through the support center. We provide technical support and help with optimizing Cluely for your specific meeting and sales workflows."
+        }
+      ]
+    }
+  ],
+  "mobileMenu": {
+    "beforeMenu": [
+      {
+        "cls": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "i": 0,
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Get the desktop app"
+      },
+      {
+        "cls": "relative ml-4 flex size-6 text-foreground outline-hidden md:hidden",
+        "i": 1,
+        "rect": {
+          "h": 24,
+          "w": 24,
+          "x": 331,
+          "y": 13
+        },
+        "text": "TriggerOpen menu"
+      },
+      {
+        "cls": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "i": 2,
+        "rect": {
+          "h": 44,
+          "w": 220,
+          "x": 77,
+          "y": 327
+        },
+        "text": "Get the desktop app"
+      },
+      {
+        "cls": "flex h-8 items-center gap-1 rounded-full px-3 text-xs font-medium text-white bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] shadow-[0_0.7px_0_0_#AFB3C4_inset] hover:scale-105",
+        "i": 3,
+        "rect": {
+          "h": 26,
+          "w": 56,
+          "x": 161,
+          "y": 847
+        },
+        "text": "Hide"
+      },
+      {
+        "cls": "hover:scale-105 flex size-8 items-center justify-center rounded-full transition-colors bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] shadow-[0_0.7px_0_0_#AFB3C4_inset]",
+        "i": 4,
+        "rect": {
+          "h": 26,
+          "w": 26,
+          "x": 219,
+          "y": 847
+        },
+        "text": ""
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 5,
+        "rect": {
+          "h": 24,
+          "w": 54,
+          "x": 89,
+          "y": 1017
+        },
+        "text": "Assist"
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 6,
+        "rect": {
+          "h": 24,
+          "w": 110,
+          "x": 158,
+          "y": 1017
+        },
+        "text": "What should I say?"
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 7,
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 8,
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Recap"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transition-all duration-150 md:h-[26px] md:gap-1 md:pl-1.5 md:pr-2 md:text-xs border-white/15 text-white/40 hover:border-white/25 hover:text-[#edeef2]",
+        "i": 9,
+        "rect": {
+          "h": 18,
+          "w": 42,
+          "x": 92,
+          "y": 1073
+        },
+        "text": "Smart"
+      },
+      {
+        "cls": "flex size-6 items-center justify-center rounded-full text-white/40 transition-colors hover:bg-white/10 hover:text-[#edeef2] md:size-7",
+        "i": 10,
+        "rect": {
+          "h": 19,
+          "w": 19,
+          "x": 138,
+          "y": 1072
+        },
+        "text": ""
+      },
+      {
+        "cls": "flex size-6 items-center justify-center rounded-full text-white transition-transform duration-[160ms] ease-out hover:scale-[1.03] active:scale-[0.97] md:size-7",
+        "i": 11,
+        "rect": {
+          "h": 19,
+          "w": 19,
+          "x": 263,
+          "y": 1072
+        },
+        "text": ""
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 12,
+        "rect": {
+          "h": 30,
+          "w": 62,
+          "x": 76,
+          "y": 1446
+        },
+        "text": "Assist"
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 13,
+        "rect": {
+          "h": 30,
+          "w": 120,
+          "x": 157,
+          "y": 1446
+        },
+        "text": "What should I say?"
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 14,
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "flex items-center gap-1.5 rounded-full py-2 pr-2 pl-1.5 text-xs leading-none transition duration-75 ease-out group-hover/static-insight:bg-[#EDEEF2]/10",
+        "i": 15,
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Recap"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transition-all duration-150 md:h-[26px] md:gap-1 md:pl-1.5 md:pr-2 md:text-xs border-white/15 text-white/40 hover:border-white/25 hover:text-[#edeef2]",
+        "i": 16,
+        "rect": {
+          "h": 22,
+          "w": 53,
+          "x": 85,
+          "y": 1516
+        },
+        "text": "Smart"
+      },
+      {
+        "cls": "flex size-6 items-center justify-center rounded-full text-white/40 transition-colors hover:bg-white/10 hover:text-[#edeef2] md:size-7",
+        "i": 17,
+        "rect": {
+          "h": 24,
+          "w": 24,
+          "x": 141,
+          "y": 1515
+        },
+        "text": ""
+      },
+      {
+        "cls": "flex size-6 items-center justify-center rounded-full text-white transition-transform duration-[160ms] ease-out hover:scale-[1.03] active:scale-[0.97] md:size-7",
+        "i": 18,
+        "rect": {
+          "h": 24,
+          "w": 24,
+          "x": 267,
+          "y": 1515
+        },
+        "text": ""
+      },
+      {
+        "cls": "flex h-8 items-center gap-1 rounded-full px-3 text-xs font-medium text-white bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] shadow-[0_0.7px_0_0_#AFB3C4_inset] pointer-events-none",
+        "i": 19,
+        "rect": {
+          "h": 32,
+          "w": 69,
+          "x": 154,
+          "y": 1850
+        },
+        "text": "Hide"
+      }
+    ],
+    "after": [
+      {
+        "cls": "relative flex grow flex-col rounded-none aria-hidden:[-webkit-mask-image:-webkit-radial-gradient(white,black)]",
+        "rect": {
+          "h": 7114,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "CluelyUndetectabilityMobileBlogGet the desktop appGet for MacTriggerOpen menu{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"@id\":\"https://cluely.com/#software\",\"name\":\"Clue"
+      },
+      {
+        "cls": "absolute z-9999 flex w-full pt-2.5",
+        "rect": {
+          "h": 40,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "9999"
+        },
+        "tag": "header",
+        "text": "CluelyUndetectabilityMobileBlogGet the desktop appGet for MacTriggerOpen menu"
+      },
+      {
+        "cls": "mx-auto flex w-full max-w-6xl items-center justify-between rounded-b-lg pr-5 text-white md:pr-8",
+        "rect": {
+          "h": 30,
+          "w": 375,
+          "x": 0,
+          "y": 10
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "CluelyUndetectabilityMobileBlogGet the desktop appGet for MacTriggerOpen menu"
+      },
+      {
+        "cls": "flex items-center justify-center gap-1 rounded-2xl px-3 py-1 lg:gap-7",
+        "rect": {
+          "h": 30,
+          "w": 108,
+          "x": 0,
+          "y": 10
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "CluelyUndetectabilityMobileBlog"
+      },
+      {
+        "cls": "inline-flex shrink-0 translate-y-0.5 items-center justify-center rounded lg:mr-7",
+        "rect": {
+          "h": 22,
+          "w": 84,
+          "x": 12,
+          "y": 16
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "a",
+        "text": "Cluely"
+      },
+      {
+        "cls": "shrink-0",
+        "rect": {
+          "h": 22,
+          "w": 84,
+          "x": 12,
+          "y": 16
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 54,
+          "y": 27
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Cluely"
+      },
+      {
+        "cls": "relative ml-4 flex size-6 text-foreground outline-hidden md:hidden",
+        "rect": {
+          "h": 24,
+          "w": 24,
+          "x": 331,
+          "y": 13
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "button",
+        "text": "TriggerOpen menu"
+      },
+      {
+        "cls": "absolute -inset-3 lg:hidden",
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 319,
+          "y": 1
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "cls": "-mr-1.5 shrink-0",
+        "rect": {
+          "h": 24,
+          "w": 24,
+          "x": 331,
+          "y": 13
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "svg",
+        "text": "Trigger"
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 330,
+          "y": 12
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Open menu"
+      },
+      {
+        "cls": "grow bg-white",
+        "rect": {
+          "h": 6442,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"@id\":\"https://cluely.com/#software\",\"name\":\"Cluely\",\"url\":\"https://cluely.com\",\"description\":\"AI meeting assistant that provi"
+      },
+      {
+        "cls": "relative flex flex-col gap-12 overflow-hidden md:gap-24 md:overflow-visible lg:gap-32",
+        "rect": {
+          "h": 6442,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "main",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectableGet the desktop appGet for MacHideWhat should I say?“A discounted cash "
+      },
+      {
+        "cls": "hero-v2 flex flex-col items-center gap-8 lg:gap-12",
+        "rect": {
+          "h": 803,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) radial-gradient(187.39% 86.87% at 50% 13.13%, rgb(74, 143, 221) 23.39%, rgba(74, 143, 221, 0) 100%) no-repeat scroll 50% 0% / 1600px padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectableGet the desktop appGet for MacHideWhat should I say?“A discounted cash "
+      },
+      {
+        "cls": "relative w-full",
+        "rect": {
+          "h": 355,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectableGet the desktop appGet for Mac"
+      },
+      {
+        "cls": "flex h-full items-start justify-center px-3 pt-20 lg:pt-32",
+        "rect": {
+          "h": 355,
+          "w": 375,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "section",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectableGet the desktop appGet for Mac"
+      },
+      {
+        "cls": "flex flex-col items-center gap-8",
+        "rect": {
+          "h": 275,
+          "w": 351,
+          "x": 12,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectableGet the desktop appGet for Mac"
+      },
+      {
+        "cls": "flex flex-col items-center gap-4",
+        "rect": {
+          "h": 199,
+          "w": 351,
+          "x": 12,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectable"
+      },
+      {
+        "cls": "flex flex-col items-center gap-6 lg:gap-5",
+        "rect": {
+          "h": 199,
+          "w": 351,
+          "x": 12,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectable"
+      },
+      {
+        "cls": "max-w-[360px] text-center text-[56px] leading-[96%] font-medium tracking-[-1px] text-white lg:max-w-[560px] lg:text-[80px]",
+        "rect": {
+          "h": 108,
+          "w": 351,
+          "x": 12,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "h1",
+        "text": "#1 Undetectable AI for Meetings"
+      },
+      {
+        "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+        "rect": {
+          "h": 66,
+          "w": 51,
+          "x": 20,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "#1"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 54,
+          "w": 51,
+          "x": 20,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "#1"
+      },
+      {
+        "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+        "rect": {
+          "h": 66,
+          "w": 274,
+          "x": 81,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Undetectable"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 54,
+          "w": 274,
+          "x": 81,
+          "y": 80
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Undetectable"
+      },
+      {
+        "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+        "rect": {
+          "h": 66,
+          "w": 56,
+          "x": 26,
+          "y": 134
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "AI"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 54,
+          "w": 56,
+          "x": 26,
+          "y": 134
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "AI"
+      },
+      {
+        "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+        "rect": {
+          "h": 66,
+          "w": 60,
+          "x": 92,
+          "y": 134
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "for"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 54,
+          "w": 60,
+          "x": 92,
+          "y": 134
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "for"
+      },
+      {
+        "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+        "rect": {
+          "h": 66,
+          "w": 188,
+          "x": 162,
+          "y": 134
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Meetings"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 54,
+          "w": 188,
+          "x": 162,
+          "y": 135
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.3356)",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Meetings"
+      },
+      {
+        "cls": "max-w-[560px] text-center leading-[140%] font-medium tracking-[-0.02em] text-white lg:text-[19px]",
+        "rect": {
+          "h": 67,
+          "w": 351,
+          "x": 12,
+          "y": 220
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0",
+          "position": "static",
+          "transform": "matrix(1, 0, 0, 1, 0, 8)",
+          "zIndex": "auto"
+        },
+        "tag": "h2",
+        "text": "Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectable"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 44,
+          "w": 220,
+          "x": 77,
+          "y": 327
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0",
+          "position": "static",
+          "transform": "matrix(1, 0, 0, 1, 0, 16)",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      },
+      {
+        "cls": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] relative overflow-hidden sm:hidden",
+        "rect": {
+          "h": 44,
+          "w": 220,
+          "x": 77,
+          "y": 327
+        },
+        "style": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "button",
+        "text": "Get the desktop app"
+      },
+      {
+        "cls": "absolute top-0 left-0 z-20 h-full w-full blur-[1px]",
+        "rect": {
+          "h": 44,
+          "w": 220,
+          "x": 77,
+          "y": 327
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "20"
+        },
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "cls": "blurred-border absolute -top-px -left-px z-20 h-full w-full",
+        "rect": {
+          "h": 44,
+          "w": 220,
+          "x": 76,
+          "y": 326
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) linear-gradient(176.87deg, rgba(255, 255, 255, 0.5) 8.56%, rgba(255, 255, 255, 0) 85.04%) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0.45",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "2"
+        },
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "cls": "absolute -top-4 -left-12 h-[153px] w-[54px] opacity-40",
+        "rect": {
+          "h": 153,
+          "w": 54,
+          "x": 313,
+          "y": 311
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0.4",
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 284, 0)",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 153,
+          "w": 54,
+          "x": 313,
+          "y": 311
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "cls": "lucide lucide-laptop",
+        "rect": {
+          "h": 24,
+          "w": 24,
+          "x": 97,
+          "y": 337
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "svg",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 15,
+          "w": 19,
+          "x": 100,
+          "y": 342
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "path",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 150,
+          "x": 127,
+          "y": 337
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Get the desktop app"
+      },
+      {
+        "cls": "relative flex h-fit w-full items-start justify-center px-3 sm:px-12 pt-4 perspective-midrange lg:pt-6",
+        "rect": {
+          "h": 416,
+          "w": 375,
+          "x": 0,
+          "y": 387
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "relative h-100 sm:h-128 w-full max-w-6xl rounded-[13px] lg:aspect-[1.7] lg:h-auto",
+        "rect": {
+          "h": 457,
+          "w": 401,
+          "x": -13,
+          "y": 604
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0",
+          "position": "relative",
+          "transform": "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 200, 100, 1)",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "absolute inset-0 flex items-center justify-center rounded-[13px] perspective-midrange",
+        "rect": {
+          "h": 457,
+          "w": 401,
+          "x": -13,
+          "y": 604
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "h-full flex items-center justify-center",
+        "rect": {
+          "h": 457,
+          "w": 401,
+          "x": -13,
+          "y": 604
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "aspect-[1.6] h-[80%]",
+        "rect": {
+          "h": 366,
+          "w": 401,
+          "x": -13,
+          "y": 650
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "video",
+        "text": ""
+      },
+      {
+        "cls": "absolute inset-0 flex items-start justify-center pt-2 lg:pt-10",
+        "rect": {
+          "h": 457,
+          "w": 401,
+          "x": -13,
+          "y": 604
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "w-[80%] origin-top sm:w-[70%] md:w-120 md:touch-none lg:w-[45%]",
+        "rect": {
+          "h": 265,
+          "w": 225,
+          "x": 75,
+          "y": 842
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0",
+          "position": "static",
+          "transform": "matrix(0.7, 0, 0, 0.7, 0, 200)",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "flex flex-col gap-2",
+        "rect": {
+          "h": 265,
+          "w": 225,
+          "x": 75,
+          "y": 842
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat "
+      },
+      {
+        "cls": "mx-auto flex w-fit items-center gap-1 rounded-full px-3 py-1.5",
+        "rect": {
+          "h": 37,
+          "w": 134,
+          "x": 121,
+          "y": 842
+        },
+        "style": {
+          "background": "rgba(24, 23, 28, 0.8) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Hide"
+      },
+      {
+        "cls": "flex size-8 text-white mt-0.5 ml-0.5",
+        "rect": {
+          "h": 26,
+          "w": 26,
+          "x": 132,
+          "y": 848
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "svg",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 22,
+          "x": 132,
+          "y": 848
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "path",
+        "text": ""
+      },
+      {
+        "cls": "flex h-8 items-center gap-1 rounded-full px-3 text-xs font-medium text-white bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] shadow-[0_0.7px_0_0_#AFB3C4_inset] hover:scale-105",
+        "rect": {
+          "h": 26,
+          "w": 56,
+          "x": 161,
+          "y": 847
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(46, 48, 57), rgb(39, 42, 49)) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "button",
+        "text": "Hide"
+      },
+      {
+        "cls": "lucide lucide-chevron-down size-4 text-[#b2b3ba]",
+        "rect": {
+          "h": 13,
+          "w": 13,
+          "x": 170,
+          "y": 854
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "svg",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 3,
+          "w": 6,
+          "x": 173,
+          "y": 858
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "path",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 13,
+          "w": 20,
+          "x": 186,
+          "y": 854
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Hide"
+      },
+      {
+        "cls": "hover:scale-105 flex size-8 items-center justify-center rounded-full transition-colors bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] shadow-[0_0.7px_0_0_#AFB3C4_inset]",
+        "rect": {
+          "h": 26,
+          "w": 26,
+          "x": 219,
+          "y": 847
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(46, 48, 57), rgb(39, 42, 49)) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "button",
+        "text": ""
+      },
+      {
+        "cls": "lucide lucide-square size-3.5 fill-white text-white",
+        "rect": {
+          "h": 11,
+          "w": 11,
+          "x": 226,
+          "y": 854
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "svg",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 8,
+          "w": 8,
+          "x": 228,
+          "y": 856
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "rect",
+        "text": ""
+      },
+      {
+        "cls": "origin-top transition-all duration-100 ease-out opacity-100",
+        "rect": {
+          "h": 222,
+          "w": 225,
+          "x": 75,
+          "y": 885
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat shou"
+      },
+      {
+        "cls": "flex flex-col rounded-2xl border border-white/25",
+        "rect": {
+          "h": 222,
+          "w": 225,
+          "x": 75,
+          "y": 885
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) linear-gradient(rgba(24, 23, 28, 0.75) 0%, rgba(24, 23, 28, 0.8) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat shou"
+      },
+      {
+        "cls": "flex flex-1 flex-col p-4 pb-2",
+        "rect": {
+          "h": 162,
+          "w": 223,
+          "x": 76,
+          "y": 886
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.” AssistWhat shou"
+      },
+      {
+        "cls": "relative",
+        "rect": {
+          "h": 109,
+          "w": 197,
+          "x": 89,
+          "y": 898
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.”"
+      },
+      {
+        "cls": "flex flex-1 flex-col gap-3 pr-1 cluely-scrollbar max-h-[150px] overflow-x-hidden overflow-y-auto md:max-h-[150px]",
+        "rect": {
+          "h": 109,
+          "w": 197,
+          "x": 89,
+          "y": 898
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present value using the weighted average cost of capital.”"
+      },
+      {
+        "cls": "mx-auto w-full max-w-7xl px-5 md:px-8",
+        "rect": {
+          "h": 1,
+          "w": 375,
+          "x": 0,
+          "y": 851
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "cls": "h-px w-full border-none bg-transparent",
+        "rect": {
+          "h": 1,
+          "w": 272,
+          "x": 51,
+          "y": 851
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "matrix(0.812575, 0, 0, 1, 0, 0)",
+          "zIndex": "auto"
+        },
+        "tag": "hr",
+        "text": ""
+      },
+      {
+        "cls": "mx-auto flex w-full max-w-7xl flex-col items-center gap-11 px-5 md:px-8 lg:items-stretch",
+        "rect": {
+          "h": 1306,
+          "w": 375,
+          "x": 0,
+          "y": 900
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "How Cluely helps during a meetingCluely listens in to the conversationIt picks up the context of your meeting in real time, so it can help when you need it.00:00RecordingAssistWhat should I say?Follow"
+      },
+      {
+        "cls": "fixed inset-0 z-50 bg-black/80 dark:bg-background/90",
+        "rect": {
+          "h": 900,
+          "w": 390,
+          "x": 0,
+          "y": 0
+        },
+        "style": {
+          "background": "oklab(0 0 0 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0.980696",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "50"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "cls": "fixed inset-x-0 bottom-0 z-50 bg-popover flex h-[75dvh] flex-col rounded-t-xl border border-border p-0 lg:hidden",
+        "rect": {
+          "h": 675,
+          "w": 390,
+          "x": 0,
+          "y": 238
+        },
+        "style": {
+          "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "matrix(1, 0, 0, 1, 0, 13.0304)",
+          "zIndex": "50"
+        },
+        "tag": "div",
+        "text": "MenuUndetectabilityMobileBlogGet for Mac"
+      },
+      {
+        "cls": "mx-auto mt-4 h-1 w-28 rounded-full bg-muted",
+        "rect": {
+          "h": 4,
+          "w": 112,
+          "x": 139,
+          "y": 255
+        },
+        "style": {
+          "background": "rgb(244, 244, 245) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "cls": "text-lg leading-none font-semibold tracking-tight sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 0,
+          "y": 238
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "h2",
+        "text": "Menu"
+      },
+      {
+        "cls": "relative flex flex-1 flex-col overflow-y-auto px-5 pt-6 pb-12 md:px-8",
+        "rect": {
+          "h": 653,
+          "w": 388,
+          "x": 1,
+          "y": 259
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "UndetectabilityMobileBlogGet for Mac"
+      },
+      {
+        "cls": "flex flex-col",
+        "rect": {
+          "h": 108,
+          "w": 348,
+          "x": 21,
+          "y": 283
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "ul",
+        "text": "UndetectabilityMobileBlog"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 36,
+          "w": 348,
+          "x": 21,
+          "y": 283
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "li",
+        "text": "Undetectability"
+      },
+      {
+        "cls": "flex h-9 flex-1 items-center gap-x-2 text-base leading-snug font-medium tracking-tight hover:text-gray-40 text-foreground",
+        "rect": {
+          "h": 36,
+          "w": 348,
+          "x": 21,
+          "y": 283
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "a",
+        "text": "Undetectability"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 109,
+          "x": 21,
+          "y": 290
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Undetectability"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 36,
+          "w": 348,
+          "x": 21,
+          "y": 319
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "li",
+        "text": "Mobile"
+      },
+      {
+        "cls": "flex h-9 flex-1 items-center gap-x-2 text-base leading-snug font-medium tracking-tight hover:text-gray-40 text-foreground",
+        "rect": {
+          "h": 36,
+          "w": 348,
+          "x": 21,
+          "y": 319
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "a",
+        "text": "Mobile"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 48,
+          "x": 21,
+          "y": 326
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Mobile"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 36,
+          "w": 348,
+          "x": 21,
+          "y": 355
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "li",
+        "text": "Blog"
+      },
+      {
+        "cls": "flex h-9 flex-1 items-center gap-x-2 text-base leading-snug font-medium tracking-tight hover:text-gray-40 text-foreground",
+        "rect": {
+          "h": 36,
+          "w": 348,
+          "x": 21,
+          "y": 355
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "a",
+        "text": "Blog"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 33,
+          "x": 21,
+          "y": 362
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "span",
+        "text": "Blog"
+      },
+      {
+        "cls": "absolute inset-x-0 bottom-0 z-20 grid grid-cols-1 gap-6 px-5 pt-2 pb-5 md:px-8 md:pb-8",
+        "rect": {
+          "h": 68,
+          "w": 388,
+          "x": 1,
+          "y": 844
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "20"
+        },
+        "tag": "div",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "lg:h-11 px-3 md:w-[178px] w-fit h-10 rounded-[6px] relative font-semibold text-white inline-flex items-center justify-center lg:w-[199px] text-base leading-none purple-gradient-but",
+        "rect": {
+          "h": 40,
+          "w": 113,
+          "x": 21,
+          "y": 852
+        },
+        "style": {
+          "background": "radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) radial-gradient(114.65% 114.65% at 9.73% 17.27%, rgb(30, 130, 224) 0px, rgb(28, 56, 234) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "a",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "absolute top-0 left-0 z-20 h-full w-full blur-[1px]",
+        "rect": {
+          "h": 40,
+          "w": 113,
+          "x": 21,
+          "y": 852
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "20"
+        },
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "cls": "blurred-border absolute -top-px -left-px z-20 h-full w-full !rounded-[10px]",
+        "rect": {
+          "h": 40,
+          "w": 113,
+          "x": 20,
+          "y": 851
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) linear-gradient(176.87deg, rgba(255, 255, 255, 0.5) 8.56%, rgba(255, 255, 255, 0) 85.04%) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "0.45",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "2"
+        },
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "cls": "relative z-10 flex items-center gap-1.5 text-13 font-medium -tracking-[0.13px]",
+        "rect": {
+          "h": 15,
+          "w": 89,
+          "x": 33,
+          "y": 865
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "relative",
+          "transform": "none",
+          "zIndex": "10"
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "mb-0.5",
+        "rect": {
+          "h": 13,
+          "w": 13,
+          "x": 33,
+          "y": 865
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "svg",
+        "text": ""
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 10,
+          "x": 34,
+          "y": 865
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "static",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "path",
+        "text": ""
+      },
+      {
+        "cls": "pointer-events-none absolute inset-x-0 bottom-0 h-20 w-full bg-linear-to-b from-transparent to-background",
+        "rect": {
+          "h": 80,
+          "w": 388,
+          "x": 1,
+          "y": 832
+        },
+        "style": {
+          "background": "rgba(0, 0, 0, 0) linear-gradient(in oklab, rgba(0, 0, 0, 0) 0px, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+          "opacity": "1",
+          "position": "absolute",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,1070 @@
+[
+  {
+    "cls": "relative flex grow flex-col rounded-none aria-hidden:[-webkit-mask-image:-webkit-radial-gradient(white,black)]",
+    "rect": {
+      "h": 7114,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "div",
+    "text": "CluelyUndetectabilityMobileBlogGet the desktop appGet for MacTriggerOpen menu{\"@context\":\"https://schema.org\",\"@graph\":["
+  },
+  {
+    "cls": "absolute z-9999 flex w-full pt-2.5",
+    "rect": {
+      "h": 40,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "header",
+    "text": "CluelyUndetectabilityMobileBlogGet the desktop appGet for MacTriggerOpen menu"
+  },
+  {
+    "cls": "mx-auto flex w-full max-w-6xl items-center justify-between rounded-b-lg pr-5 text-white md:pr-8",
+    "rect": {
+      "h": 30,
+      "w": 375,
+      "x": 0,
+      "y": 10
+    },
+    "state": null,
+    "tag": "div",
+    "text": "CluelyUndetectabilityMobileBlogGet the desktop appGet for MacTriggerOpen menu"
+  },
+  {
+    "cls": "flex items-center justify-center gap-1 rounded-2xl px-3 py-1 lg:gap-7",
+    "rect": {
+      "h": 30,
+      "w": 108,
+      "x": 0,
+      "y": 10
+    },
+    "state": null,
+    "tag": "div",
+    "text": "CluelyUndetectabilityMobileBlog"
+  },
+  {
+    "cls": "inline-flex shrink-0 translate-y-0.5 items-center justify-center rounded lg:mr-7",
+    "rect": {
+      "h": 22,
+      "w": 84,
+      "x": 12,
+      "y": 16
+    },
+    "state": null,
+    "tag": "a",
+    "text": "Cluely"
+  },
+  {
+    "cls": "shrink-0",
+    "rect": {
+      "h": 22,
+      "w": 84,
+      "x": 12,
+      "y": 16
+    },
+    "state": null,
+    "tag": "img",
+    "text": ""
+  },
+  {
+    "cls": "sr-only",
+    "rect": {
+      "h": 1,
+      "w": 1,
+      "x": 54,
+      "y": 27
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Cluely"
+  },
+  {
+    "cls": "relative ml-4 flex size-6 text-foreground outline-hidden md:hidden",
+    "rect": {
+      "h": 24,
+      "w": 24,
+      "x": 331,
+      "y": 13
+    },
+    "state": "open",
+    "tag": "button",
+    "text": "TriggerOpen menu"
+  },
+  {
+    "cls": "absolute -inset-3 lg:hidden",
+    "rect": {
+      "h": 48,
+      "w": 48,
+      "x": 319,
+      "y": 1
+    },
+    "state": null,
+    "tag": "span",
+    "text": ""
+  },
+  {
+    "cls": "-mr-1.5 shrink-0",
+    "rect": {
+      "h": 24,
+      "w": 24,
+      "x": 331,
+      "y": 13
+    },
+    "state": null,
+    "tag": "svg",
+    "text": "Trigger"
+  },
+  {
+    "cls": "sr-only",
+    "rect": {
+      "h": 1,
+      "w": 1,
+      "x": 330,
+      "y": 12
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Open menu"
+  },
+  {
+    "cls": "grow bg-white",
+    "rect": {
+      "h": 6442,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "div",
+    "text": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"@id\":\"https://cluely.com/#software\",\"name\":\"C"
+  },
+  {
+    "cls": "relative flex flex-col gap-12 overflow-hidden md:gap-24 md:overflow-visible lg:gap-32",
+    "rect": {
+      "h": 6442,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "main",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "hero-v2 flex flex-col items-center gap-8 lg:gap-12",
+    "rect": {
+      "h": 803,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "div",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "relative w-full",
+    "rect": {
+      "h": 355,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "div",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "flex h-full items-start justify-center px-3 pt-20 lg:pt-32",
+    "rect": {
+      "h": 355,
+      "w": 375,
+      "x": 0,
+      "y": 0
+    },
+    "state": null,
+    "tag": "section",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "flex flex-col items-center gap-8",
+    "rect": {
+      "h": 275,
+      "w": 351,
+      "x": 12,
+      "y": 80
+    },
+    "state": null,
+    "tag": "div",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "flex flex-col items-center gap-4",
+    "rect": {
+      "h": 199,
+      "w": 351,
+      "x": 12,
+      "y": 80
+    },
+    "state": null,
+    "tag": "div",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "flex flex-col items-center gap-6 lg:gap-5",
+    "rect": {
+      "h": 199,
+      "w": 351,
+      "x": 12,
+      "y": 80
+    },
+    "state": null,
+    "tag": "div",
+    "text": "#1 Undetectable AI for Meetings Cluely takes perfect meeting notes and gives real-time answers, all while completely und"
+  },
+  {
+    "cls": "max-w-[360px] text-center text-[56px] leading-[96%] font-medium tracking-[-1px] text-white lg:max-w-[560px] lg:text-[80px]",
+    "rect": {
+      "h": 108,
+      "w": 351,
+      "x": 12,
+      "y": 80
+    },
+    "state": null,
+    "tag": "h1",
+    "text": "#1 Undetectable AI for Meetings"
+  },
+  {
+    "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+    "rect": {
+      "h": 66,
+      "w": 51,
+      "x": 20,
+      "y": 80
+    },
+    "state": null,
+    "tag": "span",
+    "text": "#1"
+  },
+  {
+    "cls": "inline-block",
+    "rect": {
+      "h": 54,
+      "w": 51,
+      "x": 20,
+      "y": 80
+    },
+    "state": null,
+    "tag": "span",
+    "text": "#1"
+  },
+  {
+    "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+    "rect": {
+      "h": 66,
+      "w": 274,
+      "x": 81,
+      "y": 80
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Undetectable"
+  },
+  {
+    "cls": "inline-block",
+    "rect": {
+      "h": 54,
+      "w": 274,
+      "x": 81,
+      "y": 80
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Undetectable"
+  },
+  {
+    "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+    "rect": {
+      "h": 66,
+      "w": 56,
+      "x": 26,
+      "y": 134
+    },
+    "state": null,
+    "tag": "span",
+    "text": "AI"
+  },
+  {
+    "cls": "inline-block",
+    "rect": {
+      "h": 54,
+      "w": 56,
+      "x": 26,
+      "y": 134
+    },
+    "state": null,
+    "tag": "span",
+    "text": "AI"
+  },
+  {
+    "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+    "rect": {
+      "h": 66,
+      "w": 60,
+      "x": 92,
+      "y": 134
+    },
+    "state": null,
+    "tag": "span",
+    "text": "for"
+  },
+  {
+    "cls": "inline-block",
+    "rect": {
+      "h": 54,
+      "w": 60,
+      "x": 92,
+      "y": 134
+    },
+    "state": null,
+    "tag": "span",
+    "text": "for"
+  },
+  {
+    "cls": "-mb-[0.22em] inline-block overflow-hidden pb-[0.22em] align-bottom",
+    "rect": {
+      "h": 66,
+      "w": 188,
+      "x": 162,
+      "y": 134
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Meetings"
+  },
+  {
+    "cls": "inline-block",
+    "rect": {
+      "h": 54,
+      "w": 188,
+      "x": 162,
+      "y": 134
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Meetings"
+  },
+  {
+    "cls": "max-w-[560px] text-center leading-[140%] font-medium tracking-[-0.02em] text-white lg:text-[19px]",
+    "rect": {
+      "h": 67,
+      "w": 351,
+      "x": 12,
+      "y": 220
+    },
+    "state": null,
+    "tag": "h2",
+    "text": "Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectable"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 44,
+      "w": 220,
+      "x": 77,
+      "y": 327
+    },
+    "state": null,
+    "tag": "div",
+    "text": "Get the desktop appGet for Mac"
+  },
+  {
+    "cls": "purple-gradient-button rounded-[10px] flex items-center gap-[6px] w-fit text-white font-medium text-[16px] tracking-[-0.13px] p-[10px_20px] ",
+    "rect": {
+      "h": 44,
+      "w": 220,
+      "x": 77,
+      "y": 327
+    },
+    "state": "closed",
+    "tag": "button",
+    "text": "Get the desktop app"
+  },
+  {
+    "cls": "absolute top-0 left-0 z-20 h-full w-full blur-[1px]",
+    "rect": {
+      "h": 44,
+      "w": 220,
+      "x": 77,
+      "y": 327
+    },
+    "state": null,
+    "tag": "span",
+    "text": ""
+  },
+  {
+    "cls": "blurred-border absolute -top-px -left-px z-20 h-full w-full",
+    "rect": {
+      "h": 44,
+      "w": 220,
+      "x": 76,
+      "y": 326
+    },
+    "state": null,
+    "tag": "span",
+    "text": ""
+  },
+  {
+    "cls": "absolute -top-4 -left-12 h-[153px] w-[54px] opacity-40",
+    "rect": {
+      "h": 153,
+      "w": 54,
+      "x": 313,
+      "y": 311
+    },
+    "state": null,
+    "tag": "div",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 153,
+      "w": 54,
+      "x": 313,
+      "y": 311
+    },
+    "state": null,
+    "tag": "img",
+    "text": ""
+  },
+  {
+    "cls": "lucide lucide-laptop",
+    "rect": {
+      "h": 24,
+      "w": 24,
+      "x": 97,
+      "y": 337
+    },
+    "state": null,
+    "tag": "svg",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 15,
+      "w": 19,
+      "x": 100,
+      "y": 342
+    },
+    "state": null,
+    "tag": "path",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 24,
+      "w": 150,
+      "x": 127,
+      "y": 337
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Get the desktop app"
+  },
+  {
+    "cls": "relative flex h-fit w-full items-start justify-center px-3 sm:px-12 pt-4 perspective-midrange lg:pt-6",
+    "rect": {
+      "h": 416,
+      "w": 375,
+      "x": 0,
+      "y": 387
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "relative h-100 sm:h-128 w-full max-w-6xl rounded-[13px] lg:aspect-[1.7] lg:h-auto",
+    "rect": {
+      "h": 457,
+      "w": 401,
+      "x": -13,
+      "y": 604
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "absolute inset-0 flex items-center justify-center rounded-[13px] perspective-midrange",
+    "rect": {
+      "h": 457,
+      "w": 401,
+      "x": -13,
+      "y": 604
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "h-full flex items-center justify-center",
+    "rect": {
+      "h": 457,
+      "w": 401,
+      "x": -13,
+      "y": 604
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "aspect-[1.6] h-[80%]",
+    "rect": {
+      "h": 366,
+      "w": 401,
+      "x": -13,
+      "y": 650
+    },
+    "state": null,
+    "tag": "video",
+    "text": ""
+  },
+  {
+    "cls": "absolute inset-0 flex items-start justify-center pt-2 lg:pt-10",
+    "rect": {
+      "h": 457,
+      "w": 401,
+      "x": -13,
+      "y": 604
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "w-[80%] origin-top sm:w-[70%] md:w-120 md:touch-none lg:w-[45%]",
+    "rect": {
+      "h": 265,
+      "w": 225,
+      "x": 75,
+      "y": 842
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "flex flex-col gap-2",
+    "rect": {
+      "h": 265,
+      "w": 225,
+      "x": 75,
+      "y": 842
+    },
+    "state": null,
+    "tag": "div",
+    "text": "HideWhat should I say?“A discounted cash flow model values a company by projecting future free cash flows and discountin"
+  },
+  {
+    "cls": "mx-auto flex w-fit items-center gap-1 rounded-full px-3 py-1.5",
+    "rect": {
+      "h": 37,
+      "w": 134,
+      "x": 121,
+      "y": 842
+    },
+    "state": null,
+    "tag": "div",
+    "text": "Hide"
+  },
+  {
+    "cls": "flex size-8 text-white mt-0.5 ml-0.5",
+    "rect": {
+      "h": 26,
+      "w": 26,
+      "x": 132,
+      "y": 848
+    },
+    "state": null,
+    "tag": "svg",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 22,
+      "w": 22,
+      "x": 132,
+      "y": 848
+    },
+    "state": null,
+    "tag": "path",
+    "text": ""
+  },
+  {
+    "cls": "flex h-8 items-center gap-1 rounded-full px-3 text-xs font-medium text-white bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] shadow-[0_",
+    "rect": {
+      "h": 26,
+      "w": 56,
+      "x": 161,
+      "y": 847
+    },
+    "state": null,
+    "tag": "button",
+    "text": "Hide"
+  },
+  {
+    "cls": "lucide lucide-chevron-down size-4 text-[#b2b3ba]",
+    "rect": {
+      "h": 13,
+      "w": 13,
+      "x": 170,
+      "y": 854
+    },
+    "state": null,
+    "tag": "svg",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 3,
+      "w": 6,
+      "x": 173,
+      "y": 858
+    },
+    "state": null,
+    "tag": "path",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 13,
+      "w": 20,
+      "x": 186,
+      "y": 854
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Hide"
+  },
+  {
+    "cls": "hover:scale-105 flex size-8 items-center justify-center rounded-full transition-colors bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] ",
+    "rect": {
+      "h": 26,
+      "w": 26,
+      "x": 219,
+      "y": 847
+    },
+    "state": null,
+    "tag": "button",
+    "text": ""
+  },
+  {
+    "cls": "lucide lucide-square size-3.5 fill-white text-white",
+    "rect": {
+      "h": 11,
+      "w": 11,
+      "x": 226,
+      "y": 854
+    },
+    "state": null,
+    "tag": "svg",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 8,
+      "w": 8,
+      "x": 228,
+      "y": 856
+    },
+    "state": null,
+    "tag": "rect",
+    "text": ""
+  },
+  {
+    "cls": "origin-top transition-all duration-100 ease-out opacity-100",
+    "rect": {
+      "h": 222,
+      "w": 225,
+      "x": 75,
+      "y": 885
+    },
+    "state": null,
+    "tag": "div",
+    "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting th"
+  },
+  {
+    "cls": "flex flex-col rounded-2xl border border-white/25",
+    "rect": {
+      "h": 222,
+      "w": 225,
+      "x": 75,
+      "y": 885
+    },
+    "state": null,
+    "tag": "div",
+    "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting th"
+  },
+  {
+    "cls": "flex flex-1 flex-col p-4 pb-2",
+    "rect": {
+      "h": 162,
+      "w": 223,
+      "x": 76,
+      "y": 886
+    },
+    "state": null,
+    "tag": "div",
+    "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting th"
+  },
+  {
+    "cls": "relative",
+    "rect": {
+      "h": 109,
+      "w": 197,
+      "x": 89,
+      "y": 898
+    },
+    "state": null,
+    "tag": "div",
+    "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting th"
+  },
+  {
+    "cls": "flex flex-1 flex-col gap-3 pr-1 cluely-scrollbar max-h-[150px] overflow-x-hidden overflow-y-auto md:max-h-[150px]",
+    "rect": {
+      "h": 109,
+      "w": 197,
+      "x": 89,
+      "y": 898
+    },
+    "state": null,
+    "tag": "div",
+    "text": "What should I say?“A discounted cash flow model values a company by projecting future free cash flows and discounting th"
+  },
+  {
+    "cls": "mx-auto w-full max-w-7xl px-5 md:px-8",
+    "rect": {
+      "h": 1,
+      "w": 375,
+      "x": 0,
+      "y": 851
+    },
+    "state": null,
+    "tag": "div",
+    "text": ""
+  },
+  {
+    "cls": "h-px w-full border-none bg-transparent",
+    "rect": {
+      "h": 1,
+      "w": 305,
+      "x": 35,
+      "y": 851
+    },
+    "state": null,
+    "tag": "hr",
+    "text": ""
+  },
+  {
+    "cls": "mx-auto flex w-full max-w-7xl flex-col items-center gap-11 px-5 md:px-8 lg:items-stretch",
+    "rect": {
+      "h": 1306,
+      "w": 375,
+      "x": 0,
+      "y": 900
+    },
+    "state": null,
+    "tag": "div",
+    "text": "How Cluely helps during a meetingCluely listens in to the conversationIt picks up the context of your meeting in real ti"
+  },
+  {
+    "cls": "fixed inset-0 z-50 bg-black/80 dark:bg-background/90",
+    "rect": {
+      "h": 900,
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "state": "open",
+    "tag": "div",
+    "text": ""
+  },
+  {
+    "cls": "fixed inset-x-0 bottom-0 z-50 bg-popover flex h-[75dvh] flex-col rounded-t-xl border border-border p-0 lg:hidden",
+    "rect": {
+      "h": 675,
+      "w": 390,
+      "x": 0,
+      "y": 225
+    },
+    "state": "open",
+    "tag": "div",
+    "text": "MenuUndetectabilityMobileBlogGet for Mac"
+  },
+  {
+    "cls": "mx-auto mt-4 h-1 w-28 rounded-full bg-muted",
+    "rect": {
+      "h": 4,
+      "w": 112,
+      "x": 139,
+      "y": 242
+    },
+    "state": null,
+    "tag": "div",
+    "text": ""
+  },
+  {
+    "cls": "text-lg leading-none font-semibold tracking-tight sr-only",
+    "rect": {
+      "h": 1,
+      "w": 1,
+      "x": 0,
+      "y": 225
+    },
+    "state": null,
+    "tag": "h2",
+    "text": "Menu"
+  },
+  {
+    "cls": "relative flex flex-1 flex-col overflow-y-auto px-5 pt-6 pb-12 md:px-8",
+    "rect": {
+      "h": 653,
+      "w": 388,
+      "x": 1,
+      "y": 246
+    },
+    "state": null,
+    "tag": "div",
+    "text": "UndetectabilityMobileBlogGet for Mac"
+  },
+  {
+    "cls": "flex flex-col",
+    "rect": {
+      "h": 108,
+      "w": 348,
+      "x": 21,
+      "y": 270
+    },
+    "state": null,
+    "tag": "ul",
+    "text": "UndetectabilityMobileBlog"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 36,
+      "w": 348,
+      "x": 21,
+      "y": 270
+    },
+    "state": null,
+    "tag": "li",
+    "text": "Undetectability"
+  },
+  {
+    "cls": "flex h-9 flex-1 items-center gap-x-2 text-base leading-snug font-medium tracking-tight hover:text-gray-40 text-foreground",
+    "rect": {
+      "h": 36,
+      "w": 348,
+      "x": 21,
+      "y": 270
+    },
+    "state": null,
+    "tag": "a",
+    "text": "Undetectability"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 22,
+      "w": 109,
+      "x": 21,
+      "y": 277
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Undetectability"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 36,
+      "w": 348,
+      "x": 21,
+      "y": 306
+    },
+    "state": null,
+    "tag": "li",
+    "text": "Mobile"
+  },
+  {
+    "cls": "flex h-9 flex-1 items-center gap-x-2 text-base leading-snug font-medium tracking-tight hover:text-gray-40 text-foreground",
+    "rect": {
+      "h": 36,
+      "w": 348,
+      "x": 21,
+      "y": 306
+    },
+    "state": null,
+    "tag": "a",
+    "text": "Mobile"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 22,
+      "w": 48,
+      "x": 21,
+      "y": 313
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Mobile"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 36,
+      "w": 348,
+      "x": 21,
+      "y": 342
+    },
+    "state": null,
+    "tag": "li",
+    "text": "Blog"
+  },
+  {
+    "cls": "flex h-9 flex-1 items-center gap-x-2 text-base leading-snug font-medium tracking-tight hover:text-gray-40 text-foreground",
+    "rect": {
+      "h": 36,
+      "w": 348,
+      "x": 21,
+      "y": 342
+    },
+    "state": null,
+    "tag": "a",
+    "text": "Blog"
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 22,
+      "w": 33,
+      "x": 21,
+      "y": 349
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Blog"
+  },
+  {
+    "cls": "absolute inset-x-0 bottom-0 z-20 grid grid-cols-1 gap-6 px-5 pt-2 pb-5 md:px-8 md:pb-8",
+    "rect": {
+      "h": 68,
+      "w": 388,
+      "x": 1,
+      "y": 831
+    },
+    "state": null,
+    "tag": "div",
+    "text": "Get for Mac"
+  },
+  {
+    "cls": "lg:h-11 px-3 md:w-[178px] w-fit h-10 rounded-[6px] relative font-semibold text-white inline-flex items-center justify-center lg:w-[199px] te",
+    "rect": {
+      "h": 40,
+      "w": 113,
+      "x": 21,
+      "y": 839
+    },
+    "state": null,
+    "tag": "a",
+    "text": "Get for Mac"
+  },
+  {
+    "cls": "absolute top-0 left-0 z-20 h-full w-full blur-[1px]",
+    "rect": {
+      "h": 40,
+      "w": 113,
+      "x": 21,
+      "y": 839
+    },
+    "state": null,
+    "tag": "span",
+    "text": ""
+  },
+  {
+    "cls": "blurred-border absolute -top-px -left-px z-20 h-full w-full !rounded-[10px]",
+    "rect": {
+      "h": 40,
+      "w": 113,
+      "x": 20,
+      "y": 838
+    },
+    "state": null,
+    "tag": "span",
+    "text": ""
+  },
+  {
+    "cls": "relative z-10 flex items-center gap-1.5 text-13 font-medium -tracking-[0.13px]",
+    "rect": {
+      "h": 15,
+      "w": 89,
+      "x": 33,
+      "y": 852
+    },
+    "state": null,
+    "tag": "span",
+    "text": "Get for Mac"
+  },
+  {
+    "cls": "mb-0.5",
+    "rect": {
+      "h": 13,
+      "w": 13,
+      "x": 33,
+      "y": 852
+    },
+    "state": null,
+    "tag": "svg",
+    "text": ""
+  },
+  {
+    "cls": "",
+    "rect": {
+      "h": 12,
+      "w": 10,
+      "x": 34,
+      "y": 852
+    },
+    "state": null,
+    "tag": "path",
+    "text": ""
+  },
+  {
+    "cls": "pointer-events-none absolute inset-x-0 bottom-0 h-20 w-full bg-linear-to-b from-transparent to-background",
+    "rect": {
+      "h": 80,
+      "w": 388,
+      "x": 1,
+      "y": 819
+    },
+    "state": null,
+    "tag": "div",
+    "text": ""
+  }
+]

@@ -1,0 +1,3969 @@
+[
+  {
+    "y": 0,
+    "file": "docs/design-references/cluely-desktop-y0000.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-0",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "0",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 0,
+    "visibleTexts": [
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 190,
+          "y": 34
+        },
+        "tag": "span",
+        "text": "Cluely"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 20,
+          "w": 100,
+          "x": 303,
+          "y": 22
+        },
+        "tag": "span",
+        "text": "Undetectability"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 20,
+          "w": 44,
+          "x": 431,
+          "y": 22
+        },
+        "tag": "span",
+        "text": "Mobile"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 20,
+          "w": 30,
+          "x": 503,
+          "y": 22
+        },
+        "tag": "span",
+        "text": "Blog"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "max-w-[360px] text-center text-[56px] leading-[96%] font-medium tracking-[-1px] text-white lg:max-w-",
+        "rect": {
+          "h": 154,
+          "w": 560,
+          "x": 433,
+          "y": 128
+        },
+        "tag": "h1",
+        "text": "#1 Undetectable AI for Meetings"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 77,
+          "w": 74,
+          "x": 470,
+          "y": 128
+        },
+        "tag": "span",
+        "text": "#1"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 77,
+          "w": 396,
+          "x": 559,
+          "y": 128
+        },
+        "tag": "span",
+        "text": "Undetectable"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 77,
+          "w": 81,
+          "x": 478,
+          "y": 206
+        },
+        "tag": "span",
+        "text": "AI"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 77,
+          "w": 87,
+          "x": 574,
+          "y": 212
+        },
+        "tag": "span",
+        "text": "for"
+      },
+      {
+        "cls": "inline-block",
+        "rect": {
+          "h": 77,
+          "w": 272,
+          "x": 675,
+          "y": 242
+        },
+        "tag": "span",
+        "text": "Meetings"
+      },
+      {
+        "cls": "max-w-[560px] text-center leading-[140%] font-medium tracking-[-0.02em] text-white lg:text-[19px]",
+        "rect": {
+          "h": 53,
+          "w": 560,
+          "x": 433,
+          "y": 331
+        },
+        "tag": "h2",
+        "text": "Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectable"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 680,
+          "y": 434
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 13,
+          "w": 20,
+          "x": 711,
+          "y": 992
+        },
+        "tag": "span",
+        "text": "Hide"
+      },
+      {
+        "cls": "w-fit max-w-72 cursor-pointer select-text rounded-xl rounded-br-sm px-2.5 py-1.5 text-xs text-white",
+        "rect": {
+          "h": 22,
+          "w": 99,
+          "x": 804,
+          "y": 1053
+        },
+        "tag": "div",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "md:block",
+        "rect": {
+          "h": 31,
+          "w": 384,
+          "x": 519,
+          "y": 1069
+        },
+        "tag": "p",
+        "text": "“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present valu"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 10,
+          "x": 519,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "“A"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 49,
+          "x": 531,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "discounted"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 21,
+          "x": 582,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "cash"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 19,
+          "x": 605,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "flow"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 27,
+          "x": 627,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "model"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 28,
+          "x": 657,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "values"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 5,
+          "x": 687,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "a"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 40,
+          "x": 695,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "company"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 11,
+          "x": 738,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "by"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 44,
+          "x": 751,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "projecting"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 27,
+          "x": 797,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "future"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 17,
+          "x": 827,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "free"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 21,
+          "x": 846,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "cash"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 24,
+          "x": 870,
+          "y": 1070
+        },
+        "tag": "span",
+        "text": "flows"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 16,
+          "x": 519,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "and"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 51,
+          "x": 538,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "discounting"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 23,
+          "x": 591,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "them"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 9,
+          "x": 616,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "to"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 33,
+          "x": 628,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "present"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 23,
+          "x": 663,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "value"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 24,
+          "x": 689,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "using"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 14,
+          "x": 716,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "the"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 41,
+          "x": 732,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "weighted"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 35,
+          "x": 775,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "average"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 19,
+          "x": 812,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "cost"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 9,
+          "x": 834,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "of"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 35,
+          "x": 845,
+          "y": 1085
+        },
+        "tag": "span",
+        "text": "capital.”"
+      }
+    ]
+  },
+  {
+    "y": 700,
+    "file": "docs/design-references/cluely-desktop-y0700.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "0.983979",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 690,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 13,
+          "w": 20,
+          "x": 711,
+          "y": 302
+        },
+        "tag": "span",
+        "text": "Hide"
+      },
+      {
+        "cls": "w-fit max-w-72 cursor-pointer select-text rounded-xl rounded-br-sm px-2.5 py-1.5 text-xs text-white",
+        "rect": {
+          "h": 22,
+          "w": 99,
+          "x": 804,
+          "y": 363
+        },
+        "tag": "div",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "md:block",
+        "rect": {
+          "h": 31,
+          "w": 384,
+          "x": 519,
+          "y": 379
+        },
+        "tag": "p",
+        "text": "“A discounted cash flow model values a company by projecting future free cash flows and discounting them to present valu"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 10,
+          "x": 519,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "“A"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 49,
+          "x": 531,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "discounted"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 21,
+          "x": 582,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "cash"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 19,
+          "x": 605,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "flow"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 27,
+          "x": 627,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "model"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 28,
+          "x": 657,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "values"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 5,
+          "x": 687,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "a"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 40,
+          "x": 695,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "company"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 11,
+          "x": 738,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "by"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 44,
+          "x": 751,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "projecting"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 27,
+          "x": 797,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "future"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 17,
+          "x": 827,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "free"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 21,
+          "x": 846,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "cash"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 24,
+          "x": 870,
+          "y": 380
+        },
+        "tag": "span",
+        "text": "flows"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 16,
+          "x": 519,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "and"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 51,
+          "x": 538,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "discounting"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 23,
+          "x": 591,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "them"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 9,
+          "x": 616,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "to"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 33,
+          "x": 628,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "present"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 23,
+          "x": 663,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "value"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 24,
+          "x": 689,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "using"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 14,
+          "x": 716,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "the"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 41,
+          "x": 732,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "weighted"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 35,
+          "x": 775,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "average"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 19,
+          "x": 812,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "cost"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 9,
+          "x": 834,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "of"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 12,
+          "w": 35,
+          "x": 845,
+          "y": 396
+        },
+        "tag": "span",
+        "text": "capital.”"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 27,
+          "x": 540,
+          "y": 427
+        },
+        "tag": "span",
+        "text": "Assist"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 83,
+          "x": 609,
+          "y": 427
+        },
+        "tag": "span",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 89,
+          "x": 734,
+          "y": 427
+        },
+        "tag": "span",
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 28,
+          "x": 866,
+          "y": 427
+        },
+        "tag": "span",
+        "text": "Recap"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 16,
+          "w": 196,
+          "x": 524,
+          "y": 458
+        },
+        "tag": "span",
+        "text": "Ask about your screen or conversation, or"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 18,
+          "w": 16,
+          "x": 724,
+          "y": 457
+        },
+        "tag": "span",
+        "text": "⌘"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 18,
+          "w": 16,
+          "x": 743,
+          "y": 457
+        },
+        "tag": "span",
+        "text": "↵"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 16,
+          "w": 45,
+          "x": 762,
+          "y": 458
+        },
+        "tag": "span",
+        "text": "for Assist"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transitio",
+        "rect": {
+          "h": 21,
+          "w": 53,
+          "x": 524,
+          "y": 481
+        },
+        "tag": "button",
+        "text": "Smart"
+      },
+      {
+        "cls": "inline-block w-fit bg-gradient-to-r from-[#19191D] to-[#626275] bg-clip-text text-3xl leading-[1.25]",
+        "rect": {
+          "h": 70,
+          "w": 864,
+          "x": 105,
+          "y": 778
+        },
+        "tag": "h2",
+        "text": "How Cluely helps during a meeting"
+      },
+      {
+        "cls": "text-[26px] leading-tight font-medium tracking-[-0.5px] lg:text-28",
+        "rect": {
+          "h": 37,
+          "w": 514,
+          "x": 145,
+          "y": 924
+        },
+        "tag": "h3",
+        "text": "Cluely in to the conversation"
+      },
+      {
+        "cls": "-mx-0.5 inline-flex -translate-y-0.5 items-center gap-1 rounded-[110.25px] bg-white/20 px-2 py-0 ali",
+        "rect": {
+          "h": 35,
+          "w": 117,
+          "x": 228,
+          "y": 924
+        },
+        "tag": "span",
+        "text": "listens"
+      },
+      {
+        "cls": "max-w-120 text-15 text-white lg:text-18",
+        "rect": {
+          "h": 54,
+          "w": 480,
+          "x": 145,
+          "y": 977
+        },
+        "tag": "p",
+        "text": "It picks up the context of your meeting in real time, so it can help when you need it."
+      },
+      {
+        "cls": "text-36 leading-none font-semibold tracking-[-0.21px] text-white/60 tabular-nums lg:text-[42px]",
+        "rect": {
+          "h": 42,
+          "w": 117,
+          "x": 343,
+          "y": 1047
+        },
+        "tag": "span",
+        "text": "00:00"
+      },
+      {
+        "cls": "text-sm tracking-wide text-white/60 lg:text-base",
+        "rect": {
+          "h": 24,
+          "w": 78,
+          "x": 369,
+          "y": 1093
+        },
+        "tag": "span",
+        "text": "Recording"
+      },
+      {
+        "cls": "text-[26px] leading-tight font-medium tracking-[-0.5px] text-[#263043] lg:text-28",
+        "rect": {
+          "h": 72,
+          "w": 512,
+          "x": 768,
+          "y": 942
+        },
+        "tag": "h3",
+        "text": "When you need help, Cluely you instantly"
+      },
+      {
+        "cls": "-mx-0.5 inline-flex -translate-y-0.5 items-center gap-1 rounded-[110.25px] bg-white/20 px-2 py-0 ali",
+        "rect": {
+          "h": 35,
+          "w": 125,
+          "x": 1118,
+          "y": 942
+        },
+        "tag": "span",
+        "text": "assists"
+      },
+      {
+        "cls": "max-w-120 text-15 text-[#8C929D] lg:text-18",
+        "rect": {
+          "h": 54,
+          "w": 480,
+          "x": 768,
+          "y": 1030
+        },
+        "tag": "p",
+        "text": "Hit Cmd/Ctrl + Enter and Cluely helps you with AI in the moment."
+      }
+    ]
+  },
+  {
+    "y": 1200,
+    "file": "docs/design-references/cluely-desktop-y1200.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 1194,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "inline-block w-fit bg-gradient-to-r from-[#19191D] to-[#626275] bg-clip-text text-3xl leading-[1.25]",
+        "rect": {
+          "h": 70,
+          "w": 864,
+          "x": 105,
+          "y": 265
+        },
+        "tag": "h2",
+        "text": "How Cluely helps during a meeting"
+      },
+      {
+        "cls": "text-[26px] leading-tight font-medium tracking-[-0.5px] lg:text-28",
+        "rect": {
+          "h": 37,
+          "w": 514,
+          "x": 145,
+          "y": 419
+        },
+        "tag": "h3",
+        "text": "Cluely in to the conversation"
+      },
+      {
+        "cls": "-mx-0.5 inline-flex -translate-y-0.5 items-center gap-1 rounded-[110.25px] bg-white/20 px-2 py-0 ali",
+        "rect": {
+          "h": 35,
+          "w": 117,
+          "x": 228,
+          "y": 419
+        },
+        "tag": "span",
+        "text": "listens"
+      },
+      {
+        "cls": "max-w-120 text-15 text-white lg:text-18",
+        "rect": {
+          "h": 54,
+          "w": 480,
+          "x": 145,
+          "y": 472
+        },
+        "tag": "p",
+        "text": "It picks up the context of your meeting in real time, so it can help when you need it."
+      },
+      {
+        "cls": "text-36 leading-none font-semibold tracking-[-0.21px] text-white/60 tabular-nums lg:text-[42px]",
+        "rect": {
+          "h": 42,
+          "w": 117,
+          "x": 343,
+          "y": 542
+        },
+        "tag": "span",
+        "text": "00:00"
+      },
+      {
+        "cls": "text-sm tracking-wide text-white/60 lg:text-base",
+        "rect": {
+          "h": 24,
+          "w": 78,
+          "x": 369,
+          "y": 588
+        },
+        "tag": "span",
+        "text": "Recording"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 28,
+          "x": 199,
+          "y": 778
+        },
+        "tag": "span",
+        "text": "Assist"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 86,
+          "x": 279,
+          "y": 778
+        },
+        "tag": "span",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 93,
+          "x": 419,
+          "y": 778
+        },
+        "tag": "span",
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 29,
+          "x": 565,
+          "y": 778
+        },
+        "tag": "span",
+        "text": "Recap"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 246,
+          "x": 183,
+          "y": 816
+        },
+        "tag": "span",
+        "text": "Ask about your screen or conversation, or"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 433,
+          "y": 815
+        },
+        "tag": "span",
+        "text": "⌘"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 457,
+          "y": 815
+        },
+        "tag": "span",
+        "text": "↵"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 56,
+          "x": 481,
+          "y": 816
+        },
+        "tag": "span",
+        "text": "for Assist"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transitio",
+        "rect": {
+          "h": 26,
+          "w": 66,
+          "x": 183,
+          "y": 845
+        },
+        "tag": "button",
+        "text": "Smart"
+      },
+      {
+        "cls": "text-[26px] leading-tight font-medium tracking-[-0.5px] text-[#263043] lg:text-28",
+        "rect": {
+          "h": 72,
+          "w": 512,
+          "x": 768,
+          "y": 420
+        },
+        "tag": "h3",
+        "text": "When you need help, Cluely you instantly"
+      },
+      {
+        "cls": "-mx-0.5 inline-flex -translate-y-0.5 items-center gap-1 rounded-[110.25px] bg-white/20 px-2 py-0 ali",
+        "rect": {
+          "h": 35,
+          "w": 125,
+          "x": 1118,
+          "y": 420
+        },
+        "tag": "span",
+        "text": "assists"
+      },
+      {
+        "cls": "max-w-120 text-15 text-[#8C929D] lg:text-18",
+        "rect": {
+          "h": 54,
+          "w": 480,
+          "x": 768,
+          "y": 508
+        },
+        "tag": "p",
+        "text": "Hit Cmd/Ctrl + Enter and Cluely helps you with AI in the moment."
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 25,
+          "x": 1022,
+          "y": 597
+        },
+        "tag": "span",
+        "text": "Hide"
+      },
+      {
+        "cls": "w-fit max-w-72 cursor-pointer select-text rounded-xl rounded-br-sm px-2.5 py-1.5 text-xs text-white",
+        "rect": {
+          "h": 28,
+          "w": 53,
+          "x": 1205,
+          "y": 653
+        },
+        "tag": "div",
+        "text": "Assist"
+      },
+      {
+        "cls": "-mb-3 text-[10px] text-white/50 lg:text-xs",
+        "rect": {
+          "h": 16,
+          "w": 474,
+          "x": 785,
+          "y": 693
+        },
+        "tag": "div",
+        "text": "Viewed screen"
+      },
+      {
+        "cls": "whitespace-pre-line md:block",
+        "rect": {
+          "h": 58,
+          "w": 427,
+          "x": 785,
+          "y": 709
+        },
+        "tag": "p",
+        "text": "Cluely is an AI meeting assistant that listens in real time, understands what’s being said, and gives you instant answer"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 34,
+          "x": 785,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "Cluely"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 9,
+          "x": 822,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "is"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 14,
+          "x": 834,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "an"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 11,
+          "x": 850,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "AI"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 45,
+          "x": 864,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "meeting"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 50,
+          "x": 912,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "assistant"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 22,
+          "x": 965,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "that"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 36,
+          "x": 990,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "listens"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 10,
+          "x": 1029,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "in"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 21,
+          "x": 1042,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "real"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 27,
+          "x": 1066,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "time,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 69,
+          "x": 1096,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "understands"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 36,
+          "x": 1167,
+          "y": 710
+        },
+        "tag": "span",
+        "text": "what’s"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 31,
+          "x": 785,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "being"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 25,
+          "x": 818,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "said,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 21,
+          "x": 846,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "and"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 29,
+          "x": 870,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "gives"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 20,
+          "x": 902,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "you"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 38,
+          "x": 924,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "instant"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 48,
+          "x": 965,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "answers,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 33,
+          "x": 1017,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "notes,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 21,
+          "x": 1053,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "and"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 24,
+          "x": 1076,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "next"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 33,
+          "x": 1103,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "steps,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 13,
+          "x": 1139,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "all"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 29,
+          "x": 1155,
+          "y": 730
+        },
+        "tag": "span",
+        "text": "while"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 40,
+          "x": 785,
+          "y": 749
+        },
+        "tag": "span",
+        "text": "staying"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 61,
+          "x": 828,
+          "y": 749
+        },
+        "tag": "span",
+        "text": "completely"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 72,
+          "x": 891,
+          "y": 749
+        },
+        "tag": "span",
+        "text": "undetectable"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 14,
+          "x": 967,
+          "y": 749
+        },
+        "tag": "span",
+        "text": "on"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 24,
+          "x": 983,
+          "y": 749
+        },
+        "tag": "span",
+        "text": "your"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 39,
+          "x": 1011,
+          "y": 749
+        },
+        "tag": "span",
+        "text": "screen."
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 33,
+          "x": 811,
+          "y": 788
+        },
+        "tag": "span",
+        "text": "Assist"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 104,
+          "x": 897,
+          "y": 788
+        },
+        "tag": "span",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 112,
+          "x": 1053,
+          "y": 788
+        },
+        "tag": "span",
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 35,
+          "x": 1218,
+          "y": 788
+        },
+        "tag": "span",
+        "text": "Recap"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 246,
+          "x": 791,
+          "y": 827
+        },
+        "tag": "span",
+        "text": "Ask about your screen or conversation, or"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 1041,
+          "y": 826
+        },
+        "tag": "span",
+        "text": "⌘"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 1065,
+          "y": 826
+        },
+        "tag": "span",
+        "text": "↵"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 56,
+          "x": 1089,
+          "y": 827
+        },
+        "tag": "span",
+        "text": "for Assist"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transitio",
+        "rect": {
+          "h": 26,
+          "w": 66,
+          "x": 791,
+          "y": 856
+        },
+        "tag": "button",
+        "text": "Smart"
+      }
+    ]
+  },
+  {
+    "y": 1800,
+    "file": "docs/design-references/cluely-desktop-y1800.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 1785,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "text-sm tracking-wide text-white/60 lg:text-base",
+        "rect": {
+          "h": 24,
+          "w": 78,
+          "x": 369,
+          "y": -3
+        },
+        "tag": "span",
+        "text": "Recording"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 28,
+          "x": 199,
+          "y": 187
+        },
+        "tag": "span",
+        "text": "Assist"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 86,
+          "x": 279,
+          "y": 187
+        },
+        "tag": "span",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 93,
+          "x": 419,
+          "y": 187
+        },
+        "tag": "span",
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 10,
+          "w": 29,
+          "x": 565,
+          "y": 187
+        },
+        "tag": "span",
+        "text": "Recap"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 246,
+          "x": 183,
+          "y": 225
+        },
+        "tag": "span",
+        "text": "Ask about your screen or conversation, or"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 433,
+          "y": 224
+        },
+        "tag": "span",
+        "text": "⌘"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 457,
+          "y": 224
+        },
+        "tag": "span",
+        "text": "↵"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 56,
+          "x": 481,
+          "y": 225
+        },
+        "tag": "span",
+        "text": "for Assist"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transitio",
+        "rect": {
+          "h": 26,
+          "w": 66,
+          "x": 183,
+          "y": 254
+        },
+        "tag": "button",
+        "text": "Smart"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 25,
+          "x": 1022,
+          "y": 6
+        },
+        "tag": "span",
+        "text": "Hide"
+      },
+      {
+        "cls": "w-fit max-w-72 cursor-pointer select-text rounded-xl rounded-br-sm px-2.5 py-1.5 text-xs text-white",
+        "rect": {
+          "h": 28,
+          "w": 53,
+          "x": 1205,
+          "y": 62
+        },
+        "tag": "div",
+        "text": "Assist"
+      },
+      {
+        "cls": "-mb-3 text-[10px] text-white/50 lg:text-xs",
+        "rect": {
+          "h": 16,
+          "w": 474,
+          "x": 785,
+          "y": 102
+        },
+        "tag": "div",
+        "text": "Viewed screen"
+      },
+      {
+        "cls": "whitespace-pre-line md:block",
+        "rect": {
+          "h": 58,
+          "w": 427,
+          "x": 785,
+          "y": 118
+        },
+        "tag": "p",
+        "text": "Cluely is an AI meeting assistant that listens in real time, understands what’s being said, and gives you instant answer"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 34,
+          "x": 785,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "Cluely"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 9,
+          "x": 822,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "is"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 14,
+          "x": 834,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "an"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 11,
+          "x": 850,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "AI"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 45,
+          "x": 864,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "meeting"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 50,
+          "x": 912,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "assistant"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 22,
+          "x": 965,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "that"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 36,
+          "x": 990,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "listens"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 10,
+          "x": 1029,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "in"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 21,
+          "x": 1042,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "real"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 27,
+          "x": 1066,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "time,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 69,
+          "x": 1096,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "understands"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 36,
+          "x": 1167,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "what’s"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 31,
+          "x": 785,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "being"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 25,
+          "x": 818,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "said,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 21,
+          "x": 846,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "and"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 29,
+          "x": 870,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "gives"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 20,
+          "x": 902,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "you"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 38,
+          "x": 924,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "instant"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 48,
+          "x": 965,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "answers,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 33,
+          "x": 1017,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "notes,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 21,
+          "x": 1053,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "and"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 24,
+          "x": 1076,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "next"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 33,
+          "x": 1103,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "steps,"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 13,
+          "x": 1139,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "all"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 29,
+          "x": 1155,
+          "y": 139
+        },
+        "tag": "span",
+        "text": "while"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 40,
+          "x": 785,
+          "y": 158
+        },
+        "tag": "span",
+        "text": "staying"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 61,
+          "x": 828,
+          "y": 158
+        },
+        "tag": "span",
+        "text": "completely"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 72,
+          "x": 891,
+          "y": 158
+        },
+        "tag": "span",
+        "text": "undetectable"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 14,
+          "x": 967,
+          "y": 158
+        },
+        "tag": "span",
+        "text": "on"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 24,
+          "x": 983,
+          "y": 158
+        },
+        "tag": "span",
+        "text": "your"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 16,
+          "w": 39,
+          "x": 1011,
+          "y": 158
+        },
+        "tag": "span",
+        "text": "screen."
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 33,
+          "x": 811,
+          "y": 197
+        },
+        "tag": "span",
+        "text": "Assist"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 104,
+          "x": 897,
+          "y": 197
+        },
+        "tag": "span",
+        "text": "What should I say?"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 112,
+          "x": 1053,
+          "y": 197
+        },
+        "tag": "span",
+        "text": "Follow-up questions"
+      },
+      {
+        "cls": "truncate text-[#edeef2]",
+        "rect": {
+          "h": 12,
+          "w": 35,
+          "x": 1218,
+          "y": 197
+        },
+        "tag": "span",
+        "text": "Recap"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 246,
+          "x": 791,
+          "y": 236
+        },
+        "tag": "span",
+        "text": "Ask about your screen or conversation, or"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 1041,
+          "y": 235
+        },
+        "tag": "span",
+        "text": "⌘"
+      },
+      {
+        "cls": "inline-flex h-[18px] w-4 items-center justify-center rounded-md border border-white/20 bg-gradient-t",
+        "rect": {
+          "h": 22,
+          "w": 20,
+          "x": 1065,
+          "y": 235
+        },
+        "tag": "span",
+        "text": "↵"
+      },
+      {
+        "cls": "hidden md:inline",
+        "rect": {
+          "h": 20,
+          "w": 56,
+          "x": 1089,
+          "y": 236
+        },
+        "tag": "span",
+        "text": "for Assist"
+      },
+      {
+        "cls": "flex h-[22px] items-center gap-0.5 rounded-full border pl-1 pr-1.5 text-[10px] font-medium transitio",
+        "rect": {
+          "h": 26,
+          "w": 66,
+          "x": 791,
+          "y": 265
+        },
+        "tag": "button",
+        "text": "Smart"
+      },
+      {
+        "cls": "inline-block w-fit bg-gradient-to-r from-[#19191D] to-[#626275] bg-clip-text text-3xl leading-[1.25]",
+        "rect": {
+          "h": 70,
+          "w": 547,
+          "x": 439,
+          "y": 639
+        },
+        "tag": "h2",
+        "text": "Instant meeting notes"
+      },
+      {
+        "cls": "max-w-150 text-base leading-relaxed text-[#8C929D] md:text-lg",
+        "rect": {
+          "h": 29,
+          "w": 477,
+          "x": 474,
+          "y": 728
+        },
+        "tag": "p",
+        "text": "The easiest way to get beautiful, shareable meeting notes."
+      }
+    ]
+  },
+  {
+    "y": 2400,
+    "file": "docs/design-references/cluely-desktop-y2400.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 2384,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "inline-block w-fit bg-gradient-to-r from-[#19191D] to-[#626275] bg-clip-text text-3xl leading-[1.25]",
+        "rect": {
+          "h": 70,
+          "w": 547,
+          "x": 439,
+          "y": 31
+        },
+        "tag": "h2",
+        "text": "Instant meeting notes"
+      },
+      {
+        "cls": "max-w-150 text-base leading-relaxed text-[#8C929D] md:text-lg",
+        "rect": {
+          "h": 29,
+          "w": 477,
+          "x": 474,
+          "y": 113
+        },
+        "tag": "p",
+        "text": "The easiest way to get beautiful, shareable meeting notes."
+      },
+      {
+        "cls": "inline-block w-fit bg-gradient-to-r from-[#19191D] to-[#626275] bg-clip-text text-3xl leading-[1.25]",
+        "rect": {
+          "h": 70,
+          "w": 661,
+          "x": 382,
+          "y": 1017
+        },
+        "tag": "h2",
+        "text": "Undetectable in every way"
+      },
+      {
+        "cls": "max-w-150 text-base leading-relaxed text-[#8C929D] md:text-lg",
+        "rect": {
+          "h": 29,
+          "w": 380,
+          "x": 523,
+          "y": 1099
+        },
+        "tag": "p",
+        "text": "Suite of features to use Cluely without a trace."
+      }
+    ]
+  },
+  {
+    "y": 3200,
+    "file": "docs/design-references/cluely-desktop-y3200.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 3200,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "inline-block w-fit bg-gradient-to-r from-[#19191D] to-[#626275] bg-clip-text text-3xl leading-[1.25]",
+        "rect": {
+          "h": 70,
+          "w": 661,
+          "x": 382,
+          "y": 181
+        },
+        "tag": "h2",
+        "text": "Undetectable in every way"
+      },
+      {
+        "cls": "max-w-150 text-base leading-relaxed text-[#8C929D] md:text-lg",
+        "rect": {
+          "h": 29,
+          "w": 380,
+          "x": 523,
+          "y": 263
+        },
+        "tag": "p",
+        "text": "Suite of features to use Cluely without a trace."
+      },
+      {
+        "cls": "text-12 leading-snug font-medium tracking-tight text-gray-20 lg:text-[11px] xl:text-base",
+        "rect": {
+          "h": 22,
+          "w": 165,
+          "x": 145,
+          "y": 397
+        },
+        "tag": "h2",
+        "text": "Meeting participants"
+      },
+      {
+        "cls": "text-[10px] text-gray-50 xl:text-[13px]",
+        "rect": {
+          "h": 17,
+          "w": 14,
+          "x": 295,
+          "y": 400
+        },
+        "tag": "span",
+        "text": "(4)"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 15,
+          "w": 81,
+          "x": 359,
+          "y": 400
+        },
+        "tag": "span",
+        "text": "No bots detected"
+      },
+      {
+        "cls": "text-[10px] leading-snug font-medium tracking-tight xl:text-[13px]",
+        "rect": {
+          "h": 18,
+          "w": 88,
+          "x": 189,
+          "y": 431
+        },
+        "tag": "span",
+        "text": "Gina Huels"
+      },
+      {
+        "cls": "text-[8px] text-gray-50 xl:text-[11px]",
+        "rect": {
+          "h": 14,
+          "w": 23,
+          "x": 253,
+          "y": 433
+        },
+        "tag": "span",
+        "text": "(You)"
+      },
+      {
+        "cls": "text-[8px] leading-snug tracking-tight text-gray-50 xl:text-[11px]",
+        "rect": {
+          "h": 15,
+          "w": 213,
+          "x": 189,
+          "y": 449
+        },
+        "tag": "div",
+        "text": "ginahue65@cluely.com"
+      },
+      {
+        "cls": "text-[9px] leading-snug font-medium tracking-tight text-gray-70 xl:text-xs",
+        "rect": {
+          "h": 17,
+          "w": 35,
+          "x": 413,
+          "y": 440
+        },
+        "tag": "span",
+        "text": "Owner"
+      },
+      {
+        "cls": "text-[10px] leading-snug font-medium tracking-tight xl:text-[13px]",
+        "rect": {
+          "h": 18,
+          "w": 73,
+          "x": 189,
+          "y": 479
+        },
+        "tag": "span",
+        "text": "Todd Cremin"
+      },
+      {
+        "cls": "text-[8px] leading-snug tracking-tight text-gray-50 xl:text-[11px]",
+        "rect": {
+          "h": 15,
+          "w": 183,
+          "x": 189,
+          "y": 497
+        },
+        "tag": "div",
+        "text": "todd.cremin@cluely.com"
+      },
+      {
+        "cls": "text-[9px] leading-snug font-medium tracking-tight xl:text-xs flex items-center gap-0.5 text-gray-20",
+        "rect": {
+          "h": 24,
+          "w": 65,
+          "x": 384,
+          "y": 484
+        },
+        "tag": "span",
+        "text": "Speaker"
+      },
+      {
+        "cls": "text-[10px] leading-snug font-medium tracking-tight xl:text-[13px]",
+        "rect": {
+          "h": 18,
+          "w": 79,
+          "x": 189,
+          "y": 527
+        },
+        "tag": "span",
+        "text": "Holly Gleason"
+      },
+      {
+        "cls": "text-[8px] leading-snug tracking-tight text-gray-50 xl:text-[11px]",
+        "rect": {
+          "h": 15,
+          "w": 183,
+          "x": 189,
+          "y": 545
+        },
+        "tag": "div",
+        "text": "holly_gleaso1972@cluely.com"
+      },
+      {
+        "cls": "text-[9px] leading-snug font-medium tracking-tight xl:text-xs flex items-center gap-0.5 text-gray-20",
+        "rect": {
+          "h": 24,
+          "w": 65,
+          "x": 384,
+          "y": 532
+        },
+        "tag": "span",
+        "text": "Speaker"
+      },
+      {
+        "cls": "text-[10px] leading-snug font-medium tracking-tight xl:text-[13px]",
+        "rect": {
+          "h": 18,
+          "w": 85,
+          "x": 189,
+          "y": 575
+        },
+        "tag": "span",
+        "text": "Tomas Hansen"
+      },
+      {
+        "cls": "text-[8px] leading-snug tracking-tight text-gray-50 xl:text-[11px]",
+        "rect": {
+          "h": 15,
+          "w": 183,
+          "x": 189,
+          "y": 593
+        },
+        "tag": "div",
+        "text": "tomas_hansen@cluely.com"
+      },
+      {
+        "cls": "text-[9px] leading-snug font-medium tracking-tight xl:text-xs flex items-center gap-0.5 text-gray-20",
+        "rect": {
+          "h": 24,
+          "w": 65,
+          "x": 384,
+          "y": 580
+        },
+        "tag": "span",
+        "text": "Speaker"
+      },
+      {
+        "cls": "bg-[#A3ADC2] bg-[linear-gradient(96.56deg,rgba(209,214,224,0)_11.17%,#D1D6E0_27.98%,rgba(209,214,224",
+        "rect": {
+          "h": 18,
+          "w": 34,
+          "x": 183,
+          "y": 663
+        },
+        "tag": "span",
+        "text": "Cluely"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 83,
+          "w": 384,
+          "x": 105,
+          "y": 740
+        },
+        "tag": "p",
+        "text": "Cluely never joins your meetings, so there are no bots and no extra people on the guest list."
+      },
+      {
+        "cls": "mr-1 font-medium text-gray-20",
+        "rect": {
+          "h": 26,
+          "w": 196,
+          "x": 105,
+          "y": 741
+        },
+        "tag": "strong",
+        "text": "Doesn't join meetings."
+      },
+      {
+        "cls": "absolute top-[18px] right-[18px] flex h-[22px] items-center justify-center rounded-[4px] bg-[#676B74",
+        "rect": {
+          "h": 29,
+          "w": 113,
+          "x": 768,
+          "y": 382
+        },
+        "tag": "span",
+        "text": "Invisible to others"
+      },
+      {
+        "cls": "absolute top-[18px] left-[18px] z-10 flex h-[22px] items-center justify-center rounded-[4px] bg-[#67",
+        "rect": {
+          "h": 29,
+          "w": 89,
+          "x": 545,
+          "y": 382
+        },
+        "tag": "span",
+        "text": "Visible to you"
+      },
+      {
+        "cls": "flex items-center gap-1 text-[10px] leading-tight font-semibold tracking-tight text-gray-12 lg:text-",
+        "rect": {
+          "h": 14,
+          "w": 308,
+          "x": 559,
+          "y": 434
+        },
+        "tag": "div",
+        "text": "AI Response"
+      },
+      {
+        "cls": "mt-[7px] inline-block text-[10px] leading-normal tracking-tight text-gray-20 lg:text-[9px] xl:mt-[9p",
+        "rect": {
+          "h": 33,
+          "w": 266,
+          "x": 559,
+          "y": 457
+        },
+        "tag": "div",
+        "text": "Add a check for missinguserIdbefore calling the API. Also handledata.name safely to avoid undefined."
+      },
+      {
+        "cls": "relative mr-[5px] ml-[5px] font-mono text-[8px] leading-none text-[#4984FD] before:absolute before:t",
+        "rect": {
+          "h": 12,
+          "w": 34,
+          "x": 680,
+          "y": 460
+        },
+        "tag": "span",
+        "text": "userId"
+      },
+      {
+        "cls": "relative mr-[5px] ml-[5px] font-mono text-[8px] leading-none text-[#4984FD] before:absolute before:t",
+        "rect": {
+          "h": 12,
+          "w": 52,
+          "x": 621,
+          "y": 476
+        },
+        "tag": "span",
+        "text": "data.name"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 83,
+          "w": 384,
+          "x": 521,
+          "y": 742
+        },
+        "tag": "p",
+        "text": "Cluely never shows up in shared screens, recordings, or external meeting tools."
+      },
+      {
+        "cls": "mr-1 font-medium text-gray-20",
+        "rect": {
+          "h": 26,
+          "w": 218,
+          "x": 521,
+          "y": 743
+        },
+        "tag": "strong",
+        "text": "Invisible to screen share."
+      },
+      {
+        "cls": "text-[7px] leading-tight font-semibold tracking-tight text-white xl:text-[9px]",
+        "rect": {
+          "h": 11,
+          "w": 51,
+          "x": 1008,
+          "y": 451
+        },
+        "tag": "span",
+        "text": "AI Response"
+      },
+      {
+        "cls": "text-[8px] leading-none font-semibold tracking-2 lg:text-[7px] xl:text-[10px]",
+        "rect": {
+          "h": 10,
+          "w": 46,
+          "x": 983,
+          "y": 675
+        },
+        "tag": "span",
+        "text": "command"
+      },
+      {
+        "cls": "relative flex h-full w-9 items-center justify-center rounded-[6px] border border-gray-90 bg-white md",
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 1069,
+          "y": 647
+        },
+        "tag": "button",
+        "text": "↑"
+      },
+      {
+        "cls": "relative flex h-full w-9 items-center justify-center rounded-[6px] border border-gray-90 bg-white md",
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 1125,
+          "y": 647
+        },
+        "tag": "button",
+        "text": "↑"
+      },
+      {
+        "cls": "relative flex h-full w-9 items-center justify-center rounded-[6px] border border-gray-90 bg-white md",
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 1181,
+          "y": 647
+        },
+        "tag": "button",
+        "text": "↑"
+      },
+      {
+        "cls": "relative flex h-full w-9 items-center justify-center rounded-[6px] border border-gray-90 bg-white md",
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 1237,
+          "y": 647
+        },
+        "tag": "button",
+        "text": "↑"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 83,
+          "w": 384,
+          "x": 937,
+          "y": 749
+        },
+        "tag": "p",
+        "text": "Cluely window is fully moveable so you can position it exactly where you're looking."
+      },
+      {
+        "cls": "mr-1 font-medium text-gray-20",
+        "rect": {
+          "h": 26,
+          "w": 162,
+          "x": 937,
+          "y": 749
+        },
+        "tag": "strong",
+        "text": "Follows your eyes."
+      },
+      {
+        "cls": "text-xs font-semibold tracking-[0.15em] text-[#8C929D] uppercase",
+        "rect": {
+          "h": 16,
+          "w": 231,
+          "x": 597,
+          "y": 923
+        },
+        "tag": "span",
+        "text": "Compatible with every tool"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 41,
+          "x": 366,
+          "y": 965
+        },
+        "tag": "span",
+        "text": "Zoom"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 42,
+          "x": 501,
+          "y": 965
+        },
+        "tag": "span",
+        "text": "Slack"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 51,
+          "x": 638,
+          "y": 965
+        },
+        "tag": "span",
+        "text": "Webex"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 124,
+          "x": 783,
+          "y": 965
+        },
+        "tag": "span",
+        "text": "Microsoft Teams"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 96,
+          "x": 1001,
+          "y": 965
+        },
+        "tag": "span",
+        "text": "Google Meet"
+      }
+    ]
+  },
+  {
+    "y": 4000,
+    "file": "docs/design-references/cluely-desktop-y4000.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 3956,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 83,
+          "w": 384,
+          "x": 105,
+          "y": -15
+        },
+        "tag": "p",
+        "text": "Cluely never joins your meetings, so there are no bots and no extra people on the guest list."
+      },
+      {
+        "cls": "mr-1 font-medium text-gray-20",
+        "rect": {
+          "h": 26,
+          "w": 196,
+          "x": 105,
+          "y": -15
+        },
+        "tag": "strong",
+        "text": "Doesn't join meetings."
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 83,
+          "w": 384,
+          "x": 521,
+          "y": -15
+        },
+        "tag": "p",
+        "text": "Cluely never shows up in shared screens, recordings, or external meeting tools."
+      },
+      {
+        "cls": "mr-1 font-medium text-gray-20",
+        "rect": {
+          "h": 26,
+          "w": 218,
+          "x": 521,
+          "y": -15
+        },
+        "tag": "strong",
+        "text": "Invisible to screen share."
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 83,
+          "w": 384,
+          "x": 937,
+          "y": -15
+        },
+        "tag": "p",
+        "text": "Cluely window is fully moveable so you can position it exactly where you're looking."
+      },
+      {
+        "cls": "mr-1 font-medium text-gray-20",
+        "rect": {
+          "h": 26,
+          "w": 162,
+          "x": 937,
+          "y": -15
+        },
+        "tag": "strong",
+        "text": "Follows your eyes."
+      },
+      {
+        "cls": "text-xs font-semibold tracking-[0.15em] text-[#8C929D] uppercase",
+        "rect": {
+          "h": 16,
+          "w": 231,
+          "x": 597,
+          "y": 167
+        },
+        "tag": "span",
+        "text": "Compatible with every tool"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 41,
+          "x": 366,
+          "y": 209
+        },
+        "tag": "span",
+        "text": "Zoom"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 42,
+          "x": 501,
+          "y": 209
+        },
+        "tag": "span",
+        "text": "Slack"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 51,
+          "x": 638,
+          "y": 209
+        },
+        "tag": "span",
+        "text": "Webex"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 124,
+          "x": 783,
+          "y": 209
+        },
+        "tag": "span",
+        "text": "Microsoft Teams"
+      },
+      {
+        "cls": "text-sm font-medium text-[#3D4150] md:text-base",
+        "rect": {
+          "h": 24,
+          "w": 96,
+          "x": 1001,
+          "y": 209
+        },
+        "tag": "span",
+        "text": "Google Meet"
+      },
+      {
+        "cls": "bg-gradient-to-r from-[#19191D] to-[#31343E] bg-clip-text text-3xl leading-[1.25] font-medium tracki",
+        "rect": {
+          "h": 60,
+          "w": 616,
+          "x": 672,
+          "y": 565
+        },
+        "tag": "h2",
+        "text": "Real-time transcription"
+      },
+      {
+        "cls": "mt-4 text-5xl lg:w-48 lg:shrink-0",
+        "rect": {
+          "h": 48,
+          "w": 192,
+          "x": 672,
+          "y": 728
+        },
+        "tag": "div",
+        "text": "12+"
+      },
+      {
+        "cls": "text-4xl font-light",
+        "rect": {
+          "h": 40,
+          "w": 424,
+          "x": 864,
+          "y": 712
+        },
+        "tag": "span",
+        "text": "Languages"
+      },
+      {
+        "cls": "text-lg text-zinc-500/70 lg:max-w-112.5",
+        "rect": {
+          "h": 56,
+          "w": 424,
+          "x": 864,
+          "y": 764
+        },
+        "tag": "span",
+        "text": "We support over 12 different languages, including English, Chinese, Spanish, and more."
+      },
+      {
+        "cls": "mt-5 text-5xl lg:w-48 lg:shrink-0",
+        "rect": {
+          "h": 49,
+          "w": 192,
+          "x": 672,
+          "y": 905
+        },
+        "tag": "div",
+        "text": "300"
+      },
+      {
+        "cls": "text-3xl",
+        "rect": {
+          "h": 39,
+          "w": 42,
+          "x": 766,
+          "y": 916
+        },
+        "tag": "span",
+        "text": "ms"
+      },
+      {
+        "cls": "text-4xl font-light",
+        "rect": {
+          "h": 40,
+          "w": 386,
+          "x": 864,
+          "y": 885
+        },
+        "tag": "span",
+        "text": "Response time"
+      },
+      {
+        "cls": "text-lg text-zinc-500/70",
+        "rect": {
+          "h": 56,
+          "w": 386,
+          "x": 864,
+          "y": 937
+        },
+        "tag": "span",
+        "text": "We have the fastest live transcription available. Test us against any other competitor."
+      },
+      {
+        "cls": "mt-5 text-5xl lg:w-48 lg:shrink-0",
+        "rect": {
+          "h": 48,
+          "w": 192,
+          "x": 672,
+          "y": 1078
+        },
+        "tag": "div",
+        "text": "95%"
+      },
+      {
+        "cls": "text-4xl font-light",
+        "rect": {
+          "h": 40,
+          "w": 397,
+          "x": 864,
+          "y": 1058
+        },
+        "tag": "span",
+        "text": "Transcription accuracy"
+      }
+    ]
+  },
+  {
+    "y": 4800,
+    "file": "docs/design-references/cluely-desktop-y4800.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 4758,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "mt-5 text-5xl lg:w-48 lg:shrink-0",
+        "rect": {
+          "h": 49,
+          "w": 192,
+          "x": 672,
+          "y": 87
+        },
+        "tag": "div",
+        "text": "300"
+      },
+      {
+        "cls": "text-3xl",
+        "rect": {
+          "h": 39,
+          "w": 42,
+          "x": 766,
+          "y": 98
+        },
+        "tag": "span",
+        "text": "ms"
+      },
+      {
+        "cls": "text-4xl font-light",
+        "rect": {
+          "h": 40,
+          "w": 386,
+          "x": 864,
+          "y": 67
+        },
+        "tag": "span",
+        "text": "Response time"
+      },
+      {
+        "cls": "text-lg text-zinc-500/70",
+        "rect": {
+          "h": 56,
+          "w": 386,
+          "x": 864,
+          "y": 119
+        },
+        "tag": "span",
+        "text": "We have the fastest live transcription available. Test us against any other competitor."
+      },
+      {
+        "cls": "mt-5 text-5xl lg:w-48 lg:shrink-0",
+        "rect": {
+          "h": 48,
+          "w": 192,
+          "x": 672,
+          "y": 275
+        },
+        "tag": "div",
+        "text": "95%"
+      },
+      {
+        "cls": "text-4xl font-light",
+        "rect": {
+          "h": 40,
+          "w": 397,
+          "x": 864,
+          "y": 255
+        },
+        "tag": "span",
+        "text": "Transcription accuracy"
+      },
+      {
+        "cls": "text-lg text-zinc-500/70",
+        "rect": {
+          "h": 56,
+          "w": 397,
+          "x": 864,
+          "y": 307
+        },
+        "tag": "span",
+        "text": "Trusted by many teams for reliable transcription. All processed with industry-leading accuracy."
+      },
+      {
+        "cls": "text-28 leading-tight font-medium tracking-4 text-foreground md:text-4xl md:text-32 lg:mb-[16px] lg:",
+        "rect": {
+          "h": 50,
+          "w": 1216,
+          "x": 105,
+          "y": 612
+        },
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 418,
+          "x": 105,
+          "y": 716
+        },
+        "tag": "span",
+        "text": "Why real-time vs. a regular AI notetaker?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 186,
+          "x": 105,
+          "y": 785
+        },
+        "tag": "span",
+        "text": "Who is Cluely for?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 145,
+          "x": 105,
+          "y": 854
+        },
+        "tag": "span",
+        "text": "Is Cluely free?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 367,
+          "x": 105,
+          "y": 923
+        },
+        "tag": "span",
+        "text": "How is it undetectable in meetings?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 430,
+          "x": 105,
+          "y": 992
+        },
+        "tag": "span",
+        "text": "What languages and apps are supported?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 326,
+          "x": 105,
+          "y": 1061
+        },
+        "tag": "span",
+        "text": "Can I talk to customer support?"
+      }
+    ]
+  },
+  {
+    "y": 5500,
+    "file": "docs/design-references/cluely-desktop-y5500.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 5498,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 418,
+          "x": 105,
+          "y": -25
+        },
+        "tag": "span",
+        "text": "Why real-time vs. a regular AI notetaker?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 186,
+          "x": 105,
+          "y": 44
+        },
+        "tag": "span",
+        "text": "Who is Cluely for?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 145,
+          "x": 105,
+          "y": 113
+        },
+        "tag": "span",
+        "text": "Is Cluely free?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 367,
+          "x": 105,
+          "y": 182
+        },
+        "tag": "span",
+        "text": "How is it undetectable in meetings?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 430,
+          "x": 105,
+          "y": 251
+        },
+        "tag": "span",
+        "text": "What languages and apps are supported?"
+      },
+      {
+        "cls": "text-18 leading-snug font-medium tracking-4 text-pretty md:text-xl md:text-20 md:leading-[1.125] lg:",
+        "rect": {
+          "h": 27,
+          "w": 326,
+          "x": 105,
+          "y": 320
+        },
+        "tag": "span",
+        "text": "Can I talk to customer support?"
+      },
+      {
+        "cls": "inline text-[20px] leading-tight font-medium -tracking-[0.04em] text-foreground sm:block sm:text-[28",
+        "rect": {
+          "h": 35,
+          "w": 575,
+          "x": 105,
+          "y": 716
+        },
+        "tag": "h3",
+        "text": "Meeting AI that helps during the call, not after."
+      },
+      {
+        "cls": "inline gradient-text bg-[linear-gradient(96.56deg,_#667799_21.01%,#94A0B8_34.62%,#667799_47.64%,#667",
+        "rect": {
+          "h": 35,
+          "w": 456,
+          "x": 105,
+          "y": 751
+        },
+        "tag": "p",
+        "text": "Try Cluely on your next meeting today."
+      },
+      {
+        "cls": "relative z-10 flex items-center gap-1.5 text-14 leading-none -tracking-[0.02em] lg:text-base",
+        "rect": {
+          "h": 26,
+          "w": 119,
+          "x": 145,
+          "y": 823
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      }
+    ]
+  },
+  {
+    "y": 6200,
+    "file": "docs/design-references/cluely-desktop-y6200.png",
+    "fixed": [
+      {
+        "cls": "fixed right-2.5 hidden h-fit items-center justify-center gap-2 transition-opacity duration-300 md:flex opacity-100",
+        "rect": {
+          "h": 44,
+          "w": 149,
+          "x": 1266,
+          "y": 10
+        },
+        "style": {
+          "opacity": "1",
+          "position": "fixed",
+          "transform": "none",
+          "zIndex": "auto"
+        },
+        "tag": "div",
+        "text": "Get the desktop appGet for Mac"
+      }
+    ],
+    "scrollY": 5853,
+    "visibleTexts": [
+      {
+        "cls": "",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 1308,
+          "y": 20
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "inline text-[20px] leading-tight font-medium -tracking-[0.04em] text-foreground sm:block sm:text-[28",
+        "rect": {
+          "h": 35,
+          "w": 575,
+          "x": 105,
+          "y": 361
+        },
+        "tag": "h3",
+        "text": "Meeting AI that helps during the call, not after."
+      },
+      {
+        "cls": "inline gradient-text bg-[linear-gradient(96.56deg,_#667799_21.01%,#94A0B8_34.62%,#667799_47.64%,#667",
+        "rect": {
+          "h": 35,
+          "w": 456,
+          "x": 105,
+          "y": 396
+        },
+        "tag": "p",
+        "text": "Try Cluely on your next meeting today."
+      },
+      {
+        "cls": "relative z-10 flex items-center gap-1.5 text-14 leading-none -tracking-[0.02em] lg:text-base",
+        "rect": {
+          "h": 26,
+          "w": 119,
+          "x": 145,
+          "y": 468
+        },
+        "tag": "span",
+        "text": "Get for Mac"
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 104,
+          "y": 752
+        },
+        "tag": "span",
+        "text": "Cluely"
+      },
+      {
+        "cls": "font-medium tracking-tight text-black",
+        "rect": {
+          "h": 24,
+          "w": 87,
+          "x": 771,
+          "y": 753
+        },
+        "tag": "h3",
+        "text": "Resources"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 47,
+          "x": 771,
+          "y": 790
+        },
+        "tag": "span",
+        "text": "Mobile"
+      },
+      {
+        "cls": "inline-flex items-center rounded-full bg-blue-500 px-1.5 py-0.5 text-[11px] font-semibold text-white",
+        "rect": {
+          "h": 19,
+          "w": 34,
+          "x": 824,
+          "y": 791
+        },
+        "tag": "span",
+        "text": "New"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 69,
+          "x": 771,
+          "y": 822
+        },
+        "tag": "span",
+        "text": "Manifesto"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 39,
+          "x": 771,
+          "y": 854
+        },
+        "tag": "span",
+        "text": "Press"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 82,
+          "x": 771,
+          "y": 886
+        },
+        "tag": "span",
+        "text": "Bug Bounty"
+      },
+      {
+        "cls": "font-medium tracking-tight text-black",
+        "rect": {
+          "h": 24,
+          "w": 83,
+          "x": 924,
+          "y": 753
+        },
+        "tag": "h3",
+        "text": "Support"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 83,
+          "x": 924,
+          "y": 790
+        },
+        "tag": "span",
+        "text": "Help Center"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 77,
+          "x": 924,
+          "y": 822
+        },
+        "tag": "span",
+        "text": "Contact Us"
+      },
+      {
+        "cls": "font-medium tracking-tight text-black",
+        "rect": {
+          "h": 24,
+          "w": 115,
+          "x": 1073,
+          "y": 753
+        },
+        "tag": "h3",
+        "text": "Legal"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 96,
+          "x": 1073,
+          "y": 790
+        },
+        "tag": "span",
+        "text": "Privacy Policy"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 115,
+          "x": 1073,
+          "y": 822
+        },
+        "tag": "span",
+        "text": "Terms of Service"
+      },
+      {
+        "cls": "",
+        "rect": {
+          "h": 22,
+          "w": 104,
+          "x": 1073,
+          "y": 854
+        },
+        "tag": "span",
+        "text": "Subprocessors"
+      },
+      {
+        "cls": "font-medium tracking-tight transition-colors duration-300 [&_svg]:shrink-0 inline-flex h-[34px] item",
+        "rect": {
+          "h": 34,
+          "w": 182,
+          "x": 105,
+          "y": 939
+        },
+        "tag": "a",
+        "text": "All systems operational"
+      },
+      {
+        "cls": "text-xs font-medium tracking-tight text-gray-50",
+        "rect": {
+          "h": 16,
+          "w": 1216,
+          "x": 105,
+          "y": 1005
+        },
+        "tag": "div",
+        "text": "List of ."
+      },
+      {
+        "cls": "inline-flex items-center gap-x-1.5 rounded font-medium tracking-tight transition-colors duration-300",
+        "rect": {
+          "h": 16,
+          "w": 79,
+          "x": 140,
+          "y": 1005
+        },
+        "tag": "a",
+        "text": "subprocessors"
+      },
+      {
+        "cls": "order-2 mt-7 text-sm tracking-tight text-gray-50 md:order-1 md:mt-0",
+        "rect": {
+          "h": 20,
+          "w": 205,
+          "x": 105,
+          "y": 1061
+        },
+        "tag": "p",
+        "text": "© 2026 Cluely. All rights reserved."
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 1192,
+          "y": 1080
+        },
+        "tag": "span",
+        "text": "Follow us on Twitter"
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 1228,
+          "y": 1080
+        },
+        "tag": "span",
+        "text": "Join us on Discord"
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 1264,
+          "y": 1080
+        },
+        "tag": "span",
+        "text": "Follow us on Instagram"
+      },
+      {
+        "cls": "sr-only",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 1300,
+          "y": 1080
+        },
+        "tag": "span",
+        "text": "Follow us on GitHub"
+      }
+    ]
+  }
+]

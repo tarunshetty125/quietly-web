@@ -1,0 +1,569 @@
+{
+  "downloadedAt": "2026-06-04T19:16:05.558Z",
+  "count": 73,
+  "attempted": 75,
+  "scannedTextUrls": [
+    "https://cluely.com/",
+    "https://cluely.com/_next/static/css/a2b417449b2a5a62.css",
+    "https://cluely.com/_next/static/css/b75c2ce0aa33dcb8.css",
+    "https://cluely.com/_next/static/css/655b5c7a8df2943e.css",
+    "https://cluely.com/_next/static/chunks/webpack-b0e413bc5403e140.js",
+    "https://cluely.com/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+    "https://cluely.com/_next/static/chunks/9da6db1e-1b69abb48e193835.js",
+    "https://cluely.com/_next/static/chunks/1255-48f5625a6566b33e.js",
+    "https://cluely.com/_next/static/chunks/main-app-5eaba1f37b00c99f.js",
+    "https://cluely.com/_next/static/chunks/app/layout-f62f6c64555aa9ec.js",
+    "https://cluely.com/_next/static/chunks/2619-04bc32f026a0d946.js",
+    "https://cluely.com/_next/static/chunks/1356-eeb3c9e6682e6ce5.js",
+    "https://cluely.com/_next/static/chunks/app/not-found-11d89309dda0e38f.js",
+    "https://cluely.com/_next/static/chunks/94730671-b736ec132344b726.js",
+    "https://cluely.com/_next/static/chunks/f8025e75-c8536bb775fe75a6.js",
+    "https://cluely.com/_next/static/chunks/9955-54ebcaee50ae6007.js",
+    "https://cluely.com/_next/static/chunks/2463-93d403f443d36542.js",
+    "https://cluely.com/_next/static/chunks/8679-66a9646a4688c0d9.js",
+    "https://cluely.com/_next/static/chunks/834-9621a6493ff04cdf.js",
+    "https://cluely.com/_next/static/chunks/9134-729662ed751e8961.js",
+    "https://cluely.com/_next/static/chunks/5099-a878af3a3fb0f12c.js",
+    "https://cluely.com/_next/static/chunks/9912-32c6de057913f3a0.js",
+    "https://cluely.com/_next/static/chunks/6974-d56c0b747dfd1973.js",
+    "https://cluely.com/_next/static/chunks/4160-9ef36159f723e4a3.js",
+    "https://cluely.com/_next/static/chunks/6803-8c03a55cd50a503e.js",
+    "https://cluely.com/_next/static/chunks/app/(website)/layout-b38a416fca56f29f.js",
+    "https://cluely.com/_next/static/chunks/bf76e631-95fb859848e7c0c7.js",
+    "https://cluely.com/_next/static/chunks/8609-5accc10dc8cb4205.js",
+    "https://cluely.com/_next/static/chunks/633-8d66185702c53ce2.js",
+    "https://cluely.com/_next/static/chunks/3709-7d9dea99780e02fb.js",
+    "https://cluely.com/_next/static/chunks/6753-d1b7c4b5c18c5009.js",
+    "https://cluely.com/_next/static/chunks/app/(website)/page-9e237521c8453b28.js",
+    "https://cluely.com/manifest.json",
+    "https://cluely.com/_next/static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "discoveredAssetUrls": [
+    "https://cluely.com/wordmark-light.svg",
+    "https://cluely.com/_next/static/media/invisible-tool.452f4abe.png",
+    "https://cluely.com/_next/static/media/command-btn.05a11379.png",
+    "https://cluely.com/_next/static/media/command-active.83241958.png",
+    "https://cluely.com/_next/static/media/return-active.30ff0cd8.png",
+    "https://cluely.com/_next/static/media/return-btn.f7f71a9d.png",
+    "https://cluely.com/manifest.json",
+    "https://cluely.com/social-previews/index.jpg",
+    "https://cluely.com/favicon/light/favicon.png",
+    "https://cluely.com/favicon/dark/favicon.png",
+    "https://cluely.com/favicon/light/favicon-48x48.png",
+    "https://cluely.com/favicon/dark/favicon-48x48.png",
+    "https://cluely.com/favicon/light/favicon-72x72.png",
+    "https://cluely.com/favicon/dark/favicon-72x72.png",
+    "https://cluely.com/favicon/light/favicon-96x96.png",
+    "https://cluely.com/favicon/dark/favicon-96x96.png",
+    "https://cluely.com/favicon/light/favicon-144x144.png",
+    "https://cluely.com/favicon/dark/favicon-144x144.png",
+    "https://cluely.com/favicon/light/favicon-180x180.png",
+    "https://cluely.com/favicon/dark/favicon-180x180.png",
+    "https://cluely.com/favicon/light/favicon-256x256.png",
+    "https://cluely.com/favicon/dark/favicon-256x256.png",
+    "https://cluely.com/favicon/light/favicon-384x384.png",
+    "https://cluely.com/favicon/dark/favicon-384x384.png",
+    "https://cluely.com/favicon/light/favicon-512x512.png",
+    "https://cluely.com/favicon/dark/favicon-512x512.png",
+    "https://cluely.com/logo.svg",
+    "https://cluely.com/_next/static/media/shimmer.aeaeb2f7.png",
+    "https://cluely.com/_next/static/media/wallpaper@2x.b7df867c.png",
+    "https://cluely.com/images/pages/home/launchpad-icon.png",
+    "https://cluely.com/images/pages/home/safari-icon.png",
+    "https://cluely.com/images/pages/home/settings-icon.png",
+    "https://cluely.com/images/pages/home/zoom-icon.png",
+    "https://cluely.com/images/pages/home/cluely-icon.png",
+    "https://cluely.com/images/pages/home/trash-icon.png",
+    "https://cluely.com/videos/home/hero-v2/pro-res-hevc-safari.mp4",
+    "https://cluely.com/videos/home/hero-v2/pro-res-vp9-chrome.webm",
+    "https://cluely.com/_next/static/media/mobile-notes.5dc13f8d.png",
+    "https://cluely.com/_next/static/media/tablet-notes.5560bad7.png",
+    "https://cluely.com/_next/static/media/desktop-notes-2.8614c68b.png",
+    "https://cluely.com/_next/static/media/gina-huels.b14409cf.png",
+    "https://cluely.com/_next/static/media/todd-cremin.9cbbdf9c.png",
+    "https://cluely.com/_next/static/media/holly-gleason.528905fb.png",
+    "https://cluely.com/_next/static/media/tomas-hansen.5f58da3e.png",
+    "https://cluely.com/_next/static/media/cluely.7e226633.svg",
+    "https://cluely.com/_next/static/media/eye.79b67e64.svg",
+    "https://cluely.com/_next/static/media/bg-purple.449cf71b.jpg",
+    "https://cluely.com/_next/static/media/file-browser-card.8990f1d2.png",
+    "https://cluely.com/_next/static/media/bg-pink.1696fade.jpg",
+    "https://cluely.com/_next/static/media/messaging-card.f1bfaf57.png",
+    "https://cluely.com/_next/static/media/bg-purple-dark.58e0b5e1.jpg",
+    "https://cluely.com/_next/static/media/video-conference-card.26ec85da.png",
+    "https://cluely.com/_next/static/media/bg-blue.825b2efd.jpg",
+    "https://cluely.com/_next/static/media/video-player-card.9b7a7f86.png",
+    "https://cluely.com/_next/static/media/zoom.398e9568.png",
+    "https://cluely.com/_next/static/media/slack.0e754017.png",
+    "https://cluely.com/_next/static/media/webex.6e65e4a4.png",
+    "https://cluely.com/_next/static/media/teams.845b90a5.png",
+    "https://cluely.com/_next/static/media/meet.7640c976.png",
+    "https://cluely.com/_next/static/media/transcript-tab.1c48d5b2.png",
+    "https://cluely.com/wordmark.svg",
+    "https://cluely.com/_next/static/media/apple.9854bb2c.svg",
+    "https://cluely.com/_next/static/media/windows.47b8106d.svg",
+    "https://cluely.com/images/pages/careers/dollar-texture.jpg",
+    "https://cluely.com/patterns/button/noise-black.png",
+    "https://cluely.com/patterns/button/noise-white.png",
+    "https://cluely.com/images/pages/home/background.png",
+    "https://cluely.com/images/pages/home/background@2x.png",
+    "https://cluely.com/images/pages/home/background@4x.png",
+    "https://cluely.com/_next/static/media/step-2.8b955d19.webp",
+    "https://cluely.com/_next/static/media/step-1.43d2ca12.webp",
+    "https://cluely.com/_next/static/media/step-3.648f6b39.webp",
+    "https://cluely.com/_next/static/media/fancy.ad800e20.png",
+    "https://cluely.com/images/pages/home/media-outlets.png",
+    "https://cluely.com/favicon/light/favicon-48x48.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-72x72.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-96x96.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-144x144.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-192x192.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-256x256.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-384x384.png?v=7695c62c88ccd7e60f97c165493a7386",
+    "https://cluely.com/favicon/light/favicon-512x512.png?v=7695c62c88ccd7e60f97c165493a7386"
+  ],
+  "failures": [
+    "404 Not Found: https://cluely.com/favicon/light/favicon-180x180.png",
+    "404 Not Found: https://cluely.com/favicon/dark/favicon-180x180.png"
+  ],
+  "assets": [
+    {
+      "index": 0,
+      "url": "https://cluely.com/wordmark-light.svg",
+      "file": "public/images/cluely/wordmark-light.svg",
+      "bytes": 14893
+    },
+    {
+      "index": 1,
+      "url": "https://cluely.com/_next/static/media/shimmer.aeaeb2f7.png",
+      "file": "public/images/cluely/shimmer.aeaeb2f7.png",
+      "bytes": 3523
+    },
+    {
+      "index": 2,
+      "url": "https://cluely.com/_next/static/media/wallpaper@2x.b7df867c.png",
+      "file": "public/images/cluely/wallpaper-2x.b7df867c.png",
+      "bytes": 1191263
+    },
+    {
+      "index": 3,
+      "url": "https://cluely.com/images/pages/home/launchpad-icon.png",
+      "file": "public/images/cluely/launchpad-icon.png",
+      "bytes": 10182
+    },
+    {
+      "index": 4,
+      "url": "https://cluely.com/images/pages/home/safari-icon.png",
+      "file": "public/images/cluely/safari-icon.png",
+      "bytes": 18235
+    },
+    {
+      "index": 5,
+      "url": "https://cluely.com/images/pages/home/settings-icon.png",
+      "file": "public/images/cluely/settings-icon.png",
+      "bytes": 21977
+    },
+    {
+      "index": 6,
+      "url": "https://cluely.com/images/pages/home/zoom-icon.png",
+      "file": "public/images/cluely/zoom-icon.png",
+      "bytes": 10231
+    },
+    {
+      "index": 7,
+      "url": "https://cluely.com/images/pages/home/cluely-icon.png",
+      "file": "public/images/cluely/cluely-icon.png",
+      "bytes": 15129
+    },
+    {
+      "index": 8,
+      "url": "https://cluely.com/images/pages/home/trash-icon.png",
+      "file": "public/images/cluely/trash-icon.png",
+      "bytes": 12793
+    },
+    {
+      "index": 9,
+      "url": "https://cluely.com/_next/static/media/mobile-notes.5dc13f8d.png",
+      "file": "public/images/cluely/mobile-notes.5dc13f8d.png",
+      "bytes": 1328293
+    },
+    {
+      "index": 10,
+      "url": "https://cluely.com/_next/static/media/tablet-notes.5560bad7.png",
+      "file": "public/images/cluely/tablet-notes.5560bad7.png",
+      "bytes": 1499342
+    },
+    {
+      "index": 11,
+      "url": "https://cluely.com/_next/static/media/desktop-notes-2.8614c68b.png",
+      "file": "public/images/cluely/desktop-notes-2.8614c68b.png",
+      "bytes": 505988
+    },
+    {
+      "index": 12,
+      "url": "https://cluely.com/_next/static/media/gina-huels.b14409cf.png",
+      "file": "public/images/cluely/gina-huels.b14409cf.png",
+      "bytes": 7416
+    },
+    {
+      "index": 13,
+      "url": "https://cluely.com/_next/static/media/todd-cremin.9cbbdf9c.png",
+      "file": "public/images/cluely/todd-cremin.9cbbdf9c.png",
+      "bytes": 7951
+    },
+    {
+      "index": 14,
+      "url": "https://cluely.com/_next/static/media/holly-gleason.528905fb.png",
+      "file": "public/images/cluely/holly-gleason.528905fb.png",
+      "bytes": 8433
+    },
+    {
+      "index": 15,
+      "url": "https://cluely.com/_next/static/media/tomas-hansen.5f58da3e.png",
+      "file": "public/images/cluely/tomas-hansen.5f58da3e.png",
+      "bytes": 7723
+    },
+    {
+      "index": 16,
+      "url": "https://cluely.com/_next/static/media/cluely.7e226633.svg",
+      "file": "public/images/cluely/cluely.7e226633.svg",
+      "bytes": 12234
+    },
+    {
+      "index": 17,
+      "url": "https://cluely.com/_next/static/media/eye.79b67e64.svg",
+      "file": "public/images/cluely/eye.79b67e64.svg",
+      "bytes": 939
+    },
+    {
+      "index": 18,
+      "url": "https://cluely.com/_next/static/media/invisible-tool.452f4abe.png",
+      "file": "public/images/cluely/invisible-tool.452f4abe.png",
+      "bytes": 21766
+    },
+    {
+      "index": 19,
+      "url": "https://cluely.com/_next/static/media/bg-purple.449cf71b.jpg",
+      "file": "public/images/cluely/bg-purple.449cf71b.jpg",
+      "bytes": 16928
+    },
+    {
+      "index": 20,
+      "url": "https://cluely.com/_next/static/media/file-browser-card.8990f1d2.png",
+      "file": "public/images/cluely/file-browser-card.8990f1d2.png",
+      "bytes": 93005
+    },
+    {
+      "index": 21,
+      "url": "https://cluely.com/_next/static/media/bg-pink.1696fade.jpg",
+      "file": "public/images/cluely/bg-pink.1696fade.jpg",
+      "bytes": 23911
+    },
+    {
+      "index": 22,
+      "url": "https://cluely.com/_next/static/media/messaging-card.f1bfaf57.png",
+      "file": "public/images/cluely/messaging-card.f1bfaf57.png",
+      "bytes": 46934
+    },
+    {
+      "index": 23,
+      "url": "https://cluely.com/_next/static/media/bg-purple-dark.58e0b5e1.jpg",
+      "file": "public/images/cluely/bg-purple-dark.58e0b5e1.jpg",
+      "bytes": 27824
+    },
+    {
+      "index": 24,
+      "url": "https://cluely.com/_next/static/media/video-conference-card.26ec85da.png",
+      "file": "public/images/cluely/video-conference-card.26ec85da.png",
+      "bytes": 96357
+    },
+    {
+      "index": 25,
+      "url": "https://cluely.com/_next/static/media/bg-blue.825b2efd.jpg",
+      "file": "public/images/cluely/bg-blue.825b2efd.jpg",
+      "bytes": 21612
+    },
+    {
+      "index": 26,
+      "url": "https://cluely.com/_next/static/media/video-player-card.9b7a7f86.png",
+      "file": "public/images/cluely/video-player-card.9b7a7f86.png",
+      "bytes": 130852
+    },
+    {
+      "index": 27,
+      "url": "https://cluely.com/_next/static/media/zoom.398e9568.png",
+      "file": "public/images/cluely/zoom.398e9568.png",
+      "bytes": 89269
+    },
+    {
+      "index": 28,
+      "url": "https://cluely.com/_next/static/media/slack.0e754017.png",
+      "file": "public/images/cluely/slack.0e754017.png",
+      "bytes": 86192
+    },
+    {
+      "index": 29,
+      "url": "https://cluely.com/_next/static/media/webex.6e65e4a4.png",
+      "file": "public/images/cluely/webex.6e65e4a4.png",
+      "bytes": 103279
+    },
+    {
+      "index": 30,
+      "url": "https://cluely.com/_next/static/media/teams.845b90a5.png",
+      "file": "public/images/cluely/teams.845b90a5.png",
+      "bytes": 87070
+    },
+    {
+      "index": 31,
+      "url": "https://cluely.com/_next/static/media/meet.7640c976.png",
+      "file": "public/images/cluely/meet.7640c976.png",
+      "bytes": 82882
+    },
+    {
+      "index": 32,
+      "url": "https://cluely.com/_next/static/media/transcript-tab.1c48d5b2.png",
+      "file": "public/images/cluely/transcript-tab.1c48d5b2.png",
+      "bytes": 2125120
+    },
+    {
+      "index": 33,
+      "url": "https://cluely.com/_next/static/media/command-btn.05a11379.png",
+      "file": "public/images/cluely/command-btn.05a11379.png",
+      "bytes": 225478
+    },
+    {
+      "index": 34,
+      "url": "https://cluely.com/_next/static/media/command-active.83241958.png",
+      "file": "public/images/cluely/command-active.83241958.png",
+      "bytes": 226687
+    },
+    {
+      "index": 35,
+      "url": "https://cluely.com/_next/static/media/return-active.30ff0cd8.png",
+      "file": "public/images/cluely/return-active.30ff0cd8.png",
+      "bytes": 172941
+    },
+    {
+      "index": 36,
+      "url": "https://cluely.com/_next/static/media/return-btn.f7f71a9d.png",
+      "file": "public/images/cluely/return-btn.f7f71a9d.png",
+      "bytes": 166764
+    },
+    {
+      "index": 37,
+      "url": "https://cluely.com/wordmark.svg",
+      "file": "public/images/cluely/wordmark.svg",
+      "bytes": 14895
+    },
+    {
+      "index": 38,
+      "url": "https://cluely.com/videos/home/hero-v2/pro-res-vp9-chrome.webm",
+      "file": "public/videos/cluely/videos-home-hero-v2-pro-res-vp9-chrome.webm",
+      "bytes": 808541
+    },
+    {
+      "index": 39,
+      "url": "https://cluely.com/images/pages/home/background.png",
+      "file": "public/images/cluely/background.png",
+      "bytes": 1415871
+    },
+    {
+      "index": 40,
+      "url": "https://cluely.com/images/pages/home/background@2x.png",
+      "file": "public/images/cluely/background-2x.png",
+      "bytes": 3418799
+    },
+    {
+      "index": 41,
+      "url": "https://cluely.com/images/pages/home/background@4x.png",
+      "file": "public/images/cluely/background-4x.png",
+      "bytes": 7894023
+    },
+    {
+      "index": 42,
+      "url": "https://cluely.com/manifest.json",
+      "file": "public/seo/cluely/manifest.json",
+      "bytes": 1216
+    },
+    {
+      "index": 43,
+      "url": "https://cluely.com/favicon/light/favicon.png",
+      "file": "public/seo/cluely/light-favicon.png",
+      "bytes": 51007
+    },
+    {
+      "index": 44,
+      "url": "https://cluely.com/favicon/dark/favicon.png",
+      "file": "public/seo/cluely/dark-favicon.png",
+      "bytes": 20141
+    },
+    {
+      "index": 45,
+      "url": "https://cluely.com/favicon/light/favicon-48x48.png",
+      "file": "public/seo/cluely/light-favicon-48x48.png",
+      "bytes": 1117
+    },
+    {
+      "index": 46,
+      "url": "https://cluely.com/favicon/dark/favicon-48x48.png",
+      "file": "public/seo/cluely/dark-favicon-48x48.png",
+      "bytes": 793
+    },
+    {
+      "index": 47,
+      "url": "https://cluely.com/favicon/light/favicon-72x72.png",
+      "file": "public/seo/cluely/light-favicon-72x72.png",
+      "bytes": 1544
+    },
+    {
+      "index": 48,
+      "url": "https://cluely.com/favicon/dark/favicon-72x72.png",
+      "file": "public/seo/cluely/dark-favicon-72x72.png",
+      "bytes": 1192
+    },
+    {
+      "index": 49,
+      "url": "https://cluely.com/favicon/light/favicon-96x96.png",
+      "file": "public/seo/cluely/light-favicon-96x96.png",
+      "bytes": 2107
+    },
+    {
+      "index": 50,
+      "url": "https://cluely.com/favicon/dark/favicon-96x96.png",
+      "file": "public/seo/cluely/dark-favicon-96x96.png",
+      "bytes": 1699
+    },
+    {
+      "index": 51,
+      "url": "https://cluely.com/favicon/light/favicon-144x144.png",
+      "file": "public/seo/cluely/light-favicon-144x144.png",
+      "bytes": 3210
+    },
+    {
+      "index": 52,
+      "url": "https://cluely.com/favicon/dark/favicon-144x144.png",
+      "file": "public/seo/cluely/dark-favicon-144x144.png",
+      "bytes": 2387
+    },
+    {
+      "index": 55,
+      "url": "https://cluely.com/favicon/light/favicon-256x256.png",
+      "file": "public/seo/cluely/light-favicon-256x256.png",
+      "bytes": 6258
+    },
+    {
+      "index": 56,
+      "url": "https://cluely.com/favicon/dark/favicon-256x256.png",
+      "file": "public/seo/cluely/dark-favicon-256x256.png",
+      "bytes": 4502
+    },
+    {
+      "index": 57,
+      "url": "https://cluely.com/favicon/light/favicon-384x384.png",
+      "file": "public/seo/cluely/light-favicon-384x384.png",
+      "bytes": 11845
+    },
+    {
+      "index": 58,
+      "url": "https://cluely.com/favicon/dark/favicon-384x384.png",
+      "file": "public/seo/cluely/dark-favicon-384x384.png",
+      "bytes": 6911
+    },
+    {
+      "index": 59,
+      "url": "https://cluely.com/favicon/light/favicon-512x512.png",
+      "file": "public/seo/cluely/light-favicon-512x512.png",
+      "bytes": 20659
+    },
+    {
+      "index": 60,
+      "url": "https://cluely.com/favicon/dark/favicon-512x512.png",
+      "file": "public/seo/cluely/dark-favicon-512x512.png",
+      "bytes": 9960
+    },
+    {
+      "index": 61,
+      "url": "https://cluely.com/social-previews/index.jpg",
+      "file": "public/seo/cluely/social-previews-index.jpg",
+      "bytes": 87522
+    },
+    {
+      "index": 62,
+      "url": "https://cluely.com/logo.svg",
+      "file": "public/images/cluely/logo.svg",
+      "bytes": 14946
+    },
+    {
+      "index": 63,
+      "url": "https://cluely.com/videos/home/hero-v2/pro-res-hevc-safari.mp4",
+      "file": "public/videos/cluely/videos-home-hero-v2-pro-res-hevc-safari.mp4",
+      "bytes": 9744002
+    },
+    {
+      "index": 64,
+      "url": "https://cluely.com/_next/static/media/apple.9854bb2c.svg",
+      "file": "public/images/cluely/apple.9854bb2c.svg",
+      "bytes": 1101
+    },
+    {
+      "index": 65,
+      "url": "https://cluely.com/_next/static/media/windows.47b8106d.svg",
+      "file": "public/images/cluely/windows.47b8106d.svg",
+      "bytes": 416
+    },
+    {
+      "index": 66,
+      "url": "https://cluely.com/images/pages/careers/dollar-texture.jpg",
+      "file": "public/images/cluely/images-pages-careers-dollar-texture.jpg",
+      "bytes": 161574
+    },
+    {
+      "index": 67,
+      "url": "https://cluely.com/patterns/button/noise-black.png",
+      "file": "public/images/cluely/button-noise-black.png",
+      "bytes": 16983
+    },
+    {
+      "index": 68,
+      "url": "https://cluely.com/patterns/button/noise-white.png",
+      "file": "public/images/cluely/button-noise-white.png",
+      "bytes": 11836
+    },
+    {
+      "index": 69,
+      "url": "https://cluely.com/_next/static/media/step-2.8b955d19.webp",
+      "file": "public/images/cluely/step-2.8b955d19.webp",
+      "bytes": 13946
+    },
+    {
+      "index": 70,
+      "url": "https://cluely.com/_next/static/media/step-1.43d2ca12.webp",
+      "file": "public/images/cluely/step-1.43d2ca12.webp",
+      "bytes": 8394
+    },
+    {
+      "index": 71,
+      "url": "https://cluely.com/_next/static/media/step-3.648f6b39.webp",
+      "file": "public/images/cluely/step-3.648f6b39.webp",
+      "bytes": 17944
+    },
+    {
+      "index": 72,
+      "url": "https://cluely.com/_next/static/media/fancy.ad800e20.png",
+      "file": "public/images/cluely/fancy.ad800e20.png",
+      "bytes": 102398
+    },
+    {
+      "index": 73,
+      "url": "https://cluely.com/images/pages/home/media-outlets.png",
+      "file": "public/images/cluely/media-outlets.png",
+      "bytes": 5565
+    },
+    {
+      "index": 74,
+      "url": "https://cluely.com/favicon/light/favicon-192x192.png?v=7695c62c88ccd7e60f97c165493a7386",
+      "file": "public/seo/cluely/light-favicon-192x192.png",
+      "bytes": 4392
+    }
+  ]
+}
