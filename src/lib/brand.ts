@@ -1,1 +1,1 @@
-export const TEAMSYNC_ICON_SRC = "/images/teamsync/iconTemplate.png";
+export const QUIETLY_ICON_SRC = "/images/quietly/iconTemplate.png";

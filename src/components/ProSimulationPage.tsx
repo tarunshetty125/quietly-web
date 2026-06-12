@@ -47,7 +47,7 @@ const copy = {
   badge: "Interactive Simulation",
   title: "Built to get the offer.",
   intro:
-    "Watch the real-time simulation. See how TeamSync Pro tailors answers specifically to your resume, YOE, and target company in real time, while the free version runs general local models.",
+    "Watch the real-time simulation. See how Quietly AI Pro tailors answers specifically to your resume, YOE, and target company in real time, while the free version runs general local models.",
   interviewer: "Interviewer Statement",
   skip: "Skip Demo ->",
   chips: {
@@ -92,7 +92,7 @@ const copy = {
   context: ["Stripe - Senior Backend", "Resume loaded", "5 YOE - Infra", "Negotiation ON"],
   end: {
     free: {
-      eyebrow: "TeamSync Free",
+      eyebrow: "Quietly AI Free",
       title: "Good enough to get by.",
       body:
         "Real-time AI. Any model. Runs locally. Free forever with your own API keys.",
@@ -106,11 +106,11 @@ const copy = {
       ],
     },
     pro: {
-      eyebrow: "TeamSync Pro",
+      eyebrow: "Quietly AI Pro",
       title: "Built to get the offer.",
       body:
         "Everything in Free, plus resume & JD context, live company intelligence, and salary negotiation copilot.",
-      button: "Get TeamSync Pro ->",
+      button: "Get Quietly AI Pro ->",
       note: "One-time purchase - No subscription - yours forever",
       features: [
         "Resume & JD context awareness",
@@ -125,24 +125,24 @@ const copy = {
 const panels = {
   free: {
     tier: "Standard Tier",
-    title: "TeamSync Free",
+    title: "Quietly AI Free",
     badge: "Free forever",
     engine: "Local Engine",
     mode: "Ollama Mode",
     input: "Ask anything on screen or conversation...",
     eyebrowClassName: "text-slate-400",
-    backgroundClassName: "teamsync-pro-pane-free",
+    backgroundClassName: "quietly-pro-pane-free",
     glowClassName: "-top-12 -left-12 bg-yellow-400/5 blur-[100px]",
   },
   pro: {
     tier: "Premium License",
-    title: "TeamSync Pro",
+    title: "Quietly AI Pro",
     badge: "One-time - yours forever",
     engine: "Cloud Max Engine",
-    mode: "TeamSync API",
-    input: "Ask anything - TeamSync knows your resume and this company...",
+    mode: "Quietly AI API",
+    input: "Ask anything - Quietly AI knows your resume and this company...",
     eyebrowClassName: "text-indigo-500/80",
-    backgroundClassName: "teamsync-pro-pane-paid",
+    backgroundClassName: "quietly-pro-pane-paid",
     glowClassName: "-right-16 -bottom-16 bg-indigo-500/5 blur-[120px]",
   },
 } satisfies Record<Pane, PanelCopy>;
@@ -187,9 +187,9 @@ async function typeText(
 function ThinkingDots() {
   return (
     <div className="flex items-center gap-1.5">
-      <span className="teamsync-pro-thinking-dot" />
-      <span className="teamsync-pro-thinking-dot [animation-delay:120ms]" />
-      <span className="teamsync-pro-thinking-dot [animation-delay:240ms]" />
+      <span className="quietly-pro-thinking-dot" />
+      <span className="quietly-pro-thinking-dot [animation-delay:120ms]" />
+      <span className="quietly-pro-thinking-dot [animation-delay:240ms]" />
     </div>
   );
 }
@@ -258,7 +258,7 @@ function MessageBubble({
 }: Readonly<{ message: SimMessage; pane: Pane }>) {
   if (message.kind === "thinking") {
     return (
-      <div className="teamsync-pro-message-in w-fit rounded-2xl border border-slate-200 bg-white px-3.5 py-3 shadow-sm">
+      <div className="quietly-pro-message-in w-fit rounded-2xl border border-slate-200 bg-white px-3.5 py-3 shadow-sm">
         <ThinkingDots />
       </div>
     );
@@ -266,7 +266,7 @@ function MessageBubble({
 
   if (message.kind === "user") {
     return (
-      <div className="teamsync-pro-message-in ml-auto max-w-[82%] rounded-2xl bg-slate-900 px-3.5 py-2 text-[12px] leading-relaxed font-medium text-white shadow-[0_10px_24px_rgba(15,23,42,0.16)]">
+      <div className="quietly-pro-message-in ml-auto max-w-[82%] rounded-2xl bg-slate-900 px-3.5 py-2 text-[12px] leading-relaxed font-medium text-white shadow-[0_10px_24px_rgba(15,23,42,0.16)]">
         {message.text}
       </div>
     );
@@ -276,7 +276,7 @@ function MessageBubble({
     return (
       <div
         className={cn(
-          "teamsync-pro-message-in max-w-[92%] rounded-[18px] border bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]",
+          "quietly-pro-message-in max-w-[92%] rounded-[18px] border bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]",
           pane === "pro" ? "border-indigo-100" : "border-slate-200",
         )}
       >
@@ -300,7 +300,7 @@ function MessageBubble({
 
   if (message.kind === "negotiation") {
     return (
-      <div className="teamsync-pro-message-in max-w-[94%] overflow-hidden rounded-[20px] border border-indigo-100 bg-white shadow-[0_18px_42px_rgba(79,70,229,0.12)]">
+      <div className="quietly-pro-message-in max-w-[94%] overflow-hidden rounded-[20px] border border-indigo-100 bg-white shadow-[0_18px_42px_rgba(79,70,229,0.12)]">
         <div className="flex items-center justify-between border-b border-indigo-50 bg-indigo-50/70 px-3.5 py-2.5">
           <div>
             <p className="text-[10px] font-bold text-indigo-500">Negotiation copilot - Stripe L5</p>
@@ -332,7 +332,7 @@ function MessageBubble({
   return (
     <div
       className={cn(
-        "teamsync-pro-message-in max-w-[92%] rounded-[18px] border bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]",
+        "quietly-pro-message-in max-w-[92%] rounded-[18px] border bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]",
         pane === "pro" ? "border-indigo-100" : "border-slate-200",
       )}
     >
@@ -520,7 +520,7 @@ function EndOverlay({
   return (
     <div
       className={cn(
-        "teamsync-pro-end-card absolute inset-0 z-30 flex flex-col justify-center bg-white/95 p-6 backdrop-blur-2xl",
+        "quietly-pro-end-card absolute inset-0 z-30 flex flex-col justify-center bg-white/95 p-6 backdrop-blur-2xl",
         isPro ? "bg-indigo-50/95" : "bg-white/95",
       )}
     >
@@ -862,7 +862,7 @@ export function ProSimulationPage() {
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-slate-900">
       <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col px-4 pt-16 pb-16 md:px-8 md:pt-24">
-        <section className="teamsync-pro-hero-copy mx-auto mb-10 flex max-w-2xl flex-col items-center text-center">
+        <section className="quietly-pro-hero-copy mx-auto mb-10 flex max-w-2xl flex-col items-center text-center">
           <div className="mb-4">
             <span className="relative inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 px-3.5 py-1.5 text-[10px] font-bold text-white shadow-[0_4px_12px_rgba(99,102,241,0.2),inset_0_1px_2px_rgba(255,255,255,0.4)]">
               <div
@@ -879,7 +879,7 @@ export function ProSimulationPage() {
           <p className="text-sm leading-relaxed text-slate-500 md:text-base">{copy.intro}</p>
         </section>
 
-        <section className="teamsync-pro-frame w-full" aria-label="TeamSync Pro live simulation">
+        <section className="quietly-pro-frame w-full" aria-label="Quietly AI Pro live simulation">
           <div className="relative flex w-full flex-col items-center overflow-hidden rounded-[36px] border border-black/5 bg-[#FAF9F5] shadow-2xl">
             <div className="relative z-20 flex w-full flex-col items-center justify-between gap-4 border-b border-black/5 bg-white px-6 py-5 md:flex-row md:px-10">
               <div className="flex w-full items-center gap-3 md:w-auto">

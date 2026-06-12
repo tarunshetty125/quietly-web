@@ -139,6 +139,54 @@
 }
 
 @layer utilities {
+  .quietly-route-shell {
+    animation: quietly-route-shell-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .quietly-route-block {
+    animation: quietly-route-block-in 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .quietly-route-block:nth-of-type(2) {
+    animation-delay: 60ms;
+  }
+
+  .quietly-route-block:nth-of-type(3) {
+    animation-delay: 120ms;
+  }
+
+  .quietly-route-block:nth-of-type(4) {
+    animation-delay: 180ms;
+  }
+
+  @keyframes quietly-route-shell-in {
+    from {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateY(18px);
+    }
+
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes quietly-route-block-in {
+    from {
+      opacity: 0;
+      filter: blur(6px);
+      transform: translateY(14px);
+    }
+
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
+
   .cluely-gradient-text {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(90deg, var(--cluely-ink), var(--cluely-ink-soft));
@@ -498,7 +546,7 @@
     animation: cluely-ai-pulse 800ms ease-out 3200ms 2 both;
   }
 
-  .teamsync-audio-wave-bar {
+  .quietly-audio-wave-bar {
     --wave-alpha: 0.34;
     --wave-delay: 0s;
     --wave-duration: 1.8s;
@@ -517,340 +565,340 @@
     will-change: transform;
   }
 
-  .teamsync-audio-waveform-live .teamsync-audio-wave-bar {
-    animation: teamsync-audio-wave var(--wave-duration) cubic-bezier(0.45, 0, 0.2, 1) infinite;
+  .quietly-audio-waveform-live .quietly-audio-wave-bar {
+    animation: quietly-audio-wave var(--wave-duration) cubic-bezier(0.45, 0, 0.2, 1) infinite;
     animation-delay: var(--wave-delay);
   }
 
-  .teamsync-audio-wave-bar:nth-child(1) {
+  .quietly-audio-wave-bar:nth-child(1) {
     --wave-delay: 1.65s;
     --wave-height: 9px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(2) {
+  .quietly-audio-wave-bar:nth-child(2) {
     --wave-delay: 1.61s;
     --wave-height: 9px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(3) {
+  .quietly-audio-wave-bar:nth-child(3) {
     --wave-delay: 1.58s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(4) {
+  .quietly-audio-wave-bar:nth-child(4) {
     --wave-delay: 1.54s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(5) {
+  .quietly-audio-wave-bar:nth-child(5) {
     --wave-delay: 1.51s;
     --wave-height: 9px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(6) {
+  .quietly-audio-wave-bar:nth-child(6) {
     --wave-delay: 1.47s;
     --wave-height: 11px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(7) {
+  .quietly-audio-wave-bar:nth-child(7) {
     --wave-delay: 1.44s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(8) {
+  .quietly-audio-wave-bar:nth-child(8) {
     --wave-delay: 1.4s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(9) {
+  .quietly-audio-wave-bar:nth-child(9) {
     --wave-delay: 1.37s;
     --wave-height: 9px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(10) {
+  .quietly-audio-wave-bar:nth-child(10) {
     --wave-delay: 1.33s;
     --wave-height: 12px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(11) {
+  .quietly-audio-wave-bar:nth-child(11) {
     --wave-delay: 1.3s;
     --wave-height: 14px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(12) {
+  .quietly-audio-wave-bar:nth-child(12) {
     --wave-delay: 1.26s;
     --wave-height: 11px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(13) {
+  .quietly-audio-wave-bar:nth-child(13) {
     --wave-delay: 1.23s;
     --wave-height: 9px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(14) {
+  .quietly-audio-wave-bar:nth-child(14) {
     --wave-delay: 1.19s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(15) {
+  .quietly-audio-wave-bar:nth-child(15) {
     --wave-delay: 1.16s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(16) {
+  .quietly-audio-wave-bar:nth-child(16) {
     --wave-delay: 1.12s;
     --wave-height: 15px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(17) {
+  .quietly-audio-wave-bar:nth-child(17) {
     --wave-delay: 1.09s;
     --wave-height: 17px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(18) {
+  .quietly-audio-wave-bar:nth-child(18) {
     --wave-delay: 1.05s;
     --wave-height: 14px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(19) {
+  .quietly-audio-wave-bar:nth-child(19) {
     --wave-delay: 1.02s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(20) {
+  .quietly-audio-wave-bar:nth-child(20) {
     --wave-delay: 0.98s;
     --wave-height: 9px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(21) {
+  .quietly-audio-wave-bar:nth-child(21) {
     --wave-delay: 0.95s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(22) {
+  .quietly-audio-wave-bar:nth-child(22) {
     --wave-delay: 0.91s;
     --wave-height: 14px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(23) {
+  .quietly-audio-wave-bar:nth-child(23) {
     --wave-delay: 0.88s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(24) {
+  .quietly-audio-wave-bar:nth-child(24) {
     --wave-delay: 0.84s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(25) {
+  .quietly-audio-wave-bar:nth-child(25) {
     --wave-delay: 0.81s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(26) {
+  .quietly-audio-wave-bar:nth-child(26) {
     --wave-delay: 0.77s;
     --wave-height: 12px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(27) {
+  .quietly-audio-wave-bar:nth-child(27) {
     --wave-delay: 0.74s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(28) {
+  .quietly-audio-wave-bar:nth-child(28) {
     --wave-delay: 0.7s;
     --wave-height: 7px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(29) {
+  .quietly-audio-wave-bar:nth-child(29) {
     --wave-delay: 0.67s;
     --wave-height: 7px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(30) {
+  .quietly-audio-wave-bar:nth-child(30) {
     --wave-delay: 0.63s;
     --wave-height: 7px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(31) {
+  .quietly-audio-wave-bar:nth-child(31) {
     --wave-delay: 0.6s;
     --wave-height: 7px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(32) {
+  .quietly-audio-wave-bar:nth-child(32) {
     --wave-delay: 0.56s;
     --wave-height: 6px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(33) {
+  .quietly-audio-wave-bar:nth-child(33) {
     --wave-delay: 0.53s;
     --wave-height: 6px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(34) {
+  .quietly-audio-wave-bar:nth-child(34) {
     --wave-delay: 0.49s;
     --wave-height: 6px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(35) {
+  .quietly-audio-wave-bar:nth-child(35) {
     --wave-delay: 0.46s;
     --wave-height: 7px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(36) {
+  .quietly-audio-wave-bar:nth-child(36) {
     --wave-delay: 0.42s;
     --wave-height: 8px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(37) {
+  .quietly-audio-wave-bar:nth-child(37) {
     --wave-alpha: 0.35;
     --wave-delay: 0.39s;
     --wave-height: 10px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(38) {
+  .quietly-audio-wave-bar:nth-child(38) {
     --wave-alpha: 0.36;
     --wave-delay: 0.35s;
     --wave-height: 12px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(39) {
+  .quietly-audio-wave-bar:nth-child(39) {
     --wave-alpha: 0.37;
     --wave-delay: 0.32s;
     --wave-height: 16px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(40) {
+  .quietly-audio-wave-bar:nth-child(40) {
     --wave-alpha: 0.4;
     --wave-delay: 0.28s;
     --wave-height: 27px;
     --wave-low: 0.48;
   }
 
-  .teamsync-audio-wave-bar:nth-child(41) {
+  .quietly-audio-wave-bar:nth-child(41) {
     --wave-alpha: 0.38;
     --wave-delay: 0.25s;
     --wave-height: 24px;
     --wave-low: 0.5;
   }
 
-  .teamsync-audio-wave-bar:nth-child(42) {
+  .quietly-audio-wave-bar:nth-child(42) {
     --wave-alpha: 0.37;
     --wave-delay: 0.21s;
     --wave-height: 18px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(43) {
+  .quietly-audio-wave-bar:nth-child(43) {
     --wave-alpha: 0.44;
     --wave-delay: 0.18s;
     --wave-height: 41px;
     --wave-low: 0.42;
   }
 
-  .teamsync-audio-wave-bar:nth-child(44) {
+  .quietly-audio-wave-bar:nth-child(44) {
     --wave-alpha: 0.49;
     --wave-delay: 0.14s;
     --wave-height: 55px;
     --wave-low: 0.38;
   }
 
-  .teamsync-audio-wave-bar:nth-child(45) {
+  .quietly-audio-wave-bar:nth-child(45) {
     --wave-alpha: 0.42;
     --wave-delay: 0.11s;
     --wave-height: 35px;
     --wave-low: 0.45;
   }
 
-  .teamsync-audio-wave-bar:nth-child(46) {
+  .quietly-audio-wave-bar:nth-child(46) {
     --wave-alpha: 0.38;
     --wave-delay: 0.07s;
     --wave-height: 22px;
     --wave-low: 0.5;
   }
 
-  .teamsync-audio-wave-bar:nth-child(47) {
+  .quietly-audio-wave-bar:nth-child(47) {
     --wave-alpha: 0.46;
     --wave-delay: 0.04s;
     --wave-height: 45px;
     --wave-low: 0.4;
   }
 
-  .teamsync-audio-wave-bar:nth-child(48) {
+  .quietly-audio-wave-bar:nth-child(48) {
     --wave-alpha: 0.5;
     --wave-delay: 0s;
     --wave-height: 57px;
     --wave-low: 0.36;
   }
 
-  .teamsync-audio-wave-bar:nth-child(1),
-  .teamsync-audio-wave-bar:nth-child(9),
-  .teamsync-audio-wave-bar:nth-child(17),
-  .teamsync-audio-wave-bar:nth-child(25),
-  .teamsync-audio-wave-bar:nth-child(33) {
+  .quietly-audio-wave-bar:nth-child(1),
+  .quietly-audio-wave-bar:nth-child(9),
+  .quietly-audio-wave-bar:nth-child(17),
+  .quietly-audio-wave-bar:nth-child(25),
+  .quietly-audio-wave-bar:nth-child(33) {
     --wave-alpha: 0.39;
     --wave-height: 22px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(2),
-  .teamsync-audio-wave-bar:nth-child(10),
-  .teamsync-audio-wave-bar:nth-child(18),
-  .teamsync-audio-wave-bar:nth-child(26),
-  .teamsync-audio-wave-bar:nth-child(34) {
+  .quietly-audio-wave-bar:nth-child(2),
+  .quietly-audio-wave-bar:nth-child(10),
+  .quietly-audio-wave-bar:nth-child(18),
+  .quietly-audio-wave-bar:nth-child(26),
+  .quietly-audio-wave-bar:nth-child(34) {
     --wave-alpha: 0.43;
     --wave-height: 31px;
     --wave-low: 0.34;
   }
 
-  .teamsync-audio-wave-bar:nth-child(3),
-  .teamsync-audio-wave-bar:nth-child(11),
-  .teamsync-audio-wave-bar:nth-child(19),
-  .teamsync-audio-wave-bar:nth-child(27),
-  .teamsync-audio-wave-bar:nth-child(35) {
+  .quietly-audio-wave-bar:nth-child(3),
+  .quietly-audio-wave-bar:nth-child(11),
+  .quietly-audio-wave-bar:nth-child(19),
+  .quietly-audio-wave-bar:nth-child(27),
+  .quietly-audio-wave-bar:nth-child(35) {
     --wave-alpha: 0.36;
     --wave-height: 16px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(4),
-  .teamsync-audio-wave-bar:nth-child(12),
-  .teamsync-audio-wave-bar:nth-child(20),
-  .teamsync-audio-wave-bar:nth-child(28),
-  .teamsync-audio-wave-bar:nth-child(36) {
+  .quietly-audio-wave-bar:nth-child(4),
+  .quietly-audio-wave-bar:nth-child(12),
+  .quietly-audio-wave-bar:nth-child(20),
+  .quietly-audio-wave-bar:nth-child(28),
+  .quietly-audio-wave-bar:nth-child(36) {
     --wave-alpha: 0.41;
     --wave-height: 27px;
     --wave-low: 0.36;
   }
 
-  .teamsync-audio-wave-bar:nth-child(5),
-  .teamsync-audio-wave-bar:nth-child(13),
-  .teamsync-audio-wave-bar:nth-child(21),
-  .teamsync-audio-wave-bar:nth-child(29),
-  .teamsync-audio-wave-bar:nth-child(37) {
+  .quietly-audio-wave-bar:nth-child(5),
+  .quietly-audio-wave-bar:nth-child(13),
+  .quietly-audio-wave-bar:nth-child(21),
+  .quietly-audio-wave-bar:nth-child(29),
+  .quietly-audio-wave-bar:nth-child(37) {
     --wave-alpha: 0.37;
     --wave-height: 19px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(6),
-  .teamsync-audio-wave-bar:nth-child(14),
-  .teamsync-audio-wave-bar:nth-child(22),
-  .teamsync-audio-wave-bar:nth-child(30),
-  .teamsync-audio-wave-bar:nth-child(38) {
+  .quietly-audio-wave-bar:nth-child(6),
+  .quietly-audio-wave-bar:nth-child(14),
+  .quietly-audio-wave-bar:nth-child(22),
+  .quietly-audio-wave-bar:nth-child(30),
+  .quietly-audio-wave-bar:nth-child(38) {
     --wave-alpha: 0.45;
     --wave-height: 35px;
     --wave-low: 0.32;
   }
 
-  .teamsync-audio-wave-bar:nth-child(7),
-  .teamsync-audio-wave-bar:nth-child(15),
-  .teamsync-audio-wave-bar:nth-child(23),
-  .teamsync-audio-wave-bar:nth-child(31) {
+  .quietly-audio-wave-bar:nth-child(7),
+  .quietly-audio-wave-bar:nth-child(15),
+  .quietly-audio-wave-bar:nth-child(23),
+  .quietly-audio-wave-bar:nth-child(31) {
     --wave-alpha: 0.38;
     --wave-height: 24px;
   }
 
-  .teamsync-audio-wave-bar:nth-child(8),
-  .teamsync-audio-wave-bar:nth-child(16),
-  .teamsync-audio-wave-bar:nth-child(24),
-  .teamsync-audio-wave-bar:nth-child(32) {
+  .quietly-audio-wave-bar:nth-child(8),
+  .quietly-audio-wave-bar:nth-child(16),
+  .quietly-audio-wave-bar:nth-child(24),
+  .quietly-audio-wave-bar:nth-child(32) {
     --wave-alpha: 0.35;
     --wave-height: 14px;
   }
@@ -915,25 +963,25 @@
     animation: natively-node 2.7s cubic-bezier(0.45, 0, 0.2, 1) infinite;
   }
 
-  .teamsync-pro-mode-list {
-    animation: teamsync-pro-mode-list 5.2s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+  .quietly-pro-mode-list {
+    animation: quietly-pro-mode-list 5.2s cubic-bezier(0.45, 0, 0.2, 1) infinite;
   }
 
-  .teamsync-pro-noise {
+  .quietly-pro-noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
     background-size: 200px 200px;
   }
 
-  .teamsync-pro-resume-scan {
-    animation: teamsync-pro-resume-scan 3.4s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+  .quietly-pro-resume-scan {
+    animation: quietly-pro-resume-scan 3.4s cubic-bezier(0.45, 0, 0.2, 1) infinite;
   }
 
-  .teamsync-pro-context-node-a {
-    animation: teamsync-pro-context-a 4.8s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+  .quietly-pro-context-node-a {
+    animation: quietly-pro-context-a 4.8s cubic-bezier(0.45, 0, 0.2, 1) infinite;
   }
 
-  .teamsync-pro-context-node-b {
-    animation: teamsync-pro-context-b 5.2s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+  .quietly-pro-context-node-b {
+    animation: quietly-pro-context-b 5.2s cubic-bezier(0.45, 0, 0.2, 1) infinite;
   }
 
   .scrollbar-none {
@@ -944,42 +992,42 @@
     display: none;
   }
 
-  .teamsync-pro-hero-copy {
-    animation: teamsync-pro-hero-copy 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  .quietly-pro-hero-copy {
+    animation: quietly-pro-hero-copy 760ms cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
-  .teamsync-pro-frame {
-    animation: teamsync-pro-frame 980ms cubic-bezier(0.22, 1, 0.36, 1) 180ms both;
+  .quietly-pro-frame {
+    animation: quietly-pro-frame 980ms cubic-bezier(0.22, 1, 0.36, 1) 180ms both;
   }
 
-  .teamsync-pro-pane-free {
+  .quietly-pro-pane-free {
     background:
       radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0 0 / 24px 24px,
       linear-gradient(160deg, rgb(244, 241, 235) 0%, rgb(250, 249, 245) 60%, rgb(239, 236, 230) 100%);
     background-blend-mode: soft-light, normal;
   }
 
-  .teamsync-pro-pane-paid {
+  .quietly-pro-pane-paid {
     background:
       radial-gradient(circle, rgba(99, 102, 241, 0.08) 1.2px, transparent 1.2px) 0 0 / 26px 26px,
       linear-gradient(160deg, rgb(245, 247, 251) 0%, rgb(250, 251, 253) 60%, rgb(238, 241, 246) 100%);
   }
 
-  .teamsync-pro-message-in {
-    animation: teamsync-pro-message-in 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  .quietly-pro-message-in {
+    animation: quietly-pro-message-in 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
-  .teamsync-pro-end-card {
-    animation: teamsync-pro-end-card 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  .quietly-pro-end-card {
+    animation: quietly-pro-end-card 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
-  .teamsync-pro-thinking-dot {
+  .quietly-pro-thinking-dot {
     display: inline-flex;
     width: 6px;
     height: 6px;
     border-radius: 999px;
     background: rgba(99, 102, 241, 0.5);
-    animation: teamsync-pro-thinking-dot 900ms cubic-bezier(0.45, 0, 0.2, 1) infinite;
+    animation: quietly-pro-thinking-dot 900ms cubic-bezier(0.45, 0, 0.2, 1) infinite;
   }
 }
 
@@ -1147,7 +1195,7 @@
   }
 }
 
-@keyframes teamsync-audio-wave {
+@keyframes quietly-audio-wave {
   0%,
   100% {
     transform: scaleY(var(--wave-low));
@@ -1247,7 +1295,7 @@
   }
 }
 
-@keyframes teamsync-pro-mode-list {
+@keyframes quietly-pro-mode-list {
   0%,
   28% {
     transform: translateY(0);
@@ -1262,7 +1310,7 @@
   }
 }
 
-@keyframes teamsync-pro-resume-scan {
+@keyframes quietly-pro-resume-scan {
   0%,
   100% {
     top: 12%;
@@ -1274,7 +1322,7 @@
   }
 }
 
-@keyframes teamsync-pro-context-a {
+@keyframes quietly-pro-context-a {
   0%,
   100% {
     transform: translate(-13px, -5px);
@@ -1284,7 +1332,7 @@
   }
 }
 
-@keyframes teamsync-pro-context-b {
+@keyframes quietly-pro-context-b {
   0%,
   100% {
     transform: translate(14px, 5px);
@@ -1294,7 +1342,7 @@
   }
 }
 
-@keyframes teamsync-pro-hero-copy {
+@keyframes quietly-pro-hero-copy {
   from {
     opacity: 0;
     filter: blur(12px);
@@ -1307,7 +1355,7 @@
   }
 }
 
-@keyframes teamsync-pro-frame {
+@keyframes quietly-pro-frame {
   from {
     opacity: 0;
     transform: translateY(72px) scale(0.94);
@@ -1322,7 +1370,7 @@
   }
 }
 
-@keyframes teamsync-pro-message-in {
+@keyframes quietly-pro-message-in {
   from {
     opacity: 0;
     filter: blur(8px);
@@ -1335,7 +1383,7 @@
   }
 }
 
-@keyframes teamsync-pro-end-card {
+@keyframes quietly-pro-end-card {
   from {
     opacity: 0;
     filter: blur(10px);
@@ -1348,7 +1396,7 @@
   }
 }
 
-@keyframes teamsync-pro-thinking-dot {
+@keyframes quietly-pro-thinking-dot {
   0%,
   100% {
     opacity: 0.35;
@@ -1375,7 +1423,7 @@
   .cluely-ai-input::after,
   .cluely-ai-status::after,
   .cluely-ai-send,
-  .teamsync-audio-waveform-live .teamsync-audio-wave-bar,
+  .quietly-audio-waveform-live .quietly-audio-wave-bar,
   .natively-scan-line,
   .natively-float-a,
   .natively-float-b,
@@ -1383,15 +1431,15 @@
   .natively-voice-bar,
   .natively-confidence,
   .natively-node-dot,
-  .teamsync-pro-mode-list,
-  .teamsync-pro-resume-scan,
-  .teamsync-pro-context-node-a,
-  .teamsync-pro-context-node-b,
-  .teamsync-pro-hero-copy,
-  .teamsync-pro-frame,
-  .teamsync-pro-message-in,
-  .teamsync-pro-end-card,
-  .teamsync-pro-thinking-dot {
+  .quietly-pro-mode-list,
+  .quietly-pro-resume-scan,
+  .quietly-pro-context-node-a,
+  .quietly-pro-context-node-b,
+  .quietly-pro-hero-copy,
+  .quietly-pro-frame,
+  .quietly-pro-message-in,
+  .quietly-pro-end-card,
+  .quietly-pro-thinking-dot {
     animation: none;
     opacity: 1;
     filter: none;

@@ -86,7 +86,7 @@ function ListeningCard() {
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
           <h3 className="max-w-[500px] text-[25px] font-medium leading-[34px] sm:text-[28px] sm:leading-[38px]">
-            TeamSync{" "}
+            Quietly AI{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/16 px-2.5 py-1 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24)] backdrop-blur-md">
               <AudioWaveform className="h-4 w-4" aria-hidden="true" />
               listens
@@ -111,13 +111,13 @@ function ListeningCard() {
 
         <div
           className={cn(
-            "teamsync-audio-waveform mt-auto flex h-16 items-center justify-center gap-1 overflow-hidden sm:gap-[5px]",
-            isLive && "teamsync-audio-waveform-live",
+            "quietly-audio-waveform mt-auto flex h-16 items-center justify-center gap-1 overflow-hidden sm:gap-[5px]",
+            isLive && "quietly-audio-waveform-live",
           )}
           aria-hidden="true"
         >
           {Array.from({ length: visibleWaveformBarCount }, (_, index) => (
-            <span key={index} className="teamsync-audio-wave-bar" />
+            <span key={index} className="quietly-audio-wave-bar" />
           ))}
         </div>
 
@@ -177,7 +177,7 @@ function AssistantPanel() {
       <div className="mt-4 max-w-[470px] text-[12px] leading-5 text-white/44">
         <p className="text-white/36">Viewed screen</p>
         <p>
-          TeamSync is an AI meeting assistant that listens in real time,
+          Quietly AI is an AI meeting assistant that listens in real time,
           understands what&apos;s being said, and gives you instant answers,
           notes, and next steps all while staying completely undetectable on
           your screen.
@@ -232,7 +232,7 @@ function AssistCard() {
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
           <h3 className="max-w-[520px] text-[25px] font-medium leading-[34px] text-[#24242C] sm:text-[28px] sm:leading-[38px]">
-            When you need help, TeamSync{" "}
+            When you need help, Quietly AI{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/72 px-2.5 py-1 text-[#24242C] shadow-[0_1px_8px_rgba(150,159,180,0.16)]">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
               assists
@@ -240,7 +240,7 @@ function AssistCard() {
             you instantly
           </h3>
           <p className="mt-5 max-w-[520px] text-[17px] leading-7 text-[#777783] sm:text-lg">
-            Hit Cmd/Ctrl + Enter and TeamSync helps you with AI in the moment.
+            Hit Cmd/Ctrl + Enter and Quietly AI helps you with AI in the moment.
           </p>
         </div>
 
@@ -276,7 +276,7 @@ export function MeetingHelpSection() {
           id="meeting-help-title"
           className="max-w-[980px] bg-[linear-gradient(90deg,#19191D_0%,#626275_100%)] bg-clip-text text-[40px] font-medium leading-[48px] text-transparent md:text-[56px] md:leading-[70px]"
         >
-          How TeamSync helps during a meeting
+          How Quietly AI helps during a meeting
         </h2>
       </ScrollReveal>
       <div className="grid gap-7 lg:grid-cols-2">

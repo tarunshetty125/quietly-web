@@ -56,4 +56,4 @@ Hero wrapper with an independently animated mountain background image-set, text 
 #1 Undetectable
 AI for Meetings
 
-TeamSync takes perfect meeting notes and gives real-time answers, all while completely undetectable
+Quietly AI takes perfect meeting notes and gives real-time answers, all while completely undetectable

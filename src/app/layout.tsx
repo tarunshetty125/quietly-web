@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Geist, Geist_Mono } from "next/font/google";
 
-import { TEAMSYNC_ICON_SRC } from "@/lib/brand";
+import { QUIETLY_ICON_SRC } from "@/lib/brand";
 
 import "./globals.css";
 
@@ -22,21 +22,21 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://teamsync.com"),
-  title: "TeamSync - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
+  metadataBase: new URL("https://quietly.ai"),
+  title: "Quietly AI - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
   description:
     "AI meeting assistant that provides live meeting notes, instant answers, and real-time insights during calls.",
   icons: {
-    icon: TEAMSYNC_ICON_SRC,
-    apple: TEAMSYNC_ICON_SRC,
+    icon: QUIETLY_ICON_SRC,
+    apple: QUIETLY_ICON_SRC,
   },
   openGraph: {
     title:
-      "TeamSync - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
+      "Quietly AI - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
     description:
       "AI meeting assistant that provides live meeting notes, instant answers, and real-time insights during calls.",
     images: ["/seo/cluely/social-previews-index.jpg"],
-    siteName: "TeamSync",
+    siteName: "Quietly AI",
     type: "website",
   },
 };

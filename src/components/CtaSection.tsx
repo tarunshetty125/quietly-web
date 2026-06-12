@@ -12,10 +12,10 @@ export function CtaSection() {
             Meeting AI that helps during the call, not after.
           </h3>
           <p className="mt-1 bg-[linear-gradient(96.56deg,#667799_21.01%,#94A0B8_34.62%,#667799_47.64%,#667799_76.57%)] bg-clip-text text-[20px] leading-tight font-medium text-transparent sm:text-[28px] md:text-[24px] lg:text-[28px]">
-            Try TeamSync on your next meeting today.
+            Try Quietly AI on your next meeting today.
           </p>
           <a
-            href="https://teamsync.com/download"
+            href="https://quietly.ai/download"
             className="cluely-gradient-button cluely-magnetic-button mt-8 w-auto min-w-[156px]"
           >
             <span className="absolute top-0 left-0 z-20 h-full w-full blur-[1px]" aria-hidden="true">

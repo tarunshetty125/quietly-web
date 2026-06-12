@@ -8,7 +8,7 @@ import { NativelyModesSection } from "@/components/NativelyModesSection";
 import { NotesSection } from "@/components/NotesSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { TeamSyncProSection } from "@/components/TeamSyncProSection";
+import { QuietlyAIProSection } from "@/components/QuietlyAIProSection";
 import { UndetectabilitySection } from "@/components/UndetectabilitySection";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <UndetectabilitySection />
         <div className="flex flex-col">
           <CompatibilityStatsSection />
-          <TeamSyncProSection />
+          <QuietlyAIProSection />
         </div>
         <div className="flex flex-col">
           <FaqSection />

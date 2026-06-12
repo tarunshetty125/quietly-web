@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ContentRoutePage } from "@/components/ContentRoutePage";
-import { blogContentPages } from "@/lib/teamsync-content";
+import { blogContentPages } from "@/lib/quietly-content";
 
 type BlogRouteProps = Readonly<{
   params: Promise<{ slug: string }>;
@@ -23,7 +23,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${page.title} | TeamSync Blog`,
+    title: `${page.title} | Quietly AI Blog`,
     description: page.summary,
   };
 }

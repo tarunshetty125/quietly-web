@@ -30,7 +30,7 @@ function DesktopNotesBrandOverlays() {
         fontWeight="650"
         fill="#58AEFF"
       >
-        Start TeamSync
+        Start Quietly AI
       </text>
       <rect
         x="1696"
@@ -48,7 +48,7 @@ function DesktopNotesBrandOverlays() {
         fontWeight="600"
         fill="#8E8D98"
       >
-        Ask TeamSync about this meeting...
+        Ask Quietly AI about this meeting...
       </text>
     </svg>
   );
@@ -79,7 +79,7 @@ export function NotesSection() {
         <div className="relative mx-auto block h-auto w-full sm:hidden">
           <Image
             src="/images/cluely/mobile-notes.5dc13f8d.png"
-            alt="TeamSync meeting notes interface"
+            alt="Quietly AI meeting notes interface"
             width={1962}
             height={2529}
             sizes="(max-width: 639px) calc(100vw - 96px), 1px"
@@ -89,7 +89,7 @@ export function NotesSection() {
         <div className="relative mx-auto hidden h-auto w-full sm:block lg:hidden">
           <Image
             src="/images/cluely/tablet-notes.5560bad7.png"
-            alt="TeamSync meeting notes interface"
+            alt="Quietly AI meeting notes interface"
             width={3102}
             height={2508}
             sizes="(max-width: 1023px) calc(100vw - 160px), 1px"
@@ -99,7 +99,7 @@ export function NotesSection() {
         <div className="relative mx-auto hidden h-auto w-full lg:block">
           <Image
             src="/images/cluely/desktop-notes-2.8614c68b.png"
-            alt="TeamSync meeting notes interface"
+            alt="Quietly AI meeting notes interface"
             width={3966}
             height={2536}
             sizes="(min-width: 1024px) 672px, 1px"

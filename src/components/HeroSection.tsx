@@ -14,7 +14,7 @@ import {
   Wifi,
 } from "lucide-react";
 
-import { TEAMSYNC_ICON_SRC } from "@/lib/brand";
+import { QUIETLY_ICON_SRC } from "@/lib/brand";
 
 const dockIcons = [
   {
@@ -34,8 +34,8 @@ const dockIcons = [
     src: "/images/cluely/zoom-icon.png",
   },
   {
-    alt: "TeamSync",
-    src: TEAMSYNC_ICON_SRC,
+    alt: "Quietly AI",
+    src: QUIETLY_ICON_SRC,
   },
   {
     alt: "Trash",
@@ -96,7 +96,7 @@ function WindowChrome() {
   return (
     <div className="absolute top-0 right-0 left-0 hidden h-fit w-full items-center justify-between bg-black/10 px-3 pt-2 pb-1 text-white lg:flex">
       <Image
-        src={TEAMSYNC_ICON_SRC}
+        src={QUIETLY_ICON_SRC}
         alt=""
         width={16}
         height={16}
@@ -148,7 +148,7 @@ function OverlayToolbar() {
     <div className="cluely-ai-card cluely-ai-card-one mx-auto mb-3 flex w-fit items-center gap-2 rounded-full bg-[#3A3A42]/95 p-2 text-white shadow-[0_12px_28px_rgba(25,25,30,0.28)]">
       <span className="grid size-8 place-items-center rounded-full bg-white text-[#3A3A42]">
         <Image
-          src={TEAMSYNC_ICON_SRC}
+          src={QUIETLY_ICON_SRC}
           alt=""
           width={22}
           height={22}
@@ -259,7 +259,7 @@ function HeroVideo() {
   return (
     <video
       ref={videoRef}
-      aria-label="TeamSync meeting demo"
+      aria-label="Quietly AI meeting demo"
       className="cluely-hero-video aspect-[1.6] h-[80%] max-w-[86%] object-contain"
       loop
       muted
@@ -398,15 +398,15 @@ export function HeroSection() {
                 </span>
               </h1>
               <p className="cluely-hero-subtitle max-w-[600px] text-base leading-6 font-medium text-white/88 md:text-lg md:leading-7">
-                TeamSync takes perfect meeting notes and gives real-time answers,
+                Quietly AI takes perfect meeting notes and gives real-time answers,
                 all while completely undetectable
               </p>
             </div>
             <div className="cluely-hero-cta flex flex-wrap justify-center gap-3">
-              <PlatformCta platform="mac" href="https://teamsync.com/download" />
+              <PlatformCta platform="mac" href="https://quietly.ai/download" />
               <PlatformCta
                 platform="windows"
-                href="https://teamsync.com/download/windows"
+                href="https://quietly.ai/download/windows"
               />
             </div>
           </div>

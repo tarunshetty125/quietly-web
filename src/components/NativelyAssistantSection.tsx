@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { assistantRouteLinks } from "@/lib/teamsync-content";
+import { assistantRouteLinks } from "@/lib/quietly-content";
 
 type AssistantCard = Readonly<{
   title: string;
@@ -514,7 +514,7 @@ export function NativelyAssistantSection() {
             </span>
           </h2>
           <p className="mx-auto max-w-[46ch] text-[16px] leading-relaxed text-[#6B7280] md:text-[18px]">
-            TeamSync is an AI interview copilot and a meeting assistant in one
+            Quietly AI is an AI interview copilot and a meeting assistant in one
             app — local, private, and real-time.
           </p>
         </div>

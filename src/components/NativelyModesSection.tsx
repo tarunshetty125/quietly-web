@@ -19,43 +19,43 @@ const modes = [
     name: "Co-Pilot",
     prompt:
       "Assist me during live conversations. Summarise context, flag key points, and suggest responses based on what's being said.",
-    powered: "Powered by TeamSync's built-in General intelligence.",
+    powered: "Powered by Quietly AI's built-in General intelligence.",
   },
   {
     name: "Technical Interview",
     prompt:
       "Break down every answer into: Problem Statement, My Approach, Edge Cases, Time & Space Complexity. Never give raw code without explaining the reasoning.",
-    powered: "Powered by TeamSync's built-in Technical Interview intelligence.",
+    powered: "Powered by Quietly AI's built-in Technical Interview intelligence.",
   },
   {
     name: "Sales Mode",
     prompt:
       "Track live signals: budget cues, pain points, objections. Surface recommended closes and next steps in real time during prospect calls.",
-    powered: "Powered by TeamSync's built-in Sales intelligence.",
+    powered: "Powered by Quietly AI's built-in Sales intelligence.",
   },
   {
     name: "Recruiting",
     prompt:
       "Correlate candidate responses against the job requisition. Suggest follow-up probes for gaps and surface strong alignment signals.",
-    powered: "Powered by TeamSync's built-in Recruiting intelligence.",
+    powered: "Powered by Quietly AI's built-in Recruiting intelligence.",
   },
   {
     name: "Looking for Work",
     prompt:
       "Coach me on behavioral interview answers using the STAR framework. Lead with business impact. Align every answer to the job description.",
-    powered: "Powered by TeamSync's built-in Looking for Work intelligence.",
+    powered: "Powered by Quietly AI's built-in Looking for Work intelligence.",
   },
   {
     name: "Team Meet",
     prompt:
       "Track action items, decisions, and blockers in real time. Assign owners and flag anything that's on the critical path.",
-    powered: "Powered by TeamSync's built-in Team Meet intelligence.",
+    powered: "Powered by Quietly AI's built-in Team Meet intelligence.",
   },
   {
     name: "Lecture Mode",
     prompt:
       "Translate complex concepts into plain language. Generate LaTeX formulas on demand and provide intuitive analogies.",
-    powered: "Powered by TeamSync's built-in Lecture intelligence.",
+    powered: "Powered by Quietly AI's built-in Lecture intelligence.",
   },
 ] as const;
 
@@ -163,7 +163,7 @@ export function NativelyModesSection() {
                   aria-hidden="true"
                 />
                 <span className="text-[13px] leading-5 font-medium text-black/40">
-                  TeamSync Templates
+                  Quietly AI Templates
                 </span>
               </div>
             </aside>

@@ -29,7 +29,7 @@ All systems operational
 
 List of subprocessors.
 
-© 2026 TeamSync. All rights reserved.
+© 2026 Quietly AI. All rights reserved.
 
 ## Responsive Behavior
 - Desktop: wordmark left, columns right, social links bottom right.

@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
 
-const HEADER_ICON_SRC = "/images/teamsync/iconq-transparent.png"
+const HEADER_ICON_SRC = "/images/quietly/iconq-transparent.png"
 
 const navLinks: readonly {
   label: string;
@@ -36,8 +36,8 @@ export function SiteHeader() {
       <div className="relative flex h-8 w-full items-center justify-between px-5 md:px-12">
         <a
           href="#top"
-          aria-label="TeamSync home"
-          className="flex h-8 min-w-[132px] shrink-0 items-center gap-2.5 text-[20px] leading-tight font-semibold text-white md:text-[20px]"
+          aria-label="Quietly AI home"
+          className="flex h-8 min-w-[132px] shrink-0 items-center gap-1 text-[20px] leading-tight font-semibold text-white md:text-[20px]"
         >
           <Image
             src={HEADER_ICON_SRC}
@@ -47,7 +47,7 @@ export function SiteHeader() {
             className="size-8 rounded-md object-contain"
             priority
           />
-          TeamSync
+          Quietly AI
         </a>
 
         <nav

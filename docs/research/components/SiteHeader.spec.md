@@ -50,7 +50,7 @@ Header contains wordmark link, desktop nav links, responsive CTA controls, and m
 - `public/images/cluely/wordmark.svg`
 
 ## Text Content
-TeamSync, Undetectability, Mobile, Blog, Get for Mac
+Quietly AI, Undetectability, Mobile, Blog, Get for Mac
 
 ## Responsive Behavior
 - Desktop: full nav visible, floating CTA top-right after scroll.

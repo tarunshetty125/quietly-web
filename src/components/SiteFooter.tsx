@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 import Link from "next/link";
 
-import { footerColumns } from "@/lib/teamsync-content";
+import { footerColumns } from "@/lib/quietly-content";
 
 type SocialLink = {
   label: string;
@@ -12,22 +12,22 @@ type SocialLink = {
 const SOCIAL_LINKS: readonly SocialLink[] = [
   {
     label: "Twitter",
-    href: "https://x.com/teamsync",
+    href: "https://x.com/quietlyai",
     icon: XIcon,
   },
   {
     label: "Discord",
-    href: "https://discord.gg/teamsync",
+    href: "https://discord.gg/quietlyai",
     icon: DiscordIcon,
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/teamsync/",
+    href: "https://www.instagram.com/quietlyai/",
     icon: InstagramIcon,
   },
   {
     label: "GitHub",
-    href: "https://github.com/teamsync",
+    href: "https://github.com/quietly-ai",
     icon: GithubIcon,
   },
 ];
@@ -80,15 +80,15 @@ export function SiteFooter() {
     <footer className="relative bg-[#DDE2EE] pt-10 pb-5 text-black">
       <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-20 -translate-y-full bg-[linear-gradient(180deg,rgba(221,226,238,0)_0%,#DDE2EE_100%)] xl:h-[140px]" />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 md:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1fr_auto_1fr] lg:items-start">
+        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
           <div className="inline-flex w-fit">
             <span className="text-[24px] leading-none font-semibold text-black">
-              TeamSync
+              Quietly AI
             </span>
           </div>
-          <div className="grid w-full max-w-[760px] justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {footerColumns.map((column) => (
-              <div key={column.title} className="min-w-[180px]">
+              <div key={column.title}>
                 <h2 className="text-sm leading-5 font-semibold text-black">
                   {column.title}
                 </h2>
@@ -111,7 +111,7 @@ export function SiteFooter() {
 
         <div className="mt-11 md:mt-[30px]">
           <a
-            href="https://teamsync.trust.pagerduty.com/posts/dashboard/"
+            href="https://quietly.trust.pagerduty.com/posts/dashboard/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-[34px] items-center justify-center gap-x-1.5 rounded-[6px] border border-[rgba(201,208,228,0.50)] bg-[rgba(211,217,233,0.50)] px-3 text-sm leading-none font-medium text-[#343B4B] transition-colors duration-300 hover:bg-[rgba(211,217,233,0.90)] focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none"
@@ -124,7 +124,7 @@ export function SiteFooter() {
         <div className="relative mt-[30px] flex flex-col pt-[30px] md:mt-5 md:flex-row md:items-center md:justify-between md:pt-5">
           <div className="absolute top-0 left-0 h-px w-full bg-[#C9D0E4]" />
           <p className="order-2 mt-7 text-sm leading-5 text-[#687286] md:order-1 md:mt-0">
-            &copy; 2026 TeamSync. All rights reserved.
+            &copy; 2026 Quietly AI. All rights reserved.
           </p>
           <div className="order-1 flex items-center gap-5 md:order-2">
             {SOCIAL_LINKS.map((social) => {
