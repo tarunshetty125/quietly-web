@@ -1,3 +1,5 @@
+"use client";
+
 import {
   AudioWaveform,
   ChevronDown,
@@ -8,19 +10,83 @@ import {
   Sparkles,
   WandSparkles,
 } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { cn } from "@/lib/utils";
 
-const waveformDotCount = 52;
+const visibleWaveformBarCount = 48;
+
+function formatElapsedTime(totalSeconds: number) {
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+
+  return `${minutes.toString().padStart(2, "0")}:${seconds
+    .toString()
+    .padStart(2, "0")}`;
+}
 
 function ListeningCard() {
+  const cardRef = useRef<HTMLElement>(null);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [isLive, setIsLive] = useState(false);
+
+  useEffect(() => {
+    const node = cardRef.current;
+
+    if (!node) {
+      return undefined;
+    }
+
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (mediaQuery.matches) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry?.isIntersecting) {
+          return;
+        }
+
+        setIsLive(true);
+        observer.disconnect();
+      },
+      {
+        rootMargin: "0px 0px -18% 0px",
+        threshold: 0.32,
+      },
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isLive) {
+      return undefined;
+    }
+
+    const startedAt = Date.now();
+    const timer = window.setInterval(() => {
+      setElapsedSeconds(Math.floor((Date.now() - startedAt) / 1000));
+    }, 250);
+
+    return () => window.clearInterval(timer);
+  }, [isLive]);
+
   return (
-    <article className="relative flex min-h-[520px] overflow-hidden rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-6 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:p-8 lg:min-h-[586px] lg:p-10">
+    <article
+      ref={cardRef}
+      className="relative flex min-h-[520px] overflow-hidden rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-6 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:p-8 lg:min-h-[586px] lg:p-10"
+    >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,rgba(95,136,239,0)_0%,rgba(68,116,225,0.36)_100%)]" />
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
           <h3 className="max-w-[500px] text-[25px] font-medium leading-[34px] sm:text-[28px] sm:leading-[38px]">
-            Cluely{" "}
+            TeamSync{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/16 px-2.5 py-1 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24)] backdrop-blur-md">
               <AudioWaveform className="h-4 w-4" aria-hidden="true" />
               listens
@@ -35,27 +101,24 @@ function ListeningCard() {
 
         <div className="mt-8 flex flex-col items-center sm:mt-10">
           <div className="text-[42px] font-medium leading-none text-white/62 sm:text-[46px]">
-            00:00
+            {formatElapsedTime(elapsedSeconds)}
           </div>
           <div className="mt-2 flex items-center gap-1.5 text-[15px] text-white/62">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#FF8E7D]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#FF8E7D] motion-safe:animate-pulse" />
             Recording
           </div>
         </div>
 
         <div
-          className="mt-auto flex h-14 items-center gap-1.5"
+          className={cn(
+            "teamsync-audio-waveform mt-auto flex h-16 items-center justify-center gap-1 overflow-hidden sm:gap-[5px]",
+            isLive && "teamsync-audio-waveform-live",
+          )}
           aria-hidden="true"
         >
-          {Array.from({ length: waveformDotCount }, (_, index) => (
-            <span
-              key={index}
-              className="h-2 w-1.5 flex-1 rounded-full bg-white/28"
-            />
+          {Array.from({ length: visibleWaveformBarCount }, (_, index) => (
+            <span key={index} className="teamsync-audio-wave-bar" />
           ))}
-          <span className="ml-1 h-5 w-1.5 rounded-full bg-white/34" />
-          <span className="h-9 w-1.5 rounded-full bg-white/38" />
-          <span className="h-8 w-1.5 rounded-full bg-white/36" />
         </div>
 
         <div className="mt-9 rounded-xl border border-white/8 bg-[#26376E]/34 p-3 text-white/52 shadow-[0_16px_44px_rgba(41,64,130,0.32)] backdrop-blur-lg">
@@ -114,7 +177,7 @@ function AssistantPanel() {
       <div className="mt-4 max-w-[470px] text-[12px] leading-5 text-white/44">
         <p className="text-white/36">Viewed screen</p>
         <p>
-          Cluely is an AI meeting assistant that listens in real time,
+          TeamSync is an AI meeting assistant that listens in real time,
           understands what&apos;s being said, and gives you instant answers,
           notes, and next steps all while staying completely undetectable on
           your screen.
@@ -169,7 +232,7 @@ function AssistCard() {
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
           <h3 className="max-w-[520px] text-[25px] font-medium leading-[34px] text-[#24242C] sm:text-[28px] sm:leading-[38px]">
-            When you need help, Cluely{" "}
+            When you need help, TeamSync{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/72 px-2.5 py-1 text-[#24242C] shadow-[0_1px_8px_rgba(150,159,180,0.16)]">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
               assists
@@ -177,7 +240,7 @@ function AssistCard() {
             you instantly
           </h3>
           <p className="mt-5 max-w-[520px] text-[17px] leading-7 text-[#777783] sm:text-lg">
-            Hit Cmd/Ctrl + Enter and Cluely helps you with AI in the moment.
+            Hit Cmd/Ctrl + Enter and TeamSync helps you with AI in the moment.
           </p>
         </div>
 
@@ -213,7 +276,7 @@ export function MeetingHelpSection() {
           id="meeting-help-title"
           className="max-w-[980px] bg-[linear-gradient(90deg,#19191D_0%,#626275_100%)] bg-clip-text text-[40px] font-medium leading-[48px] text-transparent md:text-[56px] md:leading-[70px]"
         >
-          How Cluely helps during a meeting
+          How TeamSync helps during a meeting
         </h2>
       </ScrollReveal>
       <div className="grid gap-7 lg:grid-cols-2">

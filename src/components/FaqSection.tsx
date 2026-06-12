@@ -13,34 +13,34 @@ type FaqItem = {
 
 const FAQ_ITEMS: readonly FaqItem[] = [
   {
-    question: "Why real-time vs. a regular AI notetaker?",
+    question: "What does TeamSync do during a live meeting?",
     answer:
-      "Unlike regular AI notetakers like Otter or Granola that work after your meeting ends, Cluely provides real-time meeting intelligence during your calls. While other AI meeting assistants create meeting summaries afterward, Cluely helps you answer technical questions, handle objections, and perform better during high-stakes conversations.",
+      "TeamSync listens alongside you, understands the conversation, and gives you useful answers while the meeting is still happening. It can surface context, suggest responses, capture action items, and help you stay ready without interrupting the call.",
   },
   {
-    question: "Who is Cluely for?",
+    question: "How is TeamSync different from a normal AI notetaker?",
     answer:
-      "Cluely is perfect for students, professionals, sales teams, recruiters, consultants, executives, and anyone who needs to perform well in meetings. If you're in back-to-back sales calls, lectures, or client meetings where you can't afford to look unprepared, Cluely delivers you answers at moments when you most need them.",
+      "Most AI notetakers summarize the meeting after it ends. TeamSync is built for the moment itself, so it can help with live questions, objections, follow-ups, and decisions while you are still talking.",
   },
   {
-    question: "Is Cluely free?",
+    question: "Can other people see TeamSync on my screen?",
     answer:
-      "Yes, you can use Cluely's AI meeting assistant for free, and you will have limited access to all core Cluely features. The pro plan gives you access to unlimited meeting notes and unlimited AI responses with Cluely.",
+      "TeamSync is designed to stay visible only to you. It does not join as a meeting participant, and its overlay is built to stay out of recordings and screen shares so you can use it discreetly during calls.",
   },
   {
-    question: "How is it undetectable in meetings?",
+    question: "Does TeamSync create meeting notes too?",
     answer:
-      "Unlike other meeting AI tools, it never joins your calls as a participant, doesn't appear in meeting recordings, and won't show up in screen shares (limitations here). It captures meeting audio in the background and provides a discreet, translucent overlay that only you can see--making it completely undetectable to other meeting participants.",
+      "Yes. TeamSync can turn the conversation into clean notes, summaries, action items, and follow-ups after the meeting. You get both live assistance during the call and organized notes when it is done.",
   },
   {
-    question: "What languages and apps are supported?",
+    question: "Which meeting apps does TeamSync work with?",
     answer:
-      "Cluely's AI meeting assistant works with all major meeting platforms including Zoom, Microsoft Teams, Webex, and Slack calls. It supports English and major international languages for meeting transcription and real-time insights.",
+      "TeamSync works with major meeting platforms including Zoom, Google Meet, Microsoft Teams, Webex, and Slack calls. It is built for everyday calls, interviews, sales meetings, lectures, and client conversations.",
   },
   {
-    question: "Can I talk to customer support?",
+    question: "Who should use TeamSync?",
     answer:
-      "Yes, our support team is available to help you get the most out of your AI meeting assistant. You can reach out via live chat, email, or through the support center. We provide technical support and help with optimizing Cluely for your specific meeting and sales workflows.",
+      "TeamSync is for anyone who needs to perform better in conversations: founders, sales teams, recruiters, consultants, students, managers, and operators who want real-time support without losing focus.",
   },
 ];
 
@@ -48,7 +48,7 @@ export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="w-full bg-white text-black">
+    <section className="w-full bg-white pb-20 text-black md:pb-28 lg:pb-32">
       <div className="mx-auto flex w-full max-w-7xl flex-col px-5 md:px-8">
         <ScrollReveal>
           <h2 className="mb-6 text-[28px] leading-tight font-medium text-black md:text-[40px] md:leading-[50px]">

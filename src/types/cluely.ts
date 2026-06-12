@@ -3,15 +3,6 @@ export interface FaqItem {
   answer: string;
 }
 
-export interface FooterColumn {
-  title: string;
-  links: Array<{
-    label: string;
-    href: string;
-    badge?: string;
-  }>;
-}
-
 export interface CompatibilityTool {
   name: string;
   icon: string;

@@ -28,20 +28,20 @@ Centered section heading/subtitle, then three feature cards. Cards combine real 
 1. **Doesn't join meetings.**
    - image/UI participants list with four avatars.
    - avatars from `gina-huels`, `todd-cremin`, `holly-gleason`, `tomas-hansen`.
-   - body: `Cluely never joins your meetings, so there are no bots and no extra people on the guest list.`
+   - body: `TeamSync never joins your meetings, so there are no bots and no extra people on the guest list.`
 2. **Invisible to screen share.**
    - layered image `public/images/cluely/invisible-tool.452f4abe.png` with the muted invisible layer underneath and a clipped visible layer on top.
    - center handle is draggable left/right; the clipped visible layer, green outline, divider line, and eye-off control all follow the same split value.
    - visible-side UI, including the AI Response card and `Visible to you` badge, is clipped by the left side of the split; `Invisible to others` is clipped by the right side of the split so it disappears at the divider as the slider moves right.
    - when the card first enters the viewport, the split begins a slow 5-second auto sweep loop; pointer dragging cancels the auto motion and leaves the user in control.
    - drag range clamps near the frame edges so both sides remain readable.
-   - body: `Cluely never shows up in shared screens, recordings, or external meeting tools.`
+   - body: `TeamSync never shows up in shared screens, recordings, or external meeting tools.`
 3. **Follows your eyes.**
    - rotating states: video lesson/up, video call/down, chat/left, file browser/right.
    - each state renders one background and one foreground asset at a time with a small AI response overlay.
    - auto-advances approximately every 2 seconds.
    - keyboard row command/up/down/left/right under image; command cycles forward, arrow buttons jump to their matching state.
-   - body: `Cluely window is fully moveable so you can position it exactly where you're looking.`
+   - body: `TeamSync window is fully moveable so you can position it exactly where you're looking.`
 
 ## Assets
 - `public/images/cluely/gina-huels.b14409cf.png`
@@ -61,10 +61,10 @@ Centered section heading/subtitle, then three feature cards. Cards combine real 
 ## Text Content
 Undetectable in every way
 
-Suite of features to use Cluely without a trace.
+Suite of features to use TeamSync without a trace.
 
-Doesn't join meetings. Cluely never joins your meetings, so there are no bots and no extra people on the guest list.
+Doesn't join meetings. TeamSync never joins your meetings, so there are no bots and no extra people on the guest list.
 
-Invisible to screen share. Cluely never shows up in shared screens, recordings, or external meeting tools.
+Invisible to screen share. TeamSync never shows up in shared screens, recordings, or external meeting tools.
 
-Follows your eyes. Cluely window is fully moveable so you can position it exactly where you're looking.
+Follows your eyes. TeamSync window is fully moveable so you can position it exactly where you're looking.

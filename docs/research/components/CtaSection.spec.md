@@ -25,7 +25,7 @@ Pale blue gradient band with heading, subheading, Mac CTA, and floating command/
 ## Text Content
 Meeting AI that helps during the call, not after.
 
-Try Cluely on your next meeting today.
+Try TeamSync on your next meeting today.
 
 Get for Mac
 

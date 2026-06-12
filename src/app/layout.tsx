@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Geist, Geist_Mono } from "next/font/google";
+
+import { TEAMSYNC_ICON_SRC } from "@/lib/brand";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,21 +22,21 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cluely.com"),
-  title: "Cluely - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
+  metadataBase: new URL("https://teamsync.com"),
+  title: "TeamSync - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
   description:
     "AI meeting assistant that provides live meeting notes, instant answers, and real-time insights during calls.",
   icons: {
-    icon: "/seo/cluely/light-favicon.png",
-    apple: "/seo/cluely/light-favicon.png",
+    icon: TEAMSYNC_ICON_SRC,
+    apple: TEAMSYNC_ICON_SRC,
   },
   openGraph: {
     title:
-      "Cluely - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
+      "TeamSync - Live AI Meeting Assistant | Real-Time Meeting Notes and AI Insights",
     description:
       "AI meeting assistant that provides live meeting notes, instant answers, and real-time insights during calls.",
     images: ["/seo/cluely/social-previews-index.jpg"],
-    siteName: "Cluely",
+    siteName: "TeamSync",
     type: "website",
   },
 };

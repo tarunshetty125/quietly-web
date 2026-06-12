@@ -3,7 +3,7 @@
 ## Overview
 - **Target file:** `src/components/MeetingHelpSection.tsx`
 - **Screenshot:** `docs/design-references/cluely-desktop-y1200.png`
-- **Interaction model:** static with entrance animation
+- **Interaction model:** entrance animation plus live recording timer and breathing waveform
 
 ## DOM Structure
 Section heading followed by two-card grid. Left card is blue recording/listening card; right card is pale gray assist card with dark assistant panel.
@@ -14,7 +14,7 @@ Section heading followed by two-card grid. Left card is blue recording/listening
 - display: flex column, gap `44px`, padding `0 32px`, max width `1280px`
 
 ### Heading
-- text: `How Cluely helps during a meeting`
+- text: `How TeamSync helps during a meeting`
 - font: Geist, `56px`, weight `500`, line-height `70px`, letter-spacing `-1.28px`
 - gradient text: from `rgb(25,25,29)` to `rgb(98,98,117)`
 
@@ -26,24 +26,24 @@ Section heading followed by two-card grid. Left card is blue recording/listening
 ### Left Card
 - blue card fill: radial/linear blue (`rgb(73,126,233)` to `rgb(116,156,255)`)
 - rounded corners about `28px`
-- title includes pill: `Cluely listens in to the conversation`
-- timer: `00:00`, recording dot, waveform, translucent assistant dock
+- title includes pill: `TeamSync listens in to the conversation`
+- timer starts at `00:00` when the card enters view, recording dot pulses, waveform rolls with live breathing bars, translucent assistant dock
 
 ### Right Card
 - pale card with border `#DDE2EE`, soft inset/glow
-- title: `When you need help, Cluely assists you instantly`
+- title: `When you need help, TeamSync assists you instantly`
 - assistant panel dark: `rgb(24,23,28)` overlay, rounded `16px`
 
 ## Assets
 - Uses generated CSS/UI mockups plus icons from `src/components/icons.tsx`.
 
 ## Text Content
-How Cluely helps during a meeting
+How TeamSync helps during a meeting
 
-Cluely listens in to the conversation
+TeamSync listens in to the conversation
 
 It picks up the context of your meeting in real time, so it can help when you need it.
 
-When you need help, Cluely assists you instantly
+When you need help, TeamSync assists you instantly
 
-Hit Cmd/Ctrl + Enter and Cluely helps you with AI in the moment.
+Hit Cmd/Ctrl + Enter and TeamSync helps you with AI in the moment.

@@ -33,8 +33,15 @@ Hero wrapper with an independently animated mountain background image-set, text 
 - transform initial: `matrix3d(..., 0, 200, 100, 1)` and opacity `0`; visible once scrolled into hero-demo band
 
 ## States & Behaviors
-- **Entrance:** mountain background eases in first (`1200ms`). Headline appears at `430ms`, subhead at `650ms`, CTA at `900ms`. Product stage and video start at `1500ms`, dock starts at `1700ms`, and the assistant overlay starts at `2500ms`.
-- **Video:** muted, autoplay, loop, plays inline.
+- **Launch sequence:** total hero launch reads as a `4500ms` layer-by-layer reveal: message, product, proof, intelligence, action.
+- **Headline:** source-matched masked word reveal. The visible chunks are `#1`, `Undetectable`, `AI`, `for`, and `Meetings`; each chunk sits in an overflow-hidden wrapper with the inner word rising from `translateY(100%)` to `0`. Stagger: `0ms`, `90ms`, `190ms`, `285ms`, `385ms`; duration `500ms`.
+- **Subheadline:** starts at `350ms`, opacity/translate reveal over `600ms`.
+- **Product frame:** starts at `1000ms`, opacity `0`, scale `0.92`, translateY `80px`; resolves over `1000ms` with a heavy spring-like ease.
+- **Video:** video element is paused on mount, starts playback at `1950ms`, and fades in over `400ms`.
+- **AI overlay:** toolbar, response panel, and input surface reveal at `2400ms`, `2700ms`, and `3000ms` respectively using opacity, scale `0.95`, translateY `12px`, and blur `8px`.
+- **Live intelligence:** between `3200ms` and `4000ms`, the overlay emits a subtle glow, cursor scan, status shimmer, and send-button pulse.
+- **CTA:** starts last at `3800ms` and resolves by `4500ms`.
+- **Video:** muted, delayed autoplay, loop, plays inline.
 - **Responsive:** desktop shows mountain art; mobile crops to blue gradient/mountain background, with demo lower and horizontally overflowing slightly.
 
 ## Assets
@@ -49,4 +56,4 @@ Hero wrapper with an independently animated mountain background image-set, text 
 #1 Undetectable
 AI for Meetings
 
-Cluely takes perfect meeting notes and gives real-time answers, all while completely undetectable
+TeamSync takes perfect meeting notes and gives real-time answers, all while completely undetectable

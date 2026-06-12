@@ -1,17 +1,7 @@
 import type { SVGProps } from "react";
-import Image from "next/image";
+import Link from "next/link";
 
-type FooterLink = {
-  label: string;
-  href: string;
-  badge?: string;
-  external?: boolean;
-};
-
-type FooterColumn = {
-  title: string;
-  links: readonly FooterLink[];
-};
+import { footerColumns } from "@/lib/teamsync-content";
 
 type SocialLink = {
   label: string;
@@ -19,60 +9,25 @@ type SocialLink = {
   icon: (props: SVGProps<SVGSVGElement>) => React.ReactNode;
 };
 
-const FOOTER_COLUMNS: readonly FooterColumn[] = [
-  {
-    title: "Resources",
-    links: [
-      { label: "Mobile", href: "https://cluely.com/mobile", badge: "New" },
-      { label: "Manifesto", href: "https://cluely.com/manifesto" },
-      { label: "Press", href: "https://cluely.com/press" },
-      {
-        label: "Bug Bounty",
-        href: "https://cluelyhq.notion.site/bugbounty",
-        external: true,
-      },
-    ],
-  },
-  {
-    title: "Support",
-    links: [
-      {
-        label: "Help Center",
-        href: "https://support.cluely.com/en/",
-        external: true,
-      },
-      { label: "Contact Us", href: "mailto:help@cluely.com" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Privacy Policy", href: "https://cluely.com/privacy-policy" },
-      { label: "Terms of Service", href: "https://cluely.com/terms" },
-      { label: "Subprocessors", href: "https://cluely.com/subprocessors" },
-    ],
-  },
-];
-
 const SOCIAL_LINKS: readonly SocialLink[] = [
   {
     label: "Twitter",
-    href: "https://x.com/cluely",
+    href: "https://x.com/teamsync",
     icon: XIcon,
   },
   {
     label: "Discord",
-    href: "https://discord.gg/cluely",
+    href: "https://discord.gg/teamsync",
     icon: DiscordIcon,
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/cluely/",
+    href: "https://www.instagram.com/teamsync/",
     icon: InstagramIcon,
   },
   {
     label: "GitHub",
-    href: "https://github.com/cluely",
+    href: "https://github.com/teamsync",
     icon: GithubIcon,
   },
 ];
@@ -125,57 +80,38 @@ export function SiteFooter() {
     <footer className="relative bg-[#DDE2EE] pt-10 pb-5 text-black">
       <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-20 -translate-y-full bg-[linear-gradient(180deg,rgba(221,226,238,0)_0%,#DDE2EE_100%)] xl:h-[140px]" />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 md:px-8">
-        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
-          <a
-            href="https://cluely.com/"
-            className="inline-flex w-fit rounded-md focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none"
-          >
-            <span className="sr-only">Cluely</span>
-            <Image
-              src="/images/cluely/wordmark.svg"
-              alt=""
-              width={85}
-              height={30}
-              className="h-[30px] w-[85px]"
-            />
-          </a>
-
-          <div className="grid gap-8 sm:grid-cols-3 lg:min-w-[488px] lg:gap-x-[44px]">
-            {FOOTER_COLUMNS.map((column) => (
-              <nav key={column.title} aria-labelledby={`footer-${column.title}`}>
-                <h3
-                  id={`footer-${column.title}`}
-                  className="font-medium text-black"
-                >
+        <div className="grid gap-10 lg:grid-cols-[1fr_auto_1fr] lg:items-start">
+          <div className="inline-flex w-fit">
+            <span className="text-[24px] leading-none font-semibold text-black">
+              TeamSync
+            </span>
+          </div>
+          <div className="grid w-full max-w-[760px] justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+            {footerColumns.map((column) => (
+              <div key={column.title} className="min-w-[180px]">
+                <h2 className="text-sm leading-5 font-semibold text-black">
                   {column.title}
-                </h3>
-                <ul className="mt-4 space-y-2">
+                </h2>
+                <ul className="mt-4 flex flex-col gap-3">
                   {column.links.map((link) => (
-                    <li key={link.label}>
-                      <a
+                    <li key={link.href}>
+                      <Link
                         href={link.href}
-                        target={link.external ? "_blank" : undefined}
-                        rel={link.external ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center gap-x-1.5 rounded text-base leading-snug font-normal text-[#242833] transition-colors duration-200 hover:text-[#2F6DE8] focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none"
+                        className="text-sm leading-5 text-[#343B4B] transition-colors duration-300 hover:text-[#2F6DE8] focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none"
                       >
-                        <span>{link.label}</span>
-                        {link.badge ? (
-                          <span className="inline-flex items-center rounded-full bg-blue-500 px-1.5 py-0.5 text-[11px] leading-none font-semibold text-white">
-                            {link.badge}
-                          </span>
-                        ) : null}
-                      </a>
+                        {link.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>
-              </nav>
+              </div>
             ))}
           </div>
         </div>
 
         <div className="mt-11 md:mt-[30px]">
           <a
-            href="https://cluely.trust.pagerduty.com/posts/dashboard/"
+            href="https://teamsync.trust.pagerduty.com/posts/dashboard/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex h-[34px] items-center justify-center gap-x-1.5 rounded-[6px] border border-[rgba(201,208,228,0.50)] bg-[rgba(211,217,233,0.50)] px-3 text-sm leading-none font-medium text-[#343B4B] transition-colors duration-300 hover:bg-[rgba(211,217,233,0.90)] focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none"
@@ -183,22 +119,12 @@ export function SiteFooter() {
             <span className="size-1.5 rounded-full bg-[#51D36C]" />
             All systems operational
           </a>
-          <p className="mt-8 text-xs leading-4 font-medium text-[#687286]">
-            List of{" "}
-            <a
-              href="https://cluely.com/subprocessors"
-              className="inline-flex items-center rounded font-medium text-[#2F6DE8] transition-colors duration-300 hover:text-[#2457BC] focus-visible:ring-2 focus-visible:ring-black/20 focus-visible:outline-none"
-            >
-              subprocessors
-            </a>
-            .
-          </p>
         </div>
 
         <div className="relative mt-[30px] flex flex-col pt-[30px] md:mt-5 md:flex-row md:items-center md:justify-between md:pt-5">
           <div className="absolute top-0 left-0 h-px w-full bg-[#C9D0E4]" />
           <p className="order-2 mt-7 text-sm leading-5 text-[#687286] md:order-1 md:mt-0">
-            &copy; 2026 Cluely. All rights reserved.
+            &copy; 2026 TeamSync. All rights reserved.
           </p>
           <div className="order-1 flex items-center gap-5 md:order-2">
             {SOCIAL_LINKS.map((social) => {

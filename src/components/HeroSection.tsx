@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import {
   Apple,
   ChevronDown,
@@ -10,6 +13,8 @@ import {
   WandSparkles,
   Wifi,
 } from "lucide-react";
+
+import { TEAMSYNC_ICON_SRC } from "@/lib/brand";
 
 const dockIcons = [
   {
@@ -29,8 +34,8 @@ const dockIcons = [
     src: "/images/cluely/zoom-icon.png",
   },
   {
-    alt: "Cluely",
-    src: "/images/cluely/cluely-icon.png",
+    alt: "TeamSync",
+    src: TEAMSYNC_ICON_SRC,
   },
   {
     alt: "Trash",
@@ -38,14 +43,51 @@ const dockIcons = [
   },
 ] as const;
 
-function MacCta() {
+function WindowsLogo() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      className="relative z-10 size-4"
+    >
+      <path d="M3 5.02 10.7 4v7.35H3V5.02Zm9.3-1.22L21 2.65v8.7h-8.7V3.8ZM3 12.65h7.7V20L3 18.98v-6.33Zm9.3 0H21v8.7l-8.7-1.15v-7.55Z" />
+    </svg>
+  );
+}
+
+function PlatformCta({
+  platform,
+  href,
+}: Readonly<{
+  platform: "mac" | "windows";
+  href: string;
+}>) {
+  const isMac = platform === "mac";
+
   return (
     <a
-      href="https://cluely.com/download"
-      className="inline-flex h-[44px] items-center justify-center gap-2 rounded-xl bg-[radial-gradient(101.79%_101.79%_at_65.61%_81.79%,rgba(255,255,255,0.6)_0%,rgba(255,255,255,0)_100%),radial-gradient(114.65%_114.65%_at_9.73%_17.27%,#1E82E0_0%,#1C38EA_100%)] px-5 text-[16px] font-medium text-white shadow-[0_18px_42px_rgba(28,56,234,0.36),inset_0_1px_0_rgba(255,255,255,0.38)] transition-transform hover:scale-[1.02]"
+      href={href}
+      className={
+        isMac
+          ? "cluely-gradient-button cluely-magnetic-button"
+          : "cluely-gradient-button min-w-[190px] cluely-magnetic-button"
+      }
     >
-      <Apple className="size-4 fill-current" aria-hidden="true" />
-      Get for Mac
+      <span
+        className="absolute top-0 left-0 z-20 h-full w-full blur-[1px]"
+        aria-hidden="true"
+      >
+        <span className="blurred-border absolute -top-px -left-px z-20 h-full w-full" />
+      </span>
+      {isMac ? (
+        <Apple className="relative z-10 mb-0.5 size-4 fill-current" aria-hidden="true" />
+      ) : (
+        <WindowsLogo />
+      )}
+      <span className="relative z-10">
+        Get for {isMac ? "Mac" : "Windows"}
+      </span>
     </a>
   );
 }
@@ -54,12 +96,12 @@ function WindowChrome() {
   return (
     <div className="absolute top-0 right-0 left-0 hidden h-fit w-full items-center justify-between bg-black/10 px-3 pt-2 pb-1 text-white lg:flex">
       <Image
-        src="/images/cluely/cluely.7e226633.svg"
+        src={TEAMSYNC_ICON_SRC}
         alt=""
         width={16}
         height={16}
         unoptimized
-        className="size-4 brightness-0 invert"
+        className="size-4"
       />
       <div className="flex items-center gap-2 text-white/82">
         <Wifi className="size-4" aria-hidden="true" />
@@ -103,10 +145,10 @@ function HeroDock() {
 
 function OverlayToolbar() {
   return (
-    <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full bg-[#3A3A42]/95 p-2 text-white shadow-[0_12px_28px_rgba(25,25,30,0.28)]">
+    <div className="cluely-ai-card cluely-ai-card-one mx-auto mb-3 flex w-fit items-center gap-2 rounded-full bg-[#3A3A42]/95 p-2 text-white shadow-[0_12px_28px_rgba(25,25,30,0.28)]">
       <span className="grid size-8 place-items-center rounded-full bg-white text-[#3A3A42]">
         <Image
-          src="/images/cluely/cluely.7e226633.svg"
+          src={TEAMSYNC_ICON_SRC}
           alt=""
           width={22}
           height={22}
@@ -114,7 +156,7 @@ function OverlayToolbar() {
           className="size-[22px]"
         />
       </span>
-      <span className="flex h-8 items-center gap-1 rounded-full bg-[#2C2C34] px-3 text-[12px]">
+      <span className="flex h-8 items-center gap-1 rounded-full bg-[linear-gradient(180deg,#2E3039_0%,#272A31_100%)] px-3 text-xs font-medium text-white shadow-[inset_0_0.7px_0_#AFB3C4] transition-transform hover:scale-105">
         <ChevronDown className="size-3.5" aria-hidden="true" />
         Hide
       </span>
@@ -130,7 +172,7 @@ function HeroAssistOverlay() {
     <div className="cluely-hero-overlay absolute inset-0 z-20 flex items-start justify-center pt-2 lg:pt-10">
       <div className="w-[88%] max-w-[520px] origin-top md:w-[480px] lg:w-[45%]">
         <OverlayToolbar />
-        <div className="rounded-2xl border border-white/25 bg-[linear-gradient(180deg,rgba(24,23,28,0.75)_0%,rgba(24,23,28,0.86)_100%)] p-3 text-white shadow-[0_24px_54px_rgba(24,23,28,0.34)] backdrop-blur-md sm:p-4">
+        <div className="cluely-ai-card cluely-ai-card-two cluely-ai-panel rounded-2xl border border-white/25 bg-[linear-gradient(180deg,rgba(24,23,28,0.75)_0%,rgba(24,23,28,0.86)_100%)] p-3 text-white shadow-[0_24px_54px_rgba(24,23,28,0.34)] backdrop-blur-md sm:p-4">
           <div className="ml-auto w-fit rounded-lg bg-[#164ED3] px-3 py-2 text-[12px] leading-none shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]">
             What should I say?
           </div>
@@ -160,7 +202,7 @@ function HeroAssistOverlay() {
             </span>
           </div>
 
-          <div className="mt-3 flex items-center rounded-xl border border-white/12 bg-white/6 px-3 py-2 text-[13px] text-white/52">
+          <div className="cluely-ai-card cluely-ai-card-three cluely-ai-input mt-3 flex items-center rounded-xl border border-white/12 bg-white/6 px-3 py-2 text-[13px] text-white/52">
             <span className="truncate">
               Ask about your screen or conversation, or
             </span>
@@ -171,13 +213,13 @@ function HeroAssistOverlay() {
               Enter
             </kbd>
             <span className="ml-2 hidden sm:inline">for Assist</span>
-            <span className="ml-auto grid size-7 shrink-0 place-items-center rounded-full bg-[#1550DA] text-white">
+            <span className="cluely-ai-send ml-auto grid size-7 shrink-0 place-items-center rounded-full bg-[#1550DA] text-white">
               <Send className="size-3.5 fill-current" aria-hidden="true" />
             </span>
           </div>
 
           <div className="mt-2 flex items-center gap-3 text-[12px] text-white/54">
-            <span className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/7 px-3 py-1">
+            <span className="cluely-ai-status flex items-center gap-1.5 rounded-full border border-white/10 bg-white/7 px-3 py-1">
               <Sparkles className="size-3" aria-hidden="true" />
               Smart
             </span>
@@ -189,47 +231,96 @@ function HeroAssistOverlay() {
   );
 }
 
+function HeroVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) {
+      return undefined;
+    }
+
+    video.pause();
+
+    try {
+      video.currentTime = 0;
+    } catch {
+      // Some browsers wait for metadata before seeking; delayed play still works.
+    }
+
+    const timer = window.setTimeout(() => {
+      void video.play().catch(() => undefined);
+    }, 1950);
+
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      aria-label="TeamSync meeting demo"
+      className="cluely-hero-video aspect-[1.6] h-[80%] max-w-[86%] object-contain"
+      loop
+      muted
+      playsInline
+      preload="auto"
+    >
+      <source
+        src="/videos/hero-bg.webm"
+        type="video/webm"
+      />
+    </video>
+  );
+}
+
+function HeroMacWallpaper() {
+  return (
+    <>
+      <video
+        aria-hidden="true"
+        autoPlay
+        className="absolute inset-0 hidden h-full w-full rounded-[13px] object-cover object-center blur-xl lg:block"
+        loop
+        muted
+        playsInline
+        poster="/images/cluely/wallpaper-2x.b7df867c.png"
+        preload="auto"
+      >
+        <source
+          src="/videos/teamsync/team-sync-logo-live-wallpaper.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        aria-hidden="true"
+        autoPlay
+        className="absolute inset-0 h-full w-full rounded-[13px] object-cover object-center"
+        loop
+        muted
+        playsInline
+        poster="/images/cluely/wallpaper-2x.b7df867c.png"
+        preload="auto"
+      >
+        <source
+          src="/videos/teamsync/team-sync-logo-live-wallpaper.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </>
+  );
+}
+
 function HeroDemo() {
   return (
     <div className="cluely-hero-stage relative flex h-fit w-full items-start justify-center px-3 pt-10 sm:px-12 sm:pt-12 lg:pt-16 xl:pt-[74px]">
-      <div className="relative h-[400px] w-full max-w-6xl rounded-[13px] bg-[#F2B56A] sm:h-[512px] lg:aspect-[1.7] lg:h-auto">
-        <Image
-          src="/images/cluely/wallpaper-2x.b7df867c.png"
-          alt=""
-          fill
-          priority
-          sizes="(min-width: 1024px) 1152px, 1px"
-          className="absolute inset-0 hidden rounded-[13px] object-cover object-center blur-xl lg:block"
-        />
-        <Image
-          src="/images/cluely/wallpaper-2x.b7df867c.png"
-          alt="Demo"
-          fill
-          priority
-          sizes="(min-width: 1024px) 1152px, 100vw"
-          className="rounded-[13px] object-cover object-center"
-        />
+      <div className="cluely-hero-frame relative h-[400px] w-full max-w-6xl rounded-[13px] bg-[#F2B56A] sm:h-[512px] lg:aspect-[1.7] lg:h-auto">
+        <HeroMacWallpaper />
 
         <div className="absolute inset-0 flex items-center justify-center rounded-[13px]">
           <WindowChrome />
           <div className="relative flex h-full w-full items-center justify-center">
-            <video
-              aria-label="Cluely meeting demo"
-              autoPlay
-              className="cluely-hero-video aspect-[1.6] h-[80%] max-w-[86%] object-contain"
-              loop
-              muted
-              playsInline
-            >
-              <source
-                src="/videos/cluely/videos-home-hero-v2-pro-res-hevc-safari.mp4"
-                type='video/mp4; codecs="hvc1"'
-              />
-              <source
-                src="/videos/cluely/videos-home-hero-v2-pro-res-vp9-chrome.webm"
-                type="video/webm"
-              />
-            </video>
+            <HeroVideo />
             <HeroAssistOverlay />
           </div>
           <HeroDock />
@@ -239,34 +330,84 @@ function HeroDemo() {
   );
 }
 
+function HeroMountainBackground() {
+  return (
+    <div
+      aria-hidden="true"
+      className="teamsync-hero-mountain pointer-events-none absolute -top-20 left-0 z-0 h-[680px] w-full overflow-hidden md:h-[820px]"
+    >
+      <video
+        autoPlay
+        muted
+        playsInline
+        preload="auto"
+        poster="/images/teamsync/natively-hero-bg-poster.jpeg"
+        className="h-full w-full object-cover object-top"
+      >
+        <source src="/videos/teamsync/natively-hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="teamsync-hero-mountain-wash absolute inset-0" />
+      <div className="teamsync-hero-mountain-depth absolute inset-0" />
+    </div>
+  );
+}
+
 export function HeroSection() {
   return (
     <section
       id="top"
-      className="relative isolate flex min-h-[1200px] w-full justify-center overflow-hidden bg-[#5d93d8] text-white md:min-h-[1220px]"
+      className="relative isolate flex min-h-[1200px] w-full justify-center overflow-hidden bg-white text-white md:min-h-[1220px]"
     >
-      <div
-        aria-hidden="true"
-        className="cluely-hero-bg pointer-events-none absolute inset-0 z-0 [background-image:radial-gradient(87.76%_87.72%_at_50%_9.2%,rgba(255,255,255,0)_41.36%,#fff_71.93%),image-set(url('/images/cluely/background.png')_1x,url('/images/cluely/background-2x.png')_2x,url('/images/cluely/background-4x.png')_4x)] [background-position:top_center] [background-repeat:no-repeat] [background-size:1600px_auto]"
-      />
+      <HeroMountainBackground />
       <div className="relative z-10 w-full max-w-[1425px]">
         <div className="flex h-[452px] items-start justify-center px-3 pt-20 text-center lg:pt-32">
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-4">
               <h1
-                className="cluely-fade-up cluely-hero-title font-serif max-w-[350px] text-[55px] leading-[0.96] font-normal text-white md:max-w-[548px] md:text-[78px] md:leading-[74.88px]"
+                className="cluely-hero-title font-serif max-w-[350px] text-[55px] leading-[0.96] font-normal text-white md:max-w-[548px] md:text-[78px] md:leading-[74.88px]"
                 aria-label="#1 Undetectable AI for Meetings"
               >
-                <span className="block">#1 Undetectable</span>
-                <span className="block">AI for Meetings</span>
+                <span className="block" aria-hidden="true">
+                  <span className="cluely-title-word-mask">
+                    <span className="cluely-title-word cluely-title-word-one">
+                      #1
+                    </span>
+                  </span>{" "}
+                  <span className="cluely-title-word-mask">
+                    <span className="cluely-title-word cluely-title-word-two">
+                      Undetectable
+                    </span>
+                  </span>
+                </span>
+                <span className="block" aria-hidden="true">
+                  <span className="cluely-title-word-mask">
+                    <span className="cluely-title-word cluely-title-word-three">
+                      AI
+                    </span>
+                  </span>{" "}
+                  <span className="cluely-title-word-mask">
+                    <span className="cluely-title-word cluely-title-word-four">
+                      for
+                    </span>
+                  </span>{" "}
+                  <span className="cluely-title-word-mask">
+                    <span className="cluely-title-word cluely-title-word-five">
+                      Meetings
+                    </span>
+                  </span>
+                </span>
               </h1>
-              <p className="cluely-fade-up cluely-hero-subtitle max-w-[600px] text-base leading-6 font-medium text-white/88 md:text-lg md:leading-7">
-                Cluely takes perfect meeting notes and gives real-time answers,
+              <p className="cluely-hero-subtitle max-w-[600px] text-base leading-6 font-medium text-white/88 md:text-lg md:leading-7">
+                TeamSync takes perfect meeting notes and gives real-time answers,
                 all while completely undetectable
               </p>
             </div>
-            <div className="cluely-fade-up cluely-hero-cta">
-              <MacCta />
+            <div className="cluely-hero-cta flex flex-wrap justify-center gap-3">
+              <PlatformCta platform="mac" href="https://teamsync.com/download" />
+              <PlatformCta
+                platform="windows"
+                href="https://teamsync.com/download/windows"
+              />
             </div>
           </div>
         </div>

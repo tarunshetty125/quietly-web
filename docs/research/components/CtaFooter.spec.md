@@ -14,7 +14,7 @@ CTA gradient band with heading/subhead/button and floating command-key assets. F
 - padding desktop: `220px 0px 210px`
 - background gradient layer: `linear-gradient(rgb(255,255,255), rgb(221,226,238) 37.04%)`
 - heading: `Meeting AI that helps during the call, not after.`, font `28px`, weight `500`, line-height `35px`, letter-spacing `-1.12px`
-- subhead: `Try Cluely on your next meeting today.`, color blue-gray
+- subhead: `Try TeamSync on your next meeting today.`, color blue-gray
 - CTA button: blue gradient, `Get for Mac`
 - decorative assets: `command-btn`, `command-active`, `return-btn`, `return-active`
 
@@ -25,7 +25,7 @@ CTA gradient band with heading/subhead/button and floating command-key assets. F
 - inner max width: `1280px`, padding `0 32px`
 - columns: Resources, Support, Legal
 - status pill: `All systems operational`
-- copyright: `© 2026 Cluely. All rights reserved.`
+- copyright: `© 2026 TeamSync. All rights reserved.`
 
 ## Assets
 - `public/images/cluely/wordmark.svg`
@@ -37,7 +37,7 @@ CTA gradient band with heading/subhead/button and floating command-key assets. F
 ## Text Content
 Meeting AI that helps during the call, not after.
 
-Try Cluely on your next meeting today.
+Try TeamSync on your next meeting today.
 
 Resources: Mobile New, Manifesto, Press, Bug Bounty
 
@@ -49,4 +49,4 @@ All systems operational
 
 List of subprocessors.
 
-© 2026 Cluely. All rights reserved.
+© 2026 TeamSync. All rights reserved.

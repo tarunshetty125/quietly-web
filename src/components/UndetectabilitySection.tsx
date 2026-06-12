@@ -12,34 +12,35 @@ import {
 } from "lucide-react";
 
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { TEAMSYNC_ICON_SRC } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
 const participants = [
   {
     name: "Gina Huels",
     suffix: "(You)",
-    email: "ginahue65@cluely.com",
+    email: "ginahue65@teamsync.com",
     role: "Owner",
     avatar: "/images/cluely/gina-huels.b14409cf.png",
   },
   {
     name: "Todd Cremin",
     suffix: undefined,
-    email: "todd.cremin@cluely.com",
+    email: "todd.cremin@teamsync.com",
     role: "Speaker",
     avatar: "/images/cluely/todd-cremin.9cbbdf9c.png",
   },
   {
     name: "Holly Gleason",
     suffix: undefined,
-    email: "holly_gleaso1972@cluely.com",
+    email: "holly_gleaso1972@teamsync.com",
     role: "Speaker",
     avatar: "/images/cluely/holly-gleason.528905fb.png",
   },
   {
     name: "Tomas Hansen",
     suffix: undefined,
-    email: "tomas_hansen@cluely.com",
+    email: "tomas_hansen@teamsync.com",
     role: "Speaker",
     avatar: "/images/cluely/tomas-hansen.5f58da3e.png",
   },
@@ -55,7 +56,7 @@ const arrowKeys = [
 const demoStates = [
   {
     key: "up",
-    label: "Move Cluely up",
+    label: "Move TeamSync up",
     background: "/images/cluely/bg-blue.825b2efd.jpg",
     image: "/images/cluely/video-player-card.9b7a7f86.png",
     width: 971,
@@ -66,7 +67,7 @@ const demoStates = [
   },
   {
     key: "down",
-    label: "Move Cluely down",
+    label: "Move TeamSync down",
     background: "/images/cluely/bg-purple-dark.58e0b5e1.jpg",
     image: "/images/cluely/video-conference-card.26ec85da.png",
     width: 708,
@@ -76,7 +77,7 @@ const demoStates = [
   },
   {
     key: "left",
-    label: "Move Cluely left",
+    label: "Move TeamSync left",
     background: "/images/cluely/bg-pink.1696fade.jpg",
     image: "/images/cluely/messaging-card.f1bfaf57.png",
     width: 798,
@@ -86,7 +87,7 @@ const demoStates = [
   },
   {
     key: "right",
-    label: "Move Cluely right",
+    label: "Move TeamSync right",
     background: "/images/cluely/bg-purple.449cf71b.jpg",
     image: "/images/cluely/file-browser-card.8990f1d2.png",
     width: 671,
@@ -212,7 +213,7 @@ function ParticipantsCard() {
 
       <div className="relative z-0 flex h-[57px] w-full items-center rounded-xl bg-[linear-gradient(180deg,#F2F4F9_0%,#F2F4F9_24.57%)] px-4 opacity-[0.97]">
         <Image
-          src="/images/cluely/cluely.7e226633.svg"
+          src={TEAMSYNC_ICON_SRC}
           alt=""
           width={32}
           height={32}
@@ -220,7 +221,7 @@ function ParticipantsCard() {
           className="mr-[11px] size-[29px]"
         />
         <span className="bg-[#A3ADC2] bg-[linear-gradient(96.56deg,rgba(209,214,224,0)_11.17%,#D1D6E0_27.98%,rgba(209,214,224,0)_52.25%,rgba(209,214,224,0)_69.29%,#D1D6E0_93.02%,rgba(209,214,224,0)_99.59%)] bg-clip-text text-[12px] font-semibold text-transparent">
-          Cluely
+          TeamSync
         </span>
         <Image
           src="/images/cluely/eye.79b67e64.svg"
@@ -491,7 +492,7 @@ function EyesCard() {
             onClick={() =>
               setActiveIndex((index) => (index + 1) % demoStates.length)
             }
-            aria-label="Cycle Cluely position"
+            aria-label="Cycle TeamSync position"
           >
             <Command className="size-4 text-[#737783]" aria-hidden="true" />
             <span className="text-[8px] leading-none font-semibold text-black xl:text-[10px]">
@@ -538,38 +539,47 @@ export function UndetectabilitySection() {
             Undetectable in every way
           </h2>
           <p className="max-w-[600px] text-base leading-relaxed text-[#8C929D] md:text-lg">
-            Suite of features to use Cluely without a trace.
+            Suite of features to use TeamSync without a trace.
           </p>
         </ScrollReveal>
 
-        <ScrollReveal
-          className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-16 lg:grid lg:snap-none lg:grid-cols-3 lg:overflow-visible lg:pb-0 xl:gap-8 [&::-webkit-scrollbar]:hidden"
-          delayClassName="delay-150"
-        >
-          <article className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none">
-            <ParticipantsCard />
-            <FeatureCopy title="Doesn't join meetings.">
-              Cluely never joins your meetings, so there are no bots and no
-              extra people on the guest list.
-            </FeatureCopy>
-          </article>
+        <div className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-16 lg:grid lg:snap-none lg:grid-cols-3 lg:overflow-visible lg:pb-0 xl:gap-8 [&::-webkit-scrollbar]:hidden">
+          <ScrollReveal className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none">
+            <article>
+              <ParticipantsCard />
+              <FeatureCopy title="Doesn't join meetings.">
+                TeamSync never joins your meetings, so there are no bots and no
+                extra people on the guest list.
+              </FeatureCopy>
+            </article>
+          </ScrollReveal>
 
-          <article className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none">
-            <InvisibleCard />
-            <FeatureCopy title="Invisible to screen share.">
-              Cluely never shows up in shared screens, recordings, or external
-              meeting tools.
-            </FeatureCopy>
-          </article>
+          <ScrollReveal
+            className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none"
+            delayClassName="delay-200"
+          >
+            <article>
+              <InvisibleCard />
+              <FeatureCopy title="Invisible to screen share.">
+                TeamSync never shows up in shared screens, recordings, or external
+                meeting tools.
+              </FeatureCopy>
+            </article>
+          </ScrollReveal>
 
-          <article className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none">
-            <EyesCard />
-            <FeatureCopy title="Follows your eyes.">
-              Cluely window is fully moveable so you can position it exactly
-              where you&apos;re looking.
-            </FeatureCopy>
-          </article>
-        </ScrollReveal>
+          <ScrollReveal
+            className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none"
+            delayClassName="delay-[400ms]"
+          >
+            <article>
+              <EyesCard />
+              <FeatureCopy title="Follows your eyes.">
+                TeamSync window is fully moveable so you can position it exactly
+                where you&apos;re looking.
+              </FeatureCopy>
+            </article>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );
