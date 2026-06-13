@@ -13,6 +13,7 @@ const navLinks: readonly {
 }[] = [
   { label: "Undetectability", href: "#undetectability" },
   { label: "Pro", href: "/pro", variant: "gold" },
+  { label: "New V2", href: "/v2", variant: "gold" },
 ]
 
 export function SiteHeader() {
