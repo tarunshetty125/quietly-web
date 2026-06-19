@@ -552,7 +552,7 @@ function FeatureCard({ feature }: { feature: Feature }) {
         background:
           "linear-gradient(160deg, #151c2c 0%, #0f1420 60%, #0c101a 100%)",
         border: "1px solid rgba(255,255,255,0.12)",
-        minHeight: "90px",
+        minHeight: "72px",
         boxShadow:
           "0 2px 4px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.20), 0 16px 48px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.06)",
       }}
@@ -737,7 +737,7 @@ function MagneticCTA({
   };
 
   return (
-    <motion.div variants={itemUp} className="mt-5 flex flex-col items-center gap-2">
+    <motion.div variants={itemUp} className="mt-3 flex flex-col items-center gap-1.5">
       <div
         ref={fieldRef}
         className="relative flex min-h-[56px] w-full items-center justify-center overflow-visible"
@@ -807,7 +807,7 @@ function MagneticCTA({
 /* ══ Main Modal Component ══ */
 /* ══════════════════════════════════════════════════════════════════════════ */
 
-const SHOW_DELAY_MS = 7000;
+const SHOW_DELAY_MS = 10000;
 const STORAGE_KEY = "quietly-whats-new-2.7-dismissed";
 
 export function WhatsNewModal() {
@@ -992,7 +992,7 @@ export function WhatsNewModal() {
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className="relative z-10 flex flex-col items-center px-5 py-7 sm:px-7 sm:py-8"
+              className="relative z-10 flex flex-col items-center px-5 py-5 sm:px-7 sm:py-6"
             >
               {/* Eyebrow */}
               <motion.div
@@ -1034,7 +1034,7 @@ export function WhatsNewModal() {
               {/* Bento Grid */}
               <motion.div
                 variants={containerVariants}
-                className="mt-5 grid w-full grid-cols-3 gap-2"
+                className="mt-3 grid w-full grid-cols-3 gap-1.5"
               >
                 {FEATURES.map((feature) => (
                   <FeatureCard key={feature.title} feature={feature} />
