@@ -24,6 +24,9 @@ type ProFeature = Readonly<{
   visual: ReactNode;
 }>;
 
+const lifetimePurchaseEmail = "schmidt.berg1989@gmail.com";
+const lifetimePurchaseHref = `mailto:${lifetimePurchaseEmail}?subject=Quietly%20AI%20Lifetime%20License`;
+
 const proFeatures: readonly ProFeature[] = [
   {
     title: "Modes Manager",
@@ -249,8 +252,8 @@ function LifetimeCard() {
 
   return (
     <ScrollReveal delayClassName="delay-300">
-      <Link
-        href="/pro"
+      <a
+        href={lifetimePurchaseHref}
         className="block focus-visible:ring-2 focus-visible:ring-indigo-500/40 focus-visible:outline-none"
       >
         <div className="group relative flex cursor-pointer flex-col gap-5 overflow-hidden rounded-[24px] border border-indigo-500/25 bg-[linear-gradient(165deg,rgba(99,102,241,0.06)_0%,rgba(255,255,255,0.9)_100%)] p-6 shadow-[0_20px_45px_-12px_rgba(99,102,241,0.06),inset_0_1.5px_0_rgb(255,255,255)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_25px_60px_rgba(99,102,241,0.15)]">
@@ -301,7 +304,7 @@ function LifetimeCard() {
             One-time purchase · No subscription · yours forever
           </p>
         </div>
-      </Link>
+      </a>
     </ScrollReveal>
   );
 }
