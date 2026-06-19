@@ -607,7 +607,7 @@ function FeatureCard({ feature }: { feature: Feature }) {
 /* ═══ Magnetic CTA Button ═══ */
 
 const magneticSpring = { stiffness: 420, damping: 18, mass: 0.45 };
-const textSpring = { stiffness: 500, damping: 20, mass: 0.35 };
+const textSpring = { stiffness: 180, damping: 14, mass: 0.6 };
 const clamp = (v: number, min: number, max: number) =>
   Math.min(Math.max(v, min), max);
 
