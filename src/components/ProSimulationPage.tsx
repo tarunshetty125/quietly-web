@@ -17,6 +17,7 @@ import {
   useState,
 } from "react";
 
+import { lifetimePurchaseHref } from "@/lib/purchase";
 import { cn } from "@/lib/utils";
 
 type Pane = "free" | "pro";
@@ -556,7 +557,7 @@ function EndOverlay({
               "inline-flex h-10 items-center justify-center rounded-full px-4 text-[12px] font-bold transition-transform duration-200 hover:scale-[1.02]",
               isPro ? "bg-indigo-600 text-white shadow-[0_12px_30px_rgba(79,70,229,0.28)]" : "bg-slate-900 text-white",
             )}
-            href="#"
+            href={isPro ? lifetimePurchaseHref : "#"}
           >
             {data.button}
           </a>

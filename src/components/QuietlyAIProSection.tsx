@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { lifetimePurchaseHref } from "@/lib/purchase";
 import { cn } from "@/lib/utils";
 
 type ProFeature = Readonly<{
@@ -23,9 +24,6 @@ type ProFeature = Readonly<{
   badge?: "New" | "Soon";
   visual: ReactNode;
 }>;
-
-const lifetimePurchaseEmail = "schmidt.berg1989@gmail.com";
-const lifetimePurchaseHref = `mailto:${lifetimePurchaseEmail}?subject=Quietly%20AI%20Lifetime%20License`;
 
 const proFeatures: readonly ProFeature[] = [
   {
