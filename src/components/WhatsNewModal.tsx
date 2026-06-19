@@ -867,7 +867,7 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[504px] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-4 w-full max-w-[504px] max-h-[70vh] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
             style={{
               backgroundColor: "#08080f",
               fontFamily:
