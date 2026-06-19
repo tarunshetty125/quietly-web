@@ -815,25 +815,12 @@ export function WhatsNewModal() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    // Don't show if already dismissed this session
-    try {
-      if (sessionStorage.getItem(STORAGE_KEY) === "1") return;
-    } catch {
-      // sessionStorage unavailable
-    }
-
     const timer = setTimeout(() => setIsOpen(true), SHOW_DELAY_MS);
     return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
     setIsOpen(false);
-    try {
-      sessionStorage.setItem(STORAGE_KEY, "1");
-    } catch {
-      // ignore
-    }
   };
 
   return (
