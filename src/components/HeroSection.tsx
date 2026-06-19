@@ -403,10 +403,10 @@ export function HeroSection() {
               </p>
             </div>
             <div className="cluely-hero-cta flex flex-wrap justify-center gap-3">
-              <PlatformCta platform="mac" href="https://quietly.ai/download" />
+              <PlatformCta platform="mac" href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg" />
               <PlatformCta
                 platform="windows"
-                href="https://quietly.ai/download/windows"
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-Setup-2.7.0.exe"
               />
             </div>
           </div>

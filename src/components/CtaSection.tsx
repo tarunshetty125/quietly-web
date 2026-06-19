@@ -15,7 +15,7 @@ export function CtaSection() {
             Try Quietly AI on your next meeting today.
           </p>
           <a
-            href="https://quietly.ai/download"
+            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
             className="cluely-gradient-button cluely-magnetic-button mt-8 w-auto min-w-[156px]"
           >
             <span className="absolute top-0 left-0 z-20 h-full w-full blur-[1px]" aria-hidden="true">
