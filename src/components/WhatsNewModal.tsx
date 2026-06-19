@@ -776,16 +776,15 @@ function MagneticCTA({
               }}
             />
           )}
-          <motion.span
+          <span
             className="relative z-10 flex items-center gap-2 drop-shadow-[0_1px_1px_rgba(255,255,255,0.22)]"
-            style={{ x: textX, y: textY }}
           >
             Download Now
             <ArrowRight
               size={14}
               className="transition-transform duration-200 group-hover:translate-x-0.5"
             />
-          </motion.span>
+          </span>
         </motion.a>
       </div>
 
