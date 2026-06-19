@@ -547,12 +547,12 @@ function FeatureCard({ feature }: { feature: Feature }) {
         scale: 1.01,
         transition: { type: "spring", stiffness: 400, damping: 25 },
       }}
-      className={`group relative overflow-hidden rounded-[14px] p-3.5 ${feature.wide ? "col-span-2" : ""}`}
+      className={`group relative overflow-hidden rounded-[10px] p-2.5 ${feature.wide ? "col-span-2" : ""}`}
       style={{
         background:
           "linear-gradient(160deg, #151c2c 0%, #0f1420 60%, #0c101a 100%)",
         border: "1px solid rgba(255,255,255,0.12)",
-        minHeight: "72px",
+        minHeight: "62px",
         boxShadow:
           "0 2px 4px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.20), 0 16px 48px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.06)",
       }}
@@ -580,24 +580,24 @@ function FeatureCard({ feature }: { feature: Feature }) {
       {feature.illustration}
 
       <div
-        className="relative z-10 mb-2 flex h-7 w-7 items-center justify-center rounded-[8px]"
+        className="relative z-10 mb-1.5 flex h-5 w-5 items-center justify-center rounded-[6px]"
         style={{
           background: `${feature.accent}18`,
           border: `1px solid ${feature.accent}28`,
         }}
       >
         <Icon
-          size={14}
-          strokeWidth={1.8}
+           size={10}
+           strokeWidth={2}
           style={{ color: feature.accent }}
         />
       </div>
 
-      <h3 className="relative z-10 text-[13px] font-bold leading-tight tracking-[-0.01em] text-white">
+      <h3 className="relative z-10 text-[10px] font-bold leading-tight tracking-[-0.01em] text-white">
         {feature.title}
       </h3>
 
-      <p className="relative z-10 mt-1 max-w-[70%] text-[11px] font-medium leading-[1.4] text-white/55">
+      <p className="relative z-10 mt-0.5 max-w-[75%] text-[9px] font-medium leading-[1.3] text-white/50">
         {feature.description}
       </p>
     </motion.div>
@@ -740,7 +740,7 @@ function MagneticCTA({
     <motion.div variants={itemUp} className="mt-3 flex flex-col items-center gap-1.5">
       <div
         ref={fieldRef}
-        className="relative flex min-h-[56px] w-full items-center justify-center overflow-visible"
+        className="relative flex min-h-[44px] w-full items-center justify-center overflow-visible"
       >
         <motion.a
           ref={btnRef}
@@ -748,7 +748,7 @@ function MagneticCTA({
           onClick={handleClick}
           whileTap={prefersReducedMotion ? undefined : { scale: 0.97 }}
           transition={{ type: "spring", stiffness: 360, damping: 24 }}
-          className="group relative inline-flex h-[42px] min-w-[200px] items-center justify-center overflow-hidden rounded-full px-6 text-[13px] font-semibold tracking-[-0.005em] text-[#050009] outline-none transition-[filter] duration-200 ease-out"
+          className="group relative inline-flex h-[36px] min-w-[180px] items-center justify-center overflow-hidden rounded-full px-5 text-[12px] font-semibold tracking-[-0.005em] text-[#050009] outline-none transition-[filter] duration-200 ease-out"
           style={{
             x,
             y,
@@ -867,7 +867,7 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[504px] max-h-[70vh] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-4 w-full max-w-[504px] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
             style={{
               backgroundColor: "#08080f",
               fontFamily:
