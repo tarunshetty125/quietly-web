@@ -867,7 +867,7 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[720px] overflow-hidden rounded-[24px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-4 w-full max-w-[504px] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
             style={{
               backgroundColor: "#08080f",
               fontFamily:
@@ -992,7 +992,7 @@ export function WhatsNewModal() {
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className="relative z-10 flex flex-col items-center px-6 py-10 sm:px-10 sm:py-12"
+              className="relative z-10 flex flex-col items-center px-5 py-7 sm:px-7 sm:py-8"
             >
               {/* Eyebrow */}
               <motion.div
@@ -1011,7 +1011,7 @@ export function WhatsNewModal() {
               {/* Title */}
               <motion.h2
                 variants={itemUp}
-                className="text-center text-[32px] font-semibold leading-[1.06] tracking-[-0.04em] sm:text-[36px]"
+                className="text-center text-[24px] font-semibold leading-[1.06] tracking-[-0.04em] sm:text-[28px]"
                 style={{
                   background:
                     "linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.65) 100%)",
