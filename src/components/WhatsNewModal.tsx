@@ -547,12 +547,12 @@ function FeatureCard({ feature }: { feature: Feature }) {
         scale: 1.01,
         transition: { type: "spring", stiffness: 400, damping: 25 },
       }}
-      className={`group relative overflow-hidden rounded-[10px] p-2.5 ${feature.wide ? "col-span-2" : ""}`}
+      className={`group relative overflow-hidden rounded-[12px] p-3 ${feature.wide ? "col-span-2" : ""}`}
       style={{
         background:
           "linear-gradient(160deg, #151c2c 0%, #0f1420 60%, #0c101a 100%)",
         border: "1px solid rgba(255,255,255,0.12)",
-        minHeight: "62px",
+        minHeight: "70px",
         boxShadow:
           "0 2px 4px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.20), 0 16px 48px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.06)",
       }}
@@ -580,24 +580,24 @@ function FeatureCard({ feature }: { feature: Feature }) {
       {feature.illustration}
 
       <div
-        className="relative z-10 mb-1.5 flex h-5 w-5 items-center justify-center rounded-[6px]"
+        className="relative z-10 mb-1.5 flex h-6 w-6 items-center justify-center rounded-[7px]"
         style={{
           background: `${feature.accent}18`,
           border: `1px solid ${feature.accent}28`,
         }}
       >
         <Icon
-           size={10}
-           strokeWidth={2}
+           size={12}
+           strokeWidth={1.8}
           style={{ color: feature.accent }}
         />
       </div>
 
-      <h3 className="relative z-10 text-[10px] font-bold leading-tight tracking-[-0.01em] text-white">
+      <h3 className="relative z-10 text-[11.5px] font-bold leading-tight tracking-[-0.01em] text-white">
         {feature.title}
       </h3>
 
-      <p className="relative z-10 mt-0.5 max-w-[75%] text-[9px] font-medium leading-[1.3] text-white/50">
+      <p className="relative z-10 mt-0.5 max-w-[75%] text-[10px] font-medium leading-[1.35] text-white/50">
         {feature.description}
       </p>
     </motion.div>
@@ -867,7 +867,7 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[504px] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-4 w-full max-w-[540px] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
             style={{
               backgroundColor: "#08080f",
               fontFamily:
