@@ -792,7 +792,10 @@ function MagneticCTA({
       <button
         type="button"
         onClick={onClose}
-        className="text-[13px] font-medium text-[#8e8e93] transition-colors hover:text-[#50505a]"
+        className="text-[13px] font-medium transition-colors"
+        style={{ color: "rgba(255,255,255,0.4)" }}
+        onMouseEnter={(e) => { e.currentTarget.style.color = "rgba(255,255,255,0.7)"; }}
+        onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(255,255,255,0.4)"; }}
       >
         Maybe later
       </button>
@@ -864,9 +867,9 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[720px] overflow-hidden rounded-[24px] shadow-[0_32px_80px_rgba(0,0,0,0.25)]"
+            className="relative z-10 mx-4 w-full max-w-[720px] overflow-hidden rounded-[24px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
             style={{
-              backgroundColor: "#F0F2F6",
+              backgroundColor: "#08080f",
               fontFamily:
                 "'Inter', 'Geist', ui-sans-serif, system-ui, sans-serif",
             }}
@@ -875,37 +878,112 @@ export function WhatsNewModal() {
             <button
               type="button"
               onClick={handleClose}
-              className="absolute right-4 top-4 z-50 flex h-8 w-8 items-center justify-center rounded-full bg-black/5 text-[#8e8e93] transition-colors hover:bg-black/10 hover:text-[#50505a]"
+              className="absolute right-4 top-4 z-50 flex h-8 w-8 items-center justify-center rounded-full transition-colors"
+              style={{
+                background: "rgba(255,255,255,0.08)",
+                color: "rgba(255,255,255,0.5)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "rgba(255,255,255,0.14)";
+                e.currentTarget.style.color = "rgba(255,255,255,0.8)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+                e.currentTarget.style.color = "rgba(255,255,255,0.5)";
+              }}
               aria-label="Close"
             >
               <X size={16} />
             </button>
 
-            {/* Grid lines background */}
+            {/* ── 3D Wireframe Grid Background ── */}
             <style>{`
-              @keyframes gridPulse {
-                0%, 100% { opacity: 0.5; transform: scale(1); }
-                50% { opacity: 1; transform: scale(1.03); }
+              @keyframes wn-wireflow-scroll {
+                0%   { transform: rotateX(55deg) translateY(0); }
+                100% { transform: rotateX(55deg) translateY(60px); }
+              }
+              @keyframes wn-wireflow-scroll-slow {
+                0%   { transform: rotateX(55deg) translateY(0); }
+                100% { transform: rotateX(55deg) translateY(60px); }
+              }
+              @keyframes wn-wireflow-pulse {
+                0%, 100% { opacity: 0.3; }
+                50%      { opacity: 0.6; }
               }
             `}</style>
-            <div
-              className="pointer-events-none absolute inset-[-20px]"
-              style={{
-                backgroundImage: `
-                  linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px),
-                  linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)
-                `,
-                backgroundSize: "48px 48px",
-                animation: "gridPulse 6s ease-in-out infinite",
-                willChange: "transform, opacity",
-              }}
-            />
-            {/* Radial fade */}
+
+            {/* Wireframe scene container */}
             <div
               className="pointer-events-none absolute inset-0"
               style={{
-                background:
-                  "radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, #F0F2F6 100%)",
+                perspective: "320px",
+                perspectiveOrigin: "50% 40%",
+                transformStyle: "preserve-3d",
+              }}
+            >
+              {/* Primary grid plane */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: "-120% -60%",
+                  backgroundImage: `
+                    linear-gradient(rgba(255,255,255,0.22) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.22) 1px, transparent 1px)
+                  `,
+                  backgroundSize: "60px 60px",
+                  animation: "wn-wireflow-scroll 4s linear infinite",
+                  transformOrigin: "center center",
+                  willChange: "transform",
+                }}
+              />
+              {/* Secondary grid plane (parallax depth) */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: "-120% -60%",
+                  backgroundImage: `
+                    linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px)
+                  `,
+                  backgroundSize: "60px 60px",
+                  animation: "wn-wireflow-scroll-slow 6s linear infinite",
+                  opacity: 0.7,
+                  transformOrigin: "center center",
+                  willChange: "transform",
+                }}
+              />
+              {/* Intersection dots */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: "-120% -60%",
+                  backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.40) 1.5px, transparent 1.5px)",
+                  backgroundSize: "60px 60px",
+                  animation: "wn-wireflow-scroll 4s linear infinite",
+                  transformOrigin: "center center",
+                  willChange: "transform",
+                }}
+              />
+            </div>
+
+            {/* Depth fade overlay */}
+            <div
+              className="pointer-events-none absolute inset-0"
+              style={{
+                background: `linear-gradient(180deg,
+                  rgba(8,8,16,0.9) 0%,
+                  rgba(8,8,16,0.3) 25%,
+                  transparent 50%,
+                  rgba(8,8,16,0.15) 80%,
+                  rgba(8,8,16,0.7) 100%)`,
+              }}
+            />
+            {/* Horizon glow */}
+            <div
+              className="pointer-events-none absolute left-0 right-0 top-0"
+              style={{
+                height: "50%",
+                background: "linear-gradient(180deg, rgba(120,160,255,0.06) 0%, transparent 100%)",
               }}
             />
 
@@ -919,7 +997,12 @@ export function WhatsNewModal() {
               {/* Eyebrow */}
               <motion.div
                 variants={itemUp}
-                className="mb-2 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/[0.08] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600/80"
+                className="mb-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]"
+                style={{
+                  border: "1px solid rgba(96,165,250,0.25)",
+                  background: "rgba(96,165,250,0.10)",
+                  color: "rgba(147,197,253,0.9)",
+                }}
               >
                 <Sparkles size={10} />
                 Quietly 2.7
@@ -931,7 +1014,7 @@ export function WhatsNewModal() {
                 className="text-center text-[32px] font-semibold leading-[1.06] tracking-[-0.04em] sm:text-[36px]"
                 style={{
                   background:
-                    "linear-gradient(180deg, #2f2f34 0%, #50505a 100%)",
+                    "linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.65) 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -942,7 +1025,8 @@ export function WhatsNewModal() {
               {/* Subtitle */}
               <motion.p
                 variants={itemUp}
-                className="mt-2 text-center text-[13px] font-medium leading-relaxed text-[#8e8e93]"
+                className="mt-2 text-center text-[13px] font-medium leading-relaxed"
+                style={{ color: "rgba(255,255,255,0.45)" }}
               >
                 Seven powerful upgrades to supercharge your meetings
               </motion.p>
@@ -969,3 +1053,4 @@ export function WhatsNewModal() {
     </AnimatePresence>
   );
 }
+
