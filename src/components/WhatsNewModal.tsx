@@ -587,8 +587,8 @@ function FeatureCard({ feature }: { feature: Feature }) {
         }}
       >
         <Icon
-           size={12}
-           strokeWidth={1.8}
+          size={12}
+          strokeWidth={1.8}
           style={{ color: feature.accent }}
         />
       </div>
@@ -606,8 +606,8 @@ function FeatureCard({ feature }: { feature: Feature }) {
 
 /* ═══ Magnetic CTA Button ═══ */
 
-const magneticSpring = { stiffness: 420, damping: 18, mass: 0.45 };
-const textSpring = { stiffness: 180, damping: 14, mass: 0.6 };
+const magneticSpring = { stiffness: 260, damping: 24, mass: 0.62 };
+const textSpring = { stiffness: 340, damping: 25, mass: 0.5 };
 const clamp = (v: number, min: number, max: number) =>
   Math.min(Math.max(v, min), max);
 
@@ -669,20 +669,20 @@ function MagneticCTA({
       const dx = clientX - cx;
       const dy = clientY - cy;
       const dist = Math.hypot(dx, dy);
-      const radius = 180;
-      const strength = Math.pow(clamp(1 - dist / radius, 0, 1), 1.1);
+      const radius = 120;
+      const strength = Math.pow(clamp(1 - dist / radius, 0, 1), 1.4);
 
       if (strength < 0.02) {
         resetMagnet();
         return;
       }
 
-      magneticX.set(clamp(dx * 0.28 * strength, -18, 18));
-      magneticY.set(clamp(dy * 0.22 * strength, -12, 12));
-      magneticScale.set(1 + 0.035 * strength);
-      magneticRotate.set(clamp(dx * 0.012 * strength, -1.5, 1.5));
-      magneticTextX.set(clamp(dx * 0.18 * strength, -10, 10));
-      magneticTextY.set(clamp(dy * 0.22 * strength, -8, 8));
+      magneticX.set(clamp(dx * 0.1 * strength, -8, 8));
+      magneticY.set(clamp(dy * 0.08 * strength, -5, 5));
+      magneticScale.set(1 + 0.012 * strength);
+      magneticRotate.set(clamp(dx * 0.005 * strength, -0.6, 0.6));
+      magneticTextX.set(clamp(dx * 0.08 * strength, -4, 4));
+      magneticTextY.set(clamp(dy * 0.1 * strength, -3, 3));
 
       const hx = clamp(
         ((clientX - buttonRect.left) / buttonRect.width) * 100,
@@ -776,15 +776,16 @@ function MagneticCTA({
               }}
             />
           )}
-          <span
+          <motion.span
             className="relative z-10 flex items-center gap-2 drop-shadow-[0_1px_1px_rgba(255,255,255,0.22)]"
+            style={{ x: textX, y: textY }}
           >
             Download Now
             <ArrowRight
               size={14}
               className="transition-transform duration-200 group-hover:translate-x-0.5"
             />
-          </span>
+          </motion.span>
         </motion.a>
       </div>
 
