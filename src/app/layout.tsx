@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { EB_Garamond, Geist, Geist_Mono } from "next/font/google";
 
+import { InitialLoadOverlay } from "@/components/InitialLoadOverlay";
 import { QUIETLY_ICON_SRC } from "@/lib/brand";
 
 import "./globals.css";
@@ -54,6 +55,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <InitialLoadOverlay />
         <Analytics />
       </body>
     </html>
