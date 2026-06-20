@@ -1,0 +1,234 @@
+/* ═══════════════════════════════════════════════════════════════
+   QUIETLY V2 — NEURALYN DARK THEME
+   Pure black. Monochrome. Liquid glass. Instrument Serif accents.
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
+@layer base {
+  .v2-dark {
+    --v2-bg: 0 0% 0%;
+    --v2-bg-raised: 0 0% 3%;
+    --v2-bg-card: 0 0% 5%;
+    --v2-fg: 0 0% 100%;
+    --v2-fg-muted: 0 0% 65%;
+    --v2-fg-subtle: 0 0% 35%;
+    --v2-hero-subtitle: 210 17% 95%;
+    --v2-border: 0 0% 20%;
+    --v2-border-subtle: 0 0% 8%;
+    --v2-accent-sky: 199 89% 48%;
+    --v2-accent-violet: 262 83% 58%;
+    --v2-accent-emerald: 142 71% 45%;
+    --v2-accent-amber: 33 100% 52%;
+
+    color: hsl(var(--v2-fg));
+    background: hsl(var(--v2-bg));
+  }
+}
+
+/* ── Liquid Glass (Neuralyn spec) ────────────────────────────── */
+
+@layer utilities {
+  .v2-glass {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.06);
+  }
+
+  .v2-glass-hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .v2-glass-pill {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .v2-glass-pill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.15) 80%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* ── Section utilities ──────────────────────────────────────── */
+
+  .v2-section {
+    padding-left: clamp(2rem, 5vw, 7rem);
+    padding-right: clamp(2rem, 5vw, 7rem);
+    padding-top: clamp(6rem, 10vw, 8rem);
+    padding-bottom: clamp(6rem, 10vw, 8rem);
+  }
+
+  .v2-section-tight {
+    padding-left: clamp(2rem, 5vw, 7rem);
+    padding-right: clamp(2rem, 5vw, 7rem);
+    padding-top: clamp(3rem, 6vw, 5rem);
+    padding-bottom: clamp(3rem, 6vw, 5rem);
+  }
+
+  .v2-content {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .v2-wide {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── Kicker label ───────────────────────────────────────────── */
+
+  .v2-kicker {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: hsl(var(--v2-fg-muted));
+    margin-bottom: 1rem;
+  }
+
+  /* ── Headline serif accent ──────────────────────────────────── */
+
+  .v2-serif {
+    font-family: var(--font-eb-garamond), "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  /* ── Product image blend ────────────────────────────────────── */
+
+  .v2-product-blend {
+    mix-blend-mode: luminosity;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+      0 25px 50px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+
+  /* ── Bottom gradient fade ───────────────────────────────────── */
+
+  .v2-fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    background: linear-gradient(to top, hsl(0 0% 0%), transparent);
+    pointer-events: none;
+    z-index: 30;
+  }
+
+  /* ── Quick action button ────────────────────────────────────── */
+
+  .v2-action-btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    transition: all 200ms cubic-bezier(0.22, 1, 0.36, 1);
+    white-space: nowrap;
+    cursor: default;
+  }
+
+  .v2-action-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  .v2-action-btn-active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.06);
+  }
+
+  /* ── Typewriter cursor ──────────────────────────────────────── */
+
+  .v2-typewriter-cursor::after {
+    content: "▋";
+    animation: v2-blink 1s step-end infinite;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 1px;
+  }
+
+  @keyframes v2-blink {
+    50% { opacity: 0; }
+  }
+
+  /* ── CTA pulse ──────────────────────────────────────────────── */
+
+  .v2-cta-glow {
+    animation: v2-cta-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes v2-cta-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+    50% { box-shadow: 0 0 30px 4px rgba(255, 255, 255, 0.06); }
+  }
+
+  /* ── Stealth layer ring ─────────────────────────────────────── */
+
+  .v2-stealth-ring {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 9999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ── Comparison table ───────────────────────────────────────── */
+
+  .v2-table-highlight {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  /* ── Marquee scroll ──────────────────────────────────────────── */
+
+  .animate-marquee {
+    animation: v2-marquee 25s linear infinite;
+  }
+
+  @keyframes v2-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── Shimmer sweep ───────────────────────────────────────────── */
+
+  @keyframes shimmer-sweep {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(100%); }
+  }
+}
