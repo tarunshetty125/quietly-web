@@ -547,7 +547,7 @@ function FeatureCard({ feature }: { feature: Feature }) {
         scale: 1.01,
         transition: { type: "spring", stiffness: 400, damping: 25 },
       }}
-      className={`group relative overflow-hidden rounded-[12px] p-3 ${feature.wide ? "col-span-2" : ""}`}
+      className={`group relative overflow-hidden rounded-[12px] p-3 ${feature.wide ? "sm:col-span-2" : ""}`}
       style={{
         background:
           "linear-gradient(160deg, #151c2c 0%, #0f1420 60%, #0c101a 100%)",
@@ -854,7 +854,7 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[540px] overflow-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)]"
+            className="relative z-10 mx-4 w-full max-w-[540px] max-h-[85dvh] overflow-y-auto overflow-x-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             style={{
               backgroundColor: "#08080f",
               fontFamily:
@@ -1021,7 +1021,7 @@ export function WhatsNewModal() {
               {/* Bento Grid */}
               <motion.div
                 variants={containerVariants}
-                className="mt-3 grid w-full grid-cols-3 gap-1.5"
+                className="mt-3 grid w-full grid-cols-2 gap-1.5 sm:grid-cols-3"
               >
                 {FEATURES.map((feature) => (
                   <FeatureCard key={feature.title} feature={feature} />

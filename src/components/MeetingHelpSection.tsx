@@ -80,12 +80,12 @@ function ListeningCard() {
   return (
     <article
       ref={cardRef}
-      className="relative flex min-h-[520px] overflow-hidden rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-6 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:p-8 lg:min-h-[586px] lg:p-10"
+      className="relative flex min-h-[420px] overflow-hidden rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-5 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:min-h-[520px] sm:p-8 lg:min-h-[586px] lg:p-10"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,rgba(95,136,239,0)_0%,rgba(68,116,225,0.36)_100%)]" />
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
-          <h3 className="max-w-[500px] text-[25px] font-medium leading-[34px] sm:text-[28px] sm:leading-[38px]">
+          <h3 className="max-w-[500px] text-[20px] font-medium leading-[28px] sm:text-[25px] sm:leading-[34px] md:text-[28px] md:leading-[38px]">
             Quietly AI{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/16 px-2.5 py-1 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24)] backdrop-blur-md">
               <AudioWaveform className="h-4 w-4" aria-hidden="true" />
@@ -93,14 +93,14 @@ function ListeningCard() {
             </span>{" "}
             in to the conversation
           </h3>
-          <p className="mt-5 max-w-[520px] text-[17px] leading-7 text-white/88 sm:text-lg">
+          <p className="mt-3 max-w-[520px] text-[15px] leading-6 text-white/88 sm:mt-5 sm:text-[17px] sm:leading-7">
             It picks up the context of your meeting in real time, so it can help
             when you need it.
           </p>
         </div>
 
         <div className="mt-8 flex flex-col items-center sm:mt-10">
-          <div className="text-[42px] font-medium leading-none text-white/62 sm:text-[46px]">
+          <div className="text-[32px] font-medium leading-none text-white/62 sm:text-[42px] md:text-[46px]">
             {formatElapsedTime(elapsedSeconds)}
           </div>
           <div className="mt-2 flex items-center gap-1.5 text-[15px] text-white/62">
@@ -227,11 +227,11 @@ function AssistantPanel() {
 
 function AssistCard() {
   return (
-    <article className="relative flex min-h-[520px] overflow-hidden rounded-[28px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-6 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:p-8 lg:min-h-[586px] lg:p-10">
+    <article className="relative flex min-h-[420px] overflow-hidden rounded-[28px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-5 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:min-h-[520px] sm:p-8 lg:min-h-[586px] lg:p-10">
       <div className="pointer-events-none absolute inset-x-8 top-0 h-24 rounded-full bg-white/70 blur-2xl" />
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
-          <h3 className="max-w-[520px] text-[25px] font-medium leading-[34px] text-[#24242C] sm:text-[28px] sm:leading-[38px]">
+          <h3 className="max-w-[520px] text-[20px] font-medium leading-[28px] text-[#24242C] sm:text-[25px] sm:leading-[34px] md:text-[28px] md:leading-[38px]">
             When you need help, Quietly AI{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/72 px-2.5 py-1 text-[#24242C] shadow-[0_1px_8px_rgba(150,159,180,0.16)]">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
@@ -274,7 +274,7 @@ export function MeetingHelpSection() {
       <ScrollReveal>
         <h2
           id="meeting-help-title"
-          className="max-w-[980px] bg-[linear-gradient(90deg,#19191D_0%,#626275_100%)] bg-clip-text text-[40px] font-medium leading-[48px] text-transparent md:text-[56px] md:leading-[70px]"
+          className="max-w-[980px] bg-[linear-gradient(90deg,#19191D_0%,#626275_100%)] bg-clip-text text-[28px] font-medium leading-[36px] text-transparent sm:text-[40px] sm:leading-[48px] md:text-[56px] md:leading-[70px]"
         >
           How Quietly AI helps during a meeting
         </h2>
