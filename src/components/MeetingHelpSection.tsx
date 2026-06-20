@@ -170,20 +170,20 @@ function ListeningCard() {
 
 function AssistantPanel() {
   return (
-    <div className="rounded-2xl border border-white/10 bg-[#26252B]/88 p-3 text-white shadow-[0_24px_54px_rgba(24,23,28,0.22)] backdrop-blur-md sm:p-4">
-      <div className="ml-auto w-fit rounded-lg bg-[#164ED3] px-3 py-2 text-[12px] leading-none shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]">
+    <div className="rounded-xl border border-white/10 bg-[#26252B]/88 p-2 text-white shadow-[0_24px_54px_rgba(24,23,28,0.22)] backdrop-blur-md sm:rounded-2xl sm:p-3 md:p-4">
+      <div className="ml-auto w-fit rounded-md bg-[#164ED3] px-2.5 py-1.5 text-[10px] leading-none shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] sm:rounded-lg sm:px-3 sm:py-2 sm:text-[12px]">
         Assist
       </div>
-      <div className="mt-4 max-w-[470px] text-[12px] leading-5 text-white/44">
+      <div className="mt-2 text-[10px] leading-4 text-white/44 sm:mt-4 sm:max-w-[470px] sm:text-[12px] sm:leading-5">
         <p className="text-white/36">Viewed screen</p>
-        <p>
+        <p className="line-clamp-2 sm:line-clamp-none">
           Quietly AI is an AI meeting assistant that listens in real time,
           understands what&apos;s being said, and gives you instant answers,
           notes, and next steps all while staying completely undetectable on
           your screen.
         </p>
       </div>
-      <div className="mt-5 flex items-center gap-4 overflow-hidden text-[12px] text-white/82">
+      <div className="mt-2 flex items-center gap-3 overflow-hidden text-[10px] text-white/82 sm:mt-5 sm:gap-4 sm:text-[12px]">
         <span className="flex items-center gap-1.5 whitespace-nowrap">
           <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
           Assist
@@ -201,8 +201,8 @@ function AssistantPanel() {
           Recap
         </span>
       </div>
-      <div className="mt-3 flex items-center rounded-xl border border-white/12 bg-white/6 px-3 py-2 text-[13px] text-white/52">
-        <span className="truncate">Ask about your screen or conversation, or</span>
+      <div className="mt-2 flex items-center rounded-lg border border-white/12 bg-white/6 px-2 py-1.5 text-[11px] text-white/52 sm:mt-3 sm:rounded-xl sm:px-3 sm:py-2 sm:text-[13px]">
+        <span className="truncate text-[10px] sm:text-[13px]">Ask about your screen or conversation</span>
         <kbd className="ml-2 rounded border border-white/12 px-1.5 py-0.5 text-[10px]">
           Cmd
         </kbd>
@@ -210,11 +210,11 @@ function AssistantPanel() {
           Enter
         </kbd>
         <span className="ml-2 hidden sm:inline">for Assist</span>
-        <span className="ml-auto flex h-7 w-7 items-center justify-center rounded-full bg-[#1550DA] text-white">
+        <span className="ml-auto flex h-6 w-6 items-center justify-center rounded-full bg-[#1550DA] text-white sm:h-7 sm:w-7">
           <Send className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
         </span>
       </div>
-      <div className="mt-2 flex items-center gap-3 text-[12px] text-white/54">
+      <div className="mt-1.5 flex items-center gap-2 text-[10px] text-white/54 sm:mt-2 sm:gap-3 sm:text-[12px]">
         <span className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/7 px-3 py-1">
           <Sparkles className="h-3 w-3" aria-hidden="true" />
           Smart
@@ -245,18 +245,18 @@ function AssistCard() {
         </div>
 
         <div className="mt-4 pt-3 sm:mt-auto sm:pt-7">
-          <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full bg-[#3A3A42] p-2 text-white shadow-[0_12px_28px_rgba(38,38,45,0.18)]">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#3A3A42]">
+          <div className="mx-auto mb-2 flex w-fit items-center gap-1.5 rounded-full bg-[#3A3A42] p-1.5 text-white shadow-[0_12px_28px_rgba(38,38,45,0.18)] sm:mb-3 sm:gap-2 sm:p-2">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-[#3A3A42] sm:h-8 sm:w-8">
               <MousePointer2
-                className="h-5 w-5 rotate-45"
+                className="h-4 w-4 rotate-45 sm:h-5 sm:w-5"
                 aria-hidden="true"
               />
             </span>
-            <span className="flex items-center gap-1 rounded-full bg-[#2C2C34] px-3 py-2 text-[12px]">
+            <span className="flex items-center gap-1 rounded-full bg-[#2C2C34] px-2.5 py-1.5 text-[10px] sm:px-3 sm:py-2 sm:text-[12px]">
               <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
               Hide
             </span>
-            <span className="h-7 w-7 rounded-full border-[6px] border-white bg-white/20" />
+            <span className="h-5 w-5 rounded-full border-4 border-white bg-white/20 sm:h-7 sm:w-7 sm:border-[6px]" />
           </div>
           <AssistantPanel />
         </div>
