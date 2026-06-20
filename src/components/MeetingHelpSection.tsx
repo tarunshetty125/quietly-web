@@ -87,8 +87,8 @@ function ListeningCard() {
         <div>
           <h3 className="text-[18px] font-medium leading-[24px] sm:max-w-[500px] sm:text-[22px] sm:leading-[30px] md:text-[28px] md:leading-[38px]">
             Quietly AI{" "}
-            <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/16 px-2.5 py-1 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24)] backdrop-blur-md">
-              <AudioWaveform className="h-4 w-4" aria-hidden="true" />
+            <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/16 px-2 py-0.5 text-[14px] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24)] backdrop-blur-md sm:px-2.5 sm:py-1 sm:text-[inherit]">
+              <AudioWaveform className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
               listens
             </span>{" "}
             in to the conversation
@@ -233,8 +233,8 @@ function AssistCard() {
         <div>
           <h3 className="text-[18px] font-medium leading-[24px] text-[#24242C] sm:max-w-[520px] sm:text-[22px] sm:leading-[30px] md:text-[28px] md:leading-[38px]">
             When you need help, Quietly AI{" "}
-            <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/72 px-2.5 py-1 text-[#24242C] shadow-[0_1px_8px_rgba(150,159,180,0.16)]">
-              <Sparkles className="h-4 w-4" aria-hidden="true" />
+            <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/72 px-2 py-0.5 text-[14px] text-[#24242C] shadow-[0_1px_8px_rgba(150,159,180,0.16)] sm:px-2.5 sm:py-1 sm:text-[inherit]">
+              <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
               assists
             </span>{" "}
             you instantly
@@ -269,7 +269,7 @@ export function MeetingHelpSection() {
   return (
     <section
       aria-labelledby="meeting-help-title"
-      className="mx-auto flex w-full max-w-[1280px] flex-col gap-8 px-6 sm:px-8 md:gap-11"
+      className="mx-auto flex w-full max-w-[1280px] flex-col gap-6 px-4 sm:gap-8 sm:px-6 md:gap-11 md:px-8"
     >
       <ScrollReveal>
         <h2
@@ -279,7 +279,7 @@ export function MeetingHelpSection() {
           How Quietly AI helps during a meeting
         </h2>
       </ScrollReveal>
-      <div className="grid gap-7 lg:grid-cols-2">
+      <div className="grid gap-5 sm:gap-7 lg:grid-cols-2">
         <ScrollReveal delayClassName="delay-100">
           <ListeningCard />
         </ScrollReveal>
