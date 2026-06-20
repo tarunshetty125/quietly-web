@@ -80,12 +80,12 @@ function ListeningCard() {
   return (
     <article
       ref={cardRef}
-      className="relative flex h-[390px] overflow-hidden rounded-[24px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-5 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:rounded-[28px] sm:p-6 md:h-[480px] md:p-8 lg:h-[586px] lg:p-10"
+      className="relative flex h-auto overflow-hidden rounded-[20px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-4 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,rgba(95,136,239,0)_0%,rgba(68,116,225,0.36)_100%)]" />
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
-          <h3 className="max-w-[500px] text-[20px] font-medium leading-[28px] sm:text-[25px] sm:leading-[34px] md:text-[28px] md:leading-[38px]">
+          <h3 className="text-[18px] font-medium leading-[24px] sm:max-w-[500px] sm:text-[22px] sm:leading-[30px] md:text-[28px] md:leading-[38px]">
             Quietly AI{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/16 px-2.5 py-1 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.24)] backdrop-blur-md">
               <AudioWaveform className="h-4 w-4" aria-hidden="true" />
@@ -93,14 +93,14 @@ function ListeningCard() {
             </span>{" "}
             in to the conversation
           </h3>
-          <p className="mt-3 max-w-[520px] text-[15px] leading-6 text-white/88 sm:mt-5 sm:text-[17px] sm:leading-7">
+          <p className="mt-2 text-[14px] leading-5 text-white/88 sm:mt-3 sm:max-w-[520px] sm:text-[15px] sm:leading-6 md:mt-5 md:text-[17px] md:leading-7">
             It picks up the context of your meeting in real time, so it can help
             when you need it.
           </p>
         </div>
 
         <div className="mt-5 flex flex-col items-center sm:mt-8 md:mt-10">
-          <div className="text-[32px] font-medium leading-none text-white/62 sm:text-[42px] md:text-[46px]">
+          <div className="text-[28px] font-medium leading-none text-white/62 sm:text-[36px] md:text-[46px]">
             {formatElapsedTime(elapsedSeconds)}
           </div>
           <div className="mt-2 flex items-center gap-1.5 text-[15px] text-white/62">
@@ -111,7 +111,7 @@ function ListeningCard() {
 
         <div
           className={cn(
-            "quietly-audio-waveform mt-auto flex h-10 items-center justify-center gap-0.5 overflow-hidden sm:h-16 sm:gap-1 md:gap-[5px]",
+            "quietly-audio-waveform mt-4 flex h-8 items-center justify-center gap-0.5 overflow-hidden sm:mt-auto sm:h-16 sm:gap-1 md:gap-[5px]",
             isLive && "quietly-audio-waveform-live",
           )}
           aria-hidden="true"
@@ -121,8 +121,8 @@ function ListeningCard() {
           ))}
         </div>
 
-        <div className="mt-5 rounded-xl border border-white/8 bg-[#26376E]/34 p-2.5 text-white/52 shadow-[0_16px_44px_rgba(41,64,130,0.32)] backdrop-blur-lg sm:mt-9 sm:p-3">
-          <div className="flex items-center gap-4 overflow-hidden px-1 text-[11px]">
+        <div className="mt-4 rounded-lg border border-white/8 bg-[#26376E]/34 p-2 text-white/52 shadow-[0_16px_44px_rgba(41,64,130,0.32)] backdrop-blur-lg sm:mt-9 sm:rounded-xl sm:p-3">
+          <div className="flex items-center gap-3 overflow-hidden px-1 text-[10px] sm:gap-4 sm:text-[11px]">
             <span className="flex items-center gap-1.5 text-white/58">
               <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
               Assist
@@ -140,7 +140,7 @@ function ListeningCard() {
               Recap
             </span>
           </div>
-          <div className="mt-3 flex items-center rounded-xl border border-white/8 bg-white/6 px-3 py-2 text-[13px] text-white/42">
+          <div className="mt-2 flex items-center rounded-lg border border-white/8 bg-white/6 px-2.5 py-1.5 text-[12px] text-white/42 sm:mt-3 sm:rounded-xl sm:px-3 sm:py-2 sm:text-[13px]">
             <span className="truncate">
               Ask about your screen or conversation, or
             </span>
@@ -155,7 +155,7 @@ function ListeningCard() {
               <Send className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
             </span>
           </div>
-          <div className="mt-2 flex items-center gap-3 text-[12px]">
+          <div className="mt-1.5 flex items-center gap-3 text-[11px] sm:mt-2 sm:text-[12px]">
             <span className="flex items-center gap-1.5 rounded-full border border-white/8 bg-white/6 px-3 py-1">
               <Sparkles className="h-3 w-3" aria-hidden="true" />
               Smart
@@ -227,11 +227,11 @@ function AssistantPanel() {
 
 function AssistCard() {
   return (
-    <article className="relative flex h-[390px] overflow-hidden rounded-[24px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-5 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:rounded-[28px] sm:p-6 md:h-[480px] md:p-8 lg:h-[586px] lg:p-10">
+    <article className="relative flex h-auto overflow-hidden rounded-[20px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-4 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10">
       <div className="pointer-events-none absolute inset-x-8 top-0 h-24 rounded-full bg-white/70 blur-2xl" />
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
-          <h3 className="max-w-[520px] text-[20px] font-medium leading-[28px] text-[#24242C] sm:text-[25px] sm:leading-[34px] md:text-[28px] md:leading-[38px]">
+          <h3 className="text-[18px] font-medium leading-[24px] text-[#24242C] sm:max-w-[520px] sm:text-[22px] sm:leading-[30px] md:text-[28px] md:leading-[38px]">
             When you need help, Quietly AI{" "}
             <span className="inline-flex translate-y-[-2px] items-center gap-1 rounded-full bg-white/72 px-2.5 py-1 text-[#24242C] shadow-[0_1px_8px_rgba(150,159,180,0.16)]">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
@@ -239,12 +239,12 @@ function AssistCard() {
             </span>{" "}
             you instantly
           </h3>
-          <p className="mt-5 max-w-[520px] text-[17px] leading-7 text-[#777783] sm:text-lg">
+          <p className="mt-2 text-[14px] leading-5 text-[#777783] sm:mt-5 sm:max-w-[520px] sm:text-[15px] sm:leading-6 md:text-[17px] md:leading-7">
             Hit Cmd/Ctrl + Enter and Quietly AI helps you with AI in the moment.
           </p>
         </div>
 
-        <div className="mt-auto pt-7">
+        <div className="mt-4 pt-3 sm:mt-auto sm:pt-7">
           <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full bg-[#3A3A42] p-2 text-white shadow-[0_12px_28px_rgba(38,38,45,0.18)]">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#3A3A42]">
               <MousePointer2
