@@ -547,12 +547,12 @@ function FeatureCard({ feature }: { feature: Feature }) {
         scale: 1.01,
         transition: { type: "spring", stiffness: 400, damping: 25 },
       }}
-      className={`group relative overflow-hidden rounded-[12px] p-3 ${feature.wide ? "sm:col-span-2" : ""}`}
+      className={`group relative overflow-hidden rounded-[10px] p-2 sm:rounded-[12px] sm:p-3 ${feature.wide ? "sm:col-span-2" : ""}`}
       style={{
         background:
           "linear-gradient(160deg, #151c2c 0%, #0f1420 60%, #0c101a 100%)",
         border: "1px solid rgba(255,255,255,0.12)",
-        minHeight: "70px",
+        minHeight: "52px",
         boxShadow:
           "0 2px 4px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.20), 0 16px 48px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.06)",
       }}
@@ -580,7 +580,7 @@ function FeatureCard({ feature }: { feature: Feature }) {
       {feature.illustration}
 
       <div
-        className="relative z-10 mb-1.5 flex h-6 w-6 items-center justify-center rounded-[7px]"
+        className="relative z-10 mb-1 flex h-5 w-5 items-center justify-center rounded-[6px] sm:mb-1.5 sm:h-6 sm:w-6 sm:rounded-[7px]"
         style={{
           background: `${feature.accent}18`,
           border: `1px solid ${feature.accent}28`,
@@ -593,11 +593,11 @@ function FeatureCard({ feature }: { feature: Feature }) {
         />
       </div>
 
-      <h3 className="relative z-10 text-[11.5px] font-bold leading-tight tracking-[-0.01em] text-white">
+      <h3 className="relative z-10 text-[10px] font-bold leading-tight tracking-[-0.01em] text-white sm:text-[11.5px]">
         {feature.title}
       </h3>
 
-      <p className="relative z-10 mt-0.5 max-w-[75%] text-[10px] font-medium leading-[1.35] text-white/50">
+      <p className="relative z-10 mt-0.5 max-w-[75%] text-[8px] font-medium leading-[1.3] text-white/50 sm:text-[10px] sm:leading-[1.35]">
         {feature.description}
       </p>
     </motion.div>
@@ -737,7 +737,7 @@ function MagneticCTA({
   };
 
   return (
-    <motion.div variants={itemUp} className="mt-3 flex flex-col items-center gap-1.5">
+    <motion.div variants={itemUp} className="mt-2 flex flex-col items-center gap-1 sm:mt-3 sm:gap-1.5">
       <div
         ref={fieldRef}
         className="relative flex min-h-[44px] w-full items-center justify-center overflow-visible"
@@ -979,12 +979,12 @@ export function WhatsNewModal() {
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className="relative z-10 flex flex-col items-center px-5 py-5 sm:px-7 sm:py-6"
+              className="relative z-10 flex flex-col items-center px-3.5 py-3.5 sm:px-7 sm:py-6"
             >
               {/* Eyebrow */}
               <motion.div
                 variants={itemUp}
-                className="mb-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em]"
+                className="mb-1.5 inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.14em] sm:mb-2 sm:px-3 sm:py-1 sm:text-[10px]"
                 style={{
                   border: "1px solid rgba(96,165,250,0.25)",
                   background: "rgba(96,165,250,0.10)",
@@ -998,7 +998,7 @@ export function WhatsNewModal() {
               {/* Title */}
               <motion.h2
                 variants={itemUp}
-                className="text-center text-[24px] font-semibold leading-[1.06] tracking-[-0.04em] sm:text-[28px]"
+                className="text-center text-[20px] font-semibold leading-[1.06] tracking-[-0.04em] sm:text-[28px]"
                 style={{
                   background:
                     "linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.65) 100%)",
@@ -1012,7 +1012,7 @@ export function WhatsNewModal() {
               {/* Subtitle */}
               <motion.p
                 variants={itemUp}
-                className="mt-2 text-center text-[13px] font-medium leading-relaxed"
+                className="mt-1 text-center text-[11px] font-medium leading-relaxed sm:mt-2 sm:text-[13px]"
                 style={{ color: "rgba(255,255,255,0.45)" }}
               >
                 Seven powerful upgrades to supercharge your meetings
@@ -1021,7 +1021,7 @@ export function WhatsNewModal() {
               {/* Bento Grid */}
               <motion.div
                 variants={containerVariants}
-                className="mt-3 grid w-full grid-cols-2 gap-1.5 sm:grid-cols-3"
+                className="mt-2.5 grid w-full grid-cols-2 gap-1 sm:mt-3 sm:grid-cols-3 sm:gap-1.5"
               >
                 {FEATURES.map((feature) => (
                   <FeatureCard key={feature.title} feature={feature} />
