@@ -53,6 +53,8 @@ const arrowKeys = [
   { label: "Right", iconClassName: "rotate-90", state: "right" },
 ] as const;
 
+const undetectabilityFeatureCount = 3;
+
 const demoStates = [
   {
     key: "up",
@@ -528,8 +530,73 @@ function EyesCard() {
 }
 
 export function UndetectabilitySection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [isMobileCarouselActive, setIsMobileCarouselActive] = useState(false);
+  const [activeFeatureIndex, setActiveFeatureIndex] = useState(0);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    if (!section) {
+      return undefined;
+    }
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+    const desktopViewport = window.matchMedia("(min-width: 1024px)");
+
+    if (prefersReducedMotion.matches || desktopViewport.matches) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsMobileCarouselActive(Boolean(entry?.isIntersecting));
+      },
+      {
+        rootMargin: "0px 0px -18% 0px",
+        threshold: 0.35,
+      },
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isMobileCarouselActive) {
+      return undefined;
+    }
+
+    const timer = window.setInterval(() => {
+      setActiveFeatureIndex((index) => (index + 1) % undetectabilityFeatureCount);
+    }, 2800);
+
+    return () => window.clearInterval(timer);
+  }, [isMobileCarouselActive]);
+
+  useEffect(() => {
+    if (!isMobileCarouselActive) {
+      return;
+    }
+
+    const feature = carouselRef.current?.children.item(activeFeatureIndex);
+
+    if (feature instanceof HTMLElement) {
+      feature.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+    }
+  }, [activeFeatureIndex, isMobileCarouselActive]);
+
   return (
     <section
+      ref={sectionRef}
       id="undetectability"
       className="relative z-10 scroll-mt-24 overflow-hidden py-20 md:py-24 lg:min-h-[790px] lg:py-0"
     >
@@ -543,7 +610,10 @@ export function UndetectabilitySection() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-16 md:px-0 lg:grid lg:snap-none lg:grid-cols-3 lg:overflow-visible lg:pb-0 xl:gap-8 [&::-webkit-scrollbar]:hidden">
+        <div
+          ref={carouselRef}
+          className="mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-16 md:px-0 lg:grid lg:snap-none lg:grid-cols-3 lg:overflow-visible lg:pb-0 xl:gap-8 [&::-webkit-scrollbar]:hidden"
+        >
           <ScrollReveal className="w-[85vw] shrink-0 snap-center sm:w-[calc(100vw-40px)] sm:max-w-[384px] sm:snap-start lg:w-auto lg:max-w-none">
             <article>
               <ParticipantsCard />
