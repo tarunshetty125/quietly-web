@@ -80,7 +80,7 @@ function ListeningCard() {
   return (
     <article
       ref={cardRef}
-      className="relative flex h-[390px] overflow-hidden rounded-[20px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-4 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:h-auto sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10"
+      className="relative flex h-[390px] max-w-full overflow-hidden rounded-[20px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-4 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:h-auto sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,rgba(95,136,239,0)_0%,rgba(68,116,225,0.36)_100%)]" />
       <div className="relative z-10 flex h-full w-full origin-top-left scale-[0.78] flex-col sm:scale-100">
@@ -227,7 +227,7 @@ function AssistantPanel() {
 
 function AssistCard() {
   return (
-    <article className="relative flex h-[390px] overflow-hidden rounded-[20px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-4 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:h-auto sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10">
+    <article className="relative flex h-[390px] max-w-full overflow-hidden rounded-[20px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-4 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:h-auto sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10">
       <div className="pointer-events-none absolute inset-x-8 top-0 h-24 rounded-full bg-white/70 blur-2xl" />
       <div className="relative z-10 flex h-full w-full origin-top-left scale-[0.78] flex-col sm:scale-100">
         <div>
@@ -269,7 +269,7 @@ export function MeetingHelpSection() {
   return (
     <section
       aria-labelledby="meeting-help-title"
-      className="mx-auto flex w-full max-w-[1280px] flex-col gap-6 px-4 sm:gap-8 sm:px-6 md:gap-11 md:px-8"
+      className="mx-auto flex w-full max-w-[1280px] flex-col gap-6 overflow-hidden px-4 sm:gap-8 sm:px-6 md:gap-11 md:px-8"
     >
       <ScrollReveal>
         <h2
@@ -279,7 +279,7 @@ export function MeetingHelpSection() {
           How Quietly AI helps during a meeting
         </h2>
       </ScrollReveal>
-      <div className="grid gap-5 sm:gap-7 lg:grid-cols-2">
+      <div className="grid min-w-0 gap-5 sm:gap-7 lg:grid-cols-2">
         <ScrollReveal delayClassName="delay-100">
           <ListeningCard />
         </ScrollReveal>
