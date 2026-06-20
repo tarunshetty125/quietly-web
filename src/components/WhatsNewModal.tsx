@@ -854,7 +854,7 @@ export function WhatsNewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.55, ease: EASE }}
-            className="relative z-10 mx-4 w-full max-w-[540px] max-h-[85dvh] overflow-y-auto overflow-x-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="relative z-10 mx-5 w-full max-w-[400px] max-h-[85dvh] overflow-y-auto overflow-x-hidden rounded-[18px] shadow-[0_32px_80px_rgba(0,0,0,0.5)] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-4 sm:max-w-[540px]"
             style={{
               backgroundColor: "#08080f",
               fontFamily:
