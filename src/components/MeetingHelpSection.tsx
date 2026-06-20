@@ -80,7 +80,7 @@ function ListeningCard() {
   return (
     <article
       ref={cardRef}
-      className="relative flex h-[390px] max-w-full overflow-hidden rounded-[20px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-4 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:h-auto sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10"
+      className="relative mx-auto flex h-[390px] w-full max-w-[344px] overflow-hidden rounded-[20px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-4 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:h-auto sm:max-w-full sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,rgba(95,136,239,0)_0%,rgba(68,116,225,0.36)_100%)]" />
       <div className="relative z-10 flex h-full w-[128.2%] origin-top-left scale-[0.78] flex-col sm:w-full sm:scale-100">
@@ -227,7 +227,7 @@ function AssistantPanel() {
 
 function AssistCard() {
   return (
-    <article className="relative flex h-[390px] max-w-full overflow-hidden rounded-[20px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-4 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:h-auto sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10">
+    <article className="relative mx-auto flex h-[390px] w-full max-w-[344px] overflow-hidden rounded-[20px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-4 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:h-auto sm:max-w-full sm:rounded-[28px] sm:p-6 md:p-8 lg:min-h-[586px] lg:p-10">
       <div className="pointer-events-none absolute inset-x-8 top-0 h-24 rounded-full bg-white/70 blur-2xl" />
       <div className="relative z-10 flex h-full w-[128.2%] origin-top-left scale-[0.78] flex-col sm:w-full sm:scale-100">
         <div>
