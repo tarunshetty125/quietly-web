@@ -80,7 +80,7 @@ function ListeningCard() {
   return (
     <article
       ref={cardRef}
-      className="relative flex min-h-[420px] overflow-hidden rounded-[28px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-5 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:min-h-[520px] sm:p-8 lg:min-h-[586px] lg:p-10"
+      className="relative flex h-[390px] overflow-hidden rounded-[24px] bg-[radial-gradient(circle_at_50%_0%,#86A4FF_0%,#7196F5_44%,#5F88EF_100%)] p-5 text-white shadow-[0_28px_70px_rgba(83,124,232,0.24),inset_0_1px_0_rgba(255,255,255,0.38)] sm:rounded-[28px] sm:p-6 md:h-[480px] md:p-8 lg:h-[586px] lg:p-10"
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(180deg,rgba(95,136,239,0)_0%,rgba(68,116,225,0.36)_100%)]" />
       <div className="relative z-10 flex h-full w-full flex-col">
@@ -99,7 +99,7 @@ function ListeningCard() {
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col items-center sm:mt-10">
+        <div className="mt-5 flex flex-col items-center sm:mt-8 md:mt-10">
           <div className="text-[32px] font-medium leading-none text-white/62 sm:text-[42px] md:text-[46px]">
             {formatElapsedTime(elapsedSeconds)}
           </div>
@@ -111,7 +111,7 @@ function ListeningCard() {
 
         <div
           className={cn(
-            "quietly-audio-waveform mt-auto flex h-16 items-center justify-center gap-1 overflow-hidden sm:gap-[5px]",
+            "quietly-audio-waveform mt-auto flex h-10 items-center justify-center gap-0.5 overflow-hidden sm:h-16 sm:gap-1 md:gap-[5px]",
             isLive && "quietly-audio-waveform-live",
           )}
           aria-hidden="true"
@@ -121,7 +121,7 @@ function ListeningCard() {
           ))}
         </div>
 
-        <div className="mt-9 rounded-xl border border-white/8 bg-[#26376E]/34 p-3 text-white/52 shadow-[0_16px_44px_rgba(41,64,130,0.32)] backdrop-blur-lg">
+        <div className="mt-5 rounded-xl border border-white/8 bg-[#26376E]/34 p-2.5 text-white/52 shadow-[0_16px_44px_rgba(41,64,130,0.32)] backdrop-blur-lg sm:mt-9 sm:p-3">
           <div className="flex items-center gap-4 overflow-hidden px-1 text-[11px]">
             <span className="flex items-center gap-1.5 text-white/58">
               <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
@@ -227,7 +227,7 @@ function AssistantPanel() {
 
 function AssistCard() {
   return (
-    <article className="relative flex min-h-[420px] overflow-hidden rounded-[28px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-5 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:min-h-[520px] sm:p-8 lg:min-h-[586px] lg:p-10">
+    <article className="relative flex h-[390px] overflow-hidden rounded-[24px] border border-[#DDE2EE] bg-[radial-gradient(circle_at_50%_-18%,#FFFFFF_0%,#F3F6FC_42%,#F9FAFD_100%)] p-5 shadow-[0_22px_70px_rgba(178,188,213,0.2),inset_0_0_0_1px_rgba(255,255,255,0.78)] sm:rounded-[28px] sm:p-6 md:h-[480px] md:p-8 lg:h-[586px] lg:p-10">
       <div className="pointer-events-none absolute inset-x-8 top-0 h-24 rounded-full bg-white/70 blur-2xl" />
       <div className="relative z-10 flex h-full w-full flex-col">
         <div>
