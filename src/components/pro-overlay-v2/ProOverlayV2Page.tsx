@@ -257,7 +257,8 @@ function SectionKicker({ children }: { children: ReactNode }) {
 
 function SectionTitle({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <h2 className={cn("text-3xl font-semibold tracking-[-0.03em] text-white md:text-4xl lg:text-[44px]", className)}>
+    <h2 className={cn("text-2xl font-semibold tracking-[-0.03em] text-white sm:text-3xl md:text-4xl lg:text-[44px]", className)}>
+
       {children}
     </h2>
   );
@@ -420,7 +421,7 @@ function StatsStrip() {
       ref={ref}
       className="relative border-y border-white/[0.06] bg-[#060810] px-4 py-16 md:py-20"
     >
-      <div className="mx-auto flex max-w-[1100px] flex-wrap items-center justify-center gap-8 md:gap-16">
+      <div className="mx-auto grid max-w-[1100px] grid-cols-3 gap-4 sm:grid-cols-5 sm:gap-8 md:gap-16">
         {STATS.map((stat, i) => (
           <div
             key={stat.label}
@@ -432,7 +433,7 @@ function StatsStrip() {
               transform: visible ? "translateY(0)" : "translateY(20px)",
             }}
           >
-            <p className="text-4xl font-bold tracking-[-0.04em] text-white md:text-5xl">
+            <p className="text-2xl font-bold tracking-[-0.04em] text-white sm:text-4xl md:text-5xl">
               {stat.value}
             </p>
             <p className="mt-1.5 text-[12px] font-semibold text-white/32">
@@ -559,7 +560,7 @@ function ProductShowcase() {
           </p>
         </RevealWrapper>
 
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="flex flex-col gap-5 md:grid md:grid-cols-2">
           {/* Demo Guide shot */}
           <RevealWrapper delay={0}>
             <div className="group overflow-hidden rounded-[22px] border border-white/[0.08] bg-white/[0.02] p-1.5 shadow-[0_24px_80px_rgba(0,0,0,0.5)] transition-all duration-500 hover:border-white/[0.14]" style={{ transitionTimingFunction: EASE }}>
@@ -943,7 +944,7 @@ function SystemDesignSection() {
               </div>
 
               {/* Node grid */}
-              <div className="relative grid grid-cols-3 gap-2.5" style={{ gridAutoRows: "auto" }}>
+              <div className="relative grid grid-cols-1 gap-2.5 sm:grid-cols-3" style={{ gridAutoRows: "auto" }}>
                 {WHATSAPP_NODES.map((node, i) => (
                   <DiagramNodeCard key={node.id} node={node} index={i} />
                 ))}

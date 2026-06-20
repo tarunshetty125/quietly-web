@@ -543,8 +543,8 @@ export function UndetectabilitySection() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-16 lg:grid lg:snap-none lg:grid-cols-3 lg:overflow-visible lg:pb-0 xl:gap-8 [&::-webkit-scrollbar]:hidden">
-          <ScrollReveal className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none">
+        <div className="mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-16 md:px-0 lg:grid lg:snap-none lg:grid-cols-3 lg:overflow-visible lg:pb-0 xl:gap-8 [&::-webkit-scrollbar]:hidden">
+          <ScrollReveal className="w-[85vw] shrink-0 snap-center sm:w-[calc(100vw-40px)] sm:max-w-[384px] sm:snap-start lg:w-auto lg:max-w-none">
             <article>
               <ParticipantsCard />
               <FeatureCopy title="Doesn't join meetings.">
@@ -555,7 +555,7 @@ export function UndetectabilitySection() {
           </ScrollReveal>
 
           <ScrollReveal
-            className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none"
+            className="w-[85vw] shrink-0 snap-center sm:w-[calc(100vw-40px)] sm:max-w-[384px] sm:snap-start lg:w-auto lg:max-w-none"
             delayClassName="delay-200"
           >
             <article>
@@ -568,7 +568,7 @@ export function UndetectabilitySection() {
           </ScrollReveal>
 
           <ScrollReveal
-            className="w-[calc(100vw-40px)] max-w-[384px] shrink-0 snap-start lg:w-auto lg:max-w-none"
+            className="w-[85vw] shrink-0 snap-center sm:w-[calc(100vw-40px)] sm:max-w-[384px] sm:snap-start lg:w-auto lg:max-w-none"
             delayClassName="delay-[400ms]"
           >
             <article>
