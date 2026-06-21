@@ -372,15 +372,15 @@ export function HeroSection() {
             <div className="flex flex-col items-center gap-4">
               <Link
                 href="/v2"
-                className="group inline-flex items-center gap-1.5 rounded-full border border-emerald-400/30 bg-emerald-500/20 px-3.5 py-1.5 text-[12px] font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:border-emerald-400/50 hover:bg-emerald-500/25"
-                style={{ boxShadow: "0 0 24px rgba(52,211,153,0.15), inset 0 1px 0 rgba(255,255,255,0.08)" }}
+                className="v2-glass-pill group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-[13px] transition-all duration-300 hover:bg-white/[0.04]"
               >
-                <span className="relative flex size-1.5 items-center justify-center">
-                  <span className="absolute inline-flex size-2.5 animate-ping rounded-full bg-emerald-400 opacity-30" />
-                  <span className="relative inline-flex size-1.5 rounded-full bg-emerald-400" />
+                <span
+                  className="text-sm font-medium text-emerald-400"
+                  style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+                >
+                  Quietly 2.7 — Out now
                 </span>
-                <span>Quietly 2.7 — Out now</span>
-                <svg className="size-3 text-emerald-400/50 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
+                <svg className="size-3 text-white/30 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
               </Link>
               <h1
                 className="cluely-hero-title font-serif max-w-[350px] text-[55px] leading-[0.96] font-normal text-white md:max-w-[548px] md:text-[78px] md:leading-[74.88px]"

@@ -11,11 +11,11 @@ const navLinks: readonly {
   href: string;
   variant?: "gold";
 }[] = [
-  { label: "Pricing", href: "#pricing" },
-  { label: "Undetectability", href: "#undetectability" },
-  { label: "Pro", href: "/pro", variant: "gold" },
-  { label: "New V2", href: "/v2", variant: "gold" },
-]
+    { label: "Pricing", href: "#pricing" },
+    { label: "Undetectability", href: "#undetectability" },
+    { label: "Pro", href: "/pro", variant: "gold" },
+    { label: "New V2", href: "/v2", variant: "gold" },
+  ]
 
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -57,31 +57,37 @@ export function SiteHeader() {
           className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-10 md:flex"
         >
           {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={
-                link.variant === "gold"
-                  ? "flex items-center justify-center gap-2 text-sm leading-5 font-semibold text-[#FFD36A] drop-shadow-[0_2px_10px_rgba(255,196,67,0.35)] transition-colors duration-200 hover:text-[#FFE7A3] focus-visible:ring-2 focus-visible:ring-[#FFD36A]/70 focus-visible:outline-none"
-                  : "flex items-center justify-center text-sm leading-5 font-medium text-white transition-colors duration-200 hover:text-white/75 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none"
-              }
-            >
-              {link.label}
-              {link.label === "New V2" && (
-                <span className="relative overflow-hidden rounded text-[9px] font-bold px-1.5 py-[2px] uppercase tracking-wider"
-                  style={{ background: "rgba(255,211,106,0.15)", border: "1px solid rgba(255,211,106,0.3)", color: "#FFD36A" }}
-                >
-                  ✦
+            link.label === "New V2" ? (
+              <a
+                key={link.label}
+                href={link.href}
+                className="group inline-flex items-center gap-2 transition-opacity duration-200 hover:opacity-80"
+              >
+                <span className="text-[13px] font-semibold text-[#FFD36A] drop-shadow-[0_2px_10px_rgba(255,196,67,0.35)]">V2</span>
+                <span className="relative overflow-hidden rounded px-1 py-[1px] text-[9px] font-bold text-black bg-amber-400">
+                  New
                   <span
                     className="absolute inset-0 pointer-events-none"
                     style={{
-                      background: "linear-gradient(105deg, transparent 35%, rgba(255,211,106,0.5) 50%, transparent 65%)",
-                      animation: "shimmer-sweep 2s ease-in-out infinite",
+                      background: "linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.8) 50%, transparent 60%)",
+                      animation: "shimmer-sweep 2.5s ease-in-out infinite",
                     }}
                   />
                 </span>
-              )}
-            </a>
+              </a>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className={
+                  link.variant === "gold"
+                    ? "flex items-center justify-center gap-2 text-sm leading-5 font-semibold text-[#FFD36A] drop-shadow-[0_2px_10px_rgba(255,196,67,0.35)] transition-colors duration-200 hover:text-[#FFE7A3] focus-visible:ring-2 focus-visible:ring-[#FFD36A]/70 focus-visible:outline-none"
+                    : "flex items-center justify-center text-sm leading-5 font-medium text-white transition-colors duration-200 hover:text-white/75 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none"
+                }
+              >
+                {link.label}
+              </a>
+            )
           ))}
         </nav>
 

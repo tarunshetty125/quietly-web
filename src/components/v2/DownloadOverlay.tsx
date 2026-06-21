@@ -3,7 +3,7 @@
 import { useState, type ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Check, Copy, ArrowRight, X } from "lucide-react";
+import { Check, Copy, ArrowRight, X, FolderOpen, FolderInput, ShieldCheck, TerminalSquare, Sparkles, ChevronRight } from "lucide-react";
 
 /* ───────────────────────── constants ───────────────────────── */
 
@@ -16,7 +16,10 @@ const TERMINAL_CMD = "xattr -cr /Applications/Quietly.app";
 
 type Step = {
   num: number;
-  color: string;
+  badgeGradient: string;
+  borderAccent: string;
+  glowColor: string;
+  titleIcon: ReactNode;
   title: string;
   desc: string;
   illustration: ReactNode;
@@ -26,23 +29,31 @@ type Step = {
 
 function FinderIllustration() {
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-xl bg-[#1a1a1a] p-3">
-      <div className="mb-2 flex items-center gap-1.5">
-        <span className="size-[7px] rounded-full bg-[#ff5f57]" />
-        <span className="size-[7px] rounded-full bg-[#febc2e]" />
-        <span className="size-[7px] rounded-full bg-[#28c840]" />
-        <span className="ml-3 text-[9px] font-medium text-white/40">Downloads</span>
+    <div className="relative flex h-full w-full flex-col overflow-hidden rounded-2xl bg-[#0d1117] p-3.5">
+      {/* Title bar */}
+      <div className="mb-3 flex items-center gap-1.5">
+        <span className="size-[8px] rounded-full bg-[#ff5f57]" />
+        <span className="size-[8px] rounded-full bg-[#febc2e]" />
+        <span className="size-[8px] rounded-full bg-[#28c840]" />
+        <span className="ml-2 flex items-center gap-1 text-[10px] font-medium text-white/50">
+          <FolderOpen size={10} className="text-blue-400/60" />
+          Downloads
+        </span>
       </div>
-      <div className="flex items-center gap-2 rounded-lg bg-white/[0.06] px-2.5 py-2">
-        <div className="flex size-8 shrink-0 items-center justify-center rounded-md bg-white/[0.08]">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <rect x="2" y="1" width="12" height="14" rx="2" stroke="rgba(255,255,255,0.3)" strokeWidth="1.2"/>
-            <path d="M5 5h6M5 7.5h4" stroke="rgba(255,255,255,0.2)" strokeWidth="0.8" strokeLinecap="round"/>
+      {/* File row */}
+      <div className="flex items-center gap-3 rounded-xl bg-white/[0.04] px-3 py-2.5 border border-white/[0.06]">
+        <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-b from-white/10 to-white/[0.03] border border-white/[0.08]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <rect x="3" y="2" width="14" height="16" rx="2.5" stroke="rgba(96,165,250,0.5)" strokeWidth="1.2"/>
+            <path d="M7 6h6M7 9h4" stroke="rgba(96,165,250,0.3)" strokeWidth="0.8" strokeLinecap="round"/>
+            <path d="M10 12l-2 2.5h4L10 12z" fill="rgba(96,165,250,0.4)"/>
           </svg>
         </div>
         <div>
-          <p className="text-[10px] font-medium leading-tight text-white/70">Quietly-2.7.0-arm64</p>
-          <p className="text-[8px] text-white/30">.dmg · 148 MB</p>
+          <p className="text-[11px] font-semibold leading-tight text-white/80">
+            Quietly-2.7.0-arm64.dmg
+          </p>
+          <p className="mt-0.5 text-[9px] font-medium text-emerald-400/60">148 MB</p>
         </div>
       </div>
     </div>
@@ -51,23 +62,26 @@ function FinderIllustration() {
 
 function DragIllustration() {
   return (
-    <div className="flex h-full w-full items-center justify-center gap-3 rounded-xl bg-[#1a1a1a] px-4">
-      <div className="flex flex-col items-center gap-1">
-        <div className="flex size-12 items-center justify-center rounded-xl bg-gradient-to-b from-white/10 to-white/[0.04] shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
-          <Image src={ICON_SRC} alt="" width={32} height={32} className="rounded-md" />
+    <div className="flex h-full w-full items-center justify-center gap-4 rounded-2xl bg-[#0d1117] px-5 py-4">
+      {/* App icon */}
+      <div className="flex flex-col items-center gap-1.5">
+        <div className="flex size-14 items-center justify-center rounded-2xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-white/[0.1] shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
+          <Image src={ICON_SRC} alt="" width={36} height={36} className="rounded-lg" />
         </div>
-        <span className="text-[8px] font-medium text-white/40">Quietly</span>
+        <span className="text-[9px] font-semibold text-white/45">Quietly</span>
       </div>
-      <ArrowRight size={18} className="shrink-0 text-white/25" />
-      <div className="flex flex-col items-center gap-1">
-        <div className="flex size-12 items-center justify-center rounded-xl bg-gradient-to-b from-blue-500/20 to-blue-600/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <rect x="3" y="6" width="18" height="14" rx="3" stroke="rgba(96,165,250,0.6)" strokeWidth="1.5"/>
-            <path d="M3 10h18" stroke="rgba(96,165,250,0.4)" strokeWidth="1"/>
-            <text x="12" y="19" textAnchor="middle" fill="rgba(96,165,250,0.7)" fontSize="7" fontWeight="600">A</text>
+      {/* Arrow */}
+      <ArrowRight size={18} className="shrink-0 text-white/20" />
+      {/* Applications folder */}
+      <div className="flex flex-col items-center gap-1.5">
+        <div className="flex size-14 items-center justify-center rounded-2xl bg-gradient-to-b from-blue-500/15 to-blue-600/[0.06] border border-blue-400/15 shadow-[0_4px_12px_rgba(59,130,246,0.1)]">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="3" y="7" width="22" height="17" rx="3.5" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.4)" strokeWidth="1.2"/>
+            <path d="M3 11.5h22" stroke="rgba(96,165,250,0.25)" strokeWidth="1"/>
+            <text x="14" y="22" textAnchor="middle" fill="rgba(96,165,250,0.65)" fontSize="9" fontWeight="700" fontFamily="system-ui">A</text>
           </svg>
         </div>
-        <span className="text-[8px] font-medium text-white/40">Applications</span>
+        <span className="text-[9px] font-semibold text-white/45">Applications</span>
       </div>
     </div>
   );
@@ -75,20 +89,26 @@ function DragIllustration() {
 
 function GatekeeperIllustration() {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center gap-2 rounded-xl bg-[#1a1a1a] px-3 py-3">
-      <div className="flex size-8 items-center justify-center">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M12 2L2 20h20L12 2z" fill="rgba(250,204,21,0.2)" stroke="rgba(250,204,21,0.7)" strokeWidth="1.5" strokeLinejoin="round"/>
-          <path d="M12 10v4" stroke="rgba(250,204,21,0.8)" strokeWidth="1.5" strokeLinecap="round"/>
-          <circle cx="12" cy="17" r="0.8" fill="rgba(250,204,21,0.8)"/>
+    <div className="flex h-full w-full flex-col items-center justify-center gap-2.5 rounded-2xl bg-[#0d1117] px-4 py-4">
+      {/* Warning triangle */}
+      <div className="flex size-10 items-center justify-center">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M14 3L2 24h24L14 3z" fill="rgba(250,204,21,0.15)" stroke="rgba(250,204,21,0.65)" strokeWidth="1.6" strokeLinejoin="round"/>
+          <path d="M14 12v5" stroke="rgba(250,204,21,0.8)" strokeWidth="1.8" strokeLinecap="round"/>
+          <circle cx="14" cy="20.5" r="1" fill="rgba(250,204,21,0.8)"/>
         </svg>
       </div>
-      <p className="text-center text-[9px] font-medium leading-tight text-white/50">
+      <p className="text-center text-[11px] font-semibold leading-tight text-white/55">
         &ldquo;Quietly&rdquo; can&apos;t be opened
       </p>
-      <div className="flex items-center gap-1.5">
-        <span className="rounded-md bg-white/[0.06] px-2 py-0.5 text-[7px] font-medium text-white/30">Move to Trash</span>
-        <span className="rounded-md bg-white/[0.1] px-2 py-0.5 text-[7px] font-medium text-white/50">Done</span>
+      {/* Buttons */}
+      <div className="flex items-center gap-2">
+        <span className="rounded-lg bg-white/[0.05] border border-white/[0.08] px-3 py-1 text-[9px] font-semibold text-white/35">
+          Move to Trash
+        </span>
+        <span className="rounded-lg bg-blue-500/20 border border-blue-400/20 px-3 py-1 text-[9px] font-semibold text-blue-300/70">
+          Done
+        </span>
       </div>
     </div>
   );
@@ -105,25 +125,31 @@ function TerminalIllustration() {
   }
 
   return (
-    <div className="flex h-full w-full flex-col rounded-xl bg-[#1a1a1a] p-3">
-      <div className="mb-2 flex items-center gap-1.5">
-        <span className="size-[7px] rounded-full bg-[#ff5f57]" />
-        <span className="size-[7px] rounded-full bg-[#febc2e]" />
-        <span className="size-[7px] rounded-full bg-[#28c840]" />
-        <span className="ml-2 text-[9px] font-medium text-white/40">Terminal</span>
+    <div className="flex h-full w-full flex-col rounded-2xl bg-[#0d1117] p-3.5">
+      {/* Title bar */}
+      <div className="mb-3 flex items-center gap-1.5">
+        <span className="size-[8px] rounded-full bg-[#ff5f57]" />
+        <span className="size-[8px] rounded-full bg-[#febc2e]" />
+        <span className="size-[8px] rounded-full bg-[#28c840]" />
+        <span className="ml-2 text-[10px] font-medium text-white/50">Terminal</span>
       </div>
-      <div className="group relative flex-1 rounded-lg bg-black/40 px-2.5 py-2">
-        <code className="text-[9.5px] leading-relaxed text-emerald-400/80 break-all">
-          $ {TERMINAL_CMD}
+      {/* Command */}
+      <div className="group relative flex-1 rounded-xl bg-black/50 border border-white/[0.06] px-3 py-2.5">
+        <code className="text-[10px] leading-relaxed break-all">
+          <span className="text-emerald-400/70">$</span>{" "}
+          <span className="text-emerald-400/50">xattr -cr /Applications/</span>
+          <span className="text-emerald-300/80">Quietly.app</span>
         </code>
         <button
           type="button"
           onClick={handleCopy}
-          className="absolute top-1.5 right-1.5 flex size-5 items-center justify-center rounded bg-white/[0.06] text-white/30 transition-colors hover:bg-white/[0.12] hover:text-white/60"
+          className="absolute top-2 right-2 flex size-6 items-center justify-center rounded-md bg-white/[0.06] border border-white/[0.08] text-white/30 transition-all hover:bg-white/[0.12] hover:text-white/60"
           aria-label="Copy command"
         >
-          {copied ? <Check size={10} /> : <Copy size={10} />}
+          {copied ? <Check size={11} /> : <Copy size={11} />}
         </button>
+        {/* Cursor */}
+        <div className="mt-2 h-3 w-[6px] rounded-[1px] bg-white/20 animate-pulse" />
       </div>
     </div>
   );
@@ -134,28 +160,40 @@ function TerminalIllustration() {
 const steps: Step[] = [
   {
     num: 1,
-    color: "rgba(96,165,250,0.9)",
+    badgeGradient: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)",
+    borderAccent: "rgba(96,165,250,0.2)",
+    glowColor: "rgba(96,165,250,0.08)",
+    titleIcon: <FolderOpen size={14} className="text-blue-400" />,
     title: "Open the DMG",
     desc: "Open Quietly.dmg from your Downloads folder.",
     illustration: <FinderIllustration />,
   },
   {
     num: 2,
-    color: "rgba(96,165,250,0.9)",
+    badgeGradient: "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)",
+    borderAccent: "rgba(96,165,250,0.2)",
+    glowColor: "rgba(96,165,250,0.08)",
+    titleIcon: <FolderInput size={14} className="text-blue-400" />,
     title: "Move to Applications",
     desc: "Drag Quietly.app into your Applications folder.",
     illustration: <DragIllustration />,
   },
   {
     num: 3,
-    color: "rgba(74,222,128,0.9)",
+    badgeGradient: "linear-gradient(135deg, #22c55e 0%, #10b981 100%)",
+    borderAccent: "rgba(74,222,128,0.2)",
+    glowColor: "rgba(74,222,128,0.08)",
+    titleIcon: <ShieldCheck size={14} className="text-emerald-400" />,
     title: "If macOS asks…",
     desc: "Standard check for unsigned apps. It's safe to proceed.",
     illustration: <GatekeeperIllustration />,
   },
   {
     num: 4,
-    color: "rgba(251,146,60,0.9)",
+    badgeGradient: "linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)",
+    borderAccent: "rgba(168,85,247,0.2)",
+    glowColor: "rgba(168,85,247,0.08)",
+    titleIcon: <TerminalSquare size={14} className="text-violet-400" />,
     title: "Quick Fix Command",
     desc: "Paste into Terminal, hit Enter, then open the app again.",
     illustration: <TerminalIllustration />,
@@ -164,45 +202,68 @@ const steps: Step[] = [
 
 /* ───────────────────────── step card ───────────────────────── */
 
-function StepCard({ step, index }: { step: Step; index: number }) {
+function StepCard({ step, index, isLast }: { step: Step; index: number; isLast: boolean }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.1 + index * 0.08, ease: [0.22, 1, 0.36, 1] as const }}
-      className="relative flex flex-col"
-    >
-      {/* Number badge */}
-      <div
-        className="mb-3 flex size-6 items-center justify-center rounded-full text-[11px] font-bold"
-        style={{
-          background: step.color.replace("0.9", "0.15"),
-          color: step.color,
-          boxShadow: `0 0 12px ${step.color.replace("0.9", "0.1")}`,
-        }}
+    <div className="flex items-start gap-0">
+      <motion.div
+        initial={{ opacity: 0, y: 28 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55, delay: 0.12 + index * 0.1, ease: [0.22, 1, 0.36, 1] as const }}
+        className="relative flex flex-col"
       >
-        {step.num}
-      </div>
+        {/* Number badge */}
+        <div
+          className="mb-3 flex size-7 items-center justify-center rounded-full text-[12px] font-bold text-white shadow-lg"
+          style={{
+            background: step.badgeGradient,
+            boxShadow: `0 4px 14px ${step.glowColor.replace("0.08", "0.35")}`,
+          }}
+        >
+          {step.num}
+        </div>
 
-      {/* Illustration card */}
-      <div className="mb-3 aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.02]">
-        {step.illustration}
-      </div>
+        {/* Illustration card */}
+        <div
+          className="mb-4 aspect-[4/3] w-full overflow-hidden rounded-2xl"
+          style={{
+            border: `1px solid ${step.borderAccent}`,
+            boxShadow: `0 8px 32px ${step.glowColor}, inset 0 1px 0 rgba(255,255,255,0.04)`,
+            background: "rgba(255,255,255,0.02)",
+          }}
+        >
+          {step.illustration}
+        </div>
 
-      {/* Text */}
-      <h3
-        className="mb-1 text-[14px] font-semibold tracking-tight text-white"
-        style={{ fontFamily: "'Instrument Sans', sans-serif" }}
-      >
-        {step.title}
-      </h3>
-      <p
-        className="text-[12px] leading-relaxed text-white/40"
-        style={{ fontFamily: "'Instrument Sans', sans-serif" }}
-      >
-        {step.desc}
-      </p>
-    </motion.div>
+        {/* Title with icon */}
+        <div className="mb-1 flex items-center gap-1.5">
+          {step.titleIcon}
+          <h3
+            className="text-[14px] font-bold tracking-tight text-white"
+            style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+          >
+            {step.title}
+          </h3>
+        </div>
+        <p
+          className="max-w-[180px] text-[12px] leading-relaxed text-white/40"
+          style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+        >
+          {step.desc}
+        </p>
+      </motion.div>
+
+      {/* Arrow between cards */}
+      {!isLast && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
+          className="hidden md:flex items-start pt-[90px] px-2 shrink-0"
+        >
+          <ArrowRight size={14} className="text-white/15" />
+        </motion.div>
+      )}
+    </div>
   );
 }
 
@@ -216,82 +277,143 @@ export function DownloadOverlay({ onClose }: { onClose: () => void }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-        className="fixed inset-0 z-[9999] flex items-start justify-center overflow-y-auto bg-black/90 backdrop-blur-xl"
-        style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+        transition={{ duration: 0.35 }}
+        className="fixed inset-0 z-[9999] flex items-start justify-center overflow-y-auto"
+        style={{
+          fontFamily: "'Instrument Sans', sans-serif",
+          background: "radial-gradient(ellipse 80% 50% at 50% 30%, rgba(15,20,35,0.98) 0%, rgba(0,0,0,0.97) 100%)",
+          backdropFilter: "blur(40px)",
+          WebkitBackdropFilter: "blur(40px)",
+        }}
       >
-        {/* Subtle glow */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute top-0 left-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.06]"
-          style={{ background: "radial-gradient(circle, rgba(255,255,255,0.5) 0%, transparent 60%)" }}
-        />
+        {/* Ambient glows */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute top-[15%] left-[15%] h-[350px] w-[350px] rounded-full bg-blue-500/[0.06] blur-[120px]" />
+          <div className="absolute top-[20%] right-[15%] h-[300px] w-[300px] rounded-full bg-violet-500/[0.05] blur-[100px]" />
+          <div className="absolute bottom-[20%] left-[40%] h-[250px] w-[250px] rounded-full bg-emerald-500/[0.04] blur-[100px]" />
+        </div>
 
-        {/* Content card */}
+        {/* Content */}
         <motion.div
-          initial={{ opacity: 0, y: 20, scale: 0.98 }}
+          initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 10, scale: 0.99 }}
-          transition={{ duration: 0.4, delay: 0.05, ease: [0.22, 1, 0.36, 1] as const }}
-          className="relative mx-auto w-full max-w-[820px] px-5 py-12 md:px-10 md:py-16"
+          exit={{ opacity: 0, y: 12, scale: 0.99 }}
+          transition={{ duration: 0.45, delay: 0.05, ease: [0.22, 1, 0.36, 1] as const }}
+          className="relative z-10 mx-auto w-full max-w-[920px] px-5 py-10 md:px-10 md:py-14"
         >
           {/* Close button */}
           <button
             type="button"
             onClick={onClose}
-            className="absolute top-4 right-4 flex size-8 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-white/30 transition-colors hover:bg-white/[0.1] hover:text-white/60 md:top-6 md:right-6"
+            className="absolute top-4 right-4 flex size-9 items-center justify-center rounded-full border border-white/[0.1] bg-white/[0.05] text-white/40 transition-all hover:bg-white/[0.1] hover:text-white/70 md:top-6 md:right-6"
             aria-label="Close"
           >
-            <X size={14} />
+            <X size={16} />
           </button>
 
           {/* Header */}
           <div className="mb-10 flex flex-col items-center text-center md:mb-12">
             {/* Status pill */}
-            <div className="v2-glass-pill mb-5 flex items-center gap-2 rounded-lg px-3 py-1.5">
-              <span className="relative flex size-2">
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-                <span className="relative inline-flex size-2 rounded-full bg-emerald-400" />
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="mb-5 flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-500/10 px-4 py-2 shadow-[0_0_20px_rgba(52,211,153,0.1)]"
+            >
+              <div className="flex size-4 items-center justify-center rounded-full bg-emerald-500">
+                <Check size={10} className="text-white" strokeWidth={3} />
+              </div>
+              <span className="text-[12px] font-bold tracking-[0.08em] text-emerald-300/80 uppercase">
+                Download Completed
               </span>
-              <span className="text-[12px] font-medium text-white/50">DOWNLOADED</span>
-            </div>
+            </motion.div>
 
             {/* Title */}
-            <h2
-              className="text-[28px] font-semibold tracking-tight text-white md:text-[36px]"
+            <motion.h2
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="text-[32px] font-semibold tracking-tight text-white md:text-[42px]"
             >
               How to install{" "}
-              <span style={{ fontFamily: "var(--font-eb-garamond), 'Instrument Serif', serif", fontStyle: "italic", fontWeight: 400 }}>
+              <span
+                className="bg-gradient-to-r from-blue-300 via-violet-300 to-emerald-300 bg-clip-text text-transparent"
+                style={{ fontFamily: "var(--font-eb-garamond), 'Instrument Serif', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
+              >
                 Quietly
               </span>
-            </h2>
+            </motion.h2>
+
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mt-2 text-[14px] font-medium text-white/35"
+            >
+              Just a few quick steps to get started.
+            </motion.p>
           </div>
 
-          {/* Steps 1×4 Grid */}
-          <div className="mb-10 grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-6">
+          {/* Steps 1×4 Grid with arrows */}
+          <div className="mb-10 flex flex-col gap-6 md:mb-12 md:flex-row md:justify-center md:gap-0">
             {steps.map((step, i) => (
-              <StepCard key={step.num} step={step} index={i} />
+              <StepCard key={step.num} step={step} index={i} isLast={i === steps.length - 1} />
             ))}
           </div>
 
+          {/* Help bar */}
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.55 }}
+            className="mx-auto mb-6 max-w-[560px]"
+          >
+            <div className="flex items-center justify-center gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] px-5 py-3.5 backdrop-blur-sm">
+              <Sparkles size={14} className="shrink-0 text-violet-400/60" />
+              <p className="text-[12px] font-medium text-white/35">
+                Need help?{" "}
+                <a href="#" className="font-semibold text-blue-400/70 hover:text-blue-400 transition-colors">
+                  Visit our docs
+                </a>
+                {" "}or reach out to{" "}
+                <a href="mailto:support@quietly.ai" className="font-semibold text-blue-400/70 hover:text-blue-400 transition-colors">
+                  support
+                </a>
+                .
+              </p>
+              <ChevronRight size={14} className="shrink-0 text-white/15" />
+            </div>
+          </motion.div>
+
           {/* Retry link */}
-          <div className="flex flex-col items-center gap-1 text-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+            className="flex flex-col items-center gap-1 text-center"
+          >
             <p className="text-[12px] text-white/25">
               Download didn&apos;t start?{" "}
               <a
                 href={DOWNLOAD_URL}
-                className="font-medium text-blue-400/70 underline underline-offset-2 transition-colors hover:text-blue-400"
+                className="font-semibold text-blue-400/60 underline underline-offset-2 transition-colors hover:text-blue-400"
               >
                 Try again
               </a>
             </p>
-          </div>
+          </motion.div>
 
           {/* Footer brand */}
-          <div className="mt-10 flex items-center justify-center gap-2 opacity-25">
-            <Image src={ICON_SRC} alt="" width={14} height={14} className="rounded-[3px]" />
-            <span className="text-[10px] font-medium tracking-wide text-white">Quietly</span>
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.65 }}
+            className="mt-8 flex items-center justify-center gap-2 opacity-25"
+          >
+            <Image src={ICON_SRC} alt="" width={16} height={16} className="rounded-[4px]" />
+            <span className="text-[11px] font-semibold tracking-wider text-white">Quietly</span>
+          </motion.div>
         </motion.div>
       </motion.div>
     </AnimatePresence>
