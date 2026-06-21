@@ -34,8 +34,8 @@ const tiers: PricingTier[] = [
     id: "free",
     name: "FREE",
     tagline: "Everything you need to get started.",
-    monthlyPrice: "$0",
-    lifetimePrice: "$0",
+    monthlyPrice: "₹0",
+    lifetimePrice: "₹0",
     period: { monthly: "Forever", lifetime: "Forever" },
     features: [
       "Real-time AI answers",
@@ -52,11 +52,10 @@ const tiers: PricingTier[] = [
   },
   {
     id: "pro",
-    badge: "MOST POPULAR",
     name: "PRO",
     tagline: "An unfair advantage in every conversation.",
-    monthlyPrice: "$12",
-    lifetimePrice: "$49",
+    monthlyPrice: "₹499",
+    lifetimePrice: "₹999",
     period: { monthly: "/month", lifetime: "Lifetime" },
     features: [
       "Everything in Free",
@@ -76,9 +75,9 @@ const tiers: PricingTier[] = [
   {
     id: "pro-plus",
     name: "PRO PLUS",
-    tagline: "Complete intelligence.\nMaximum discretion.",
-    monthlyPrice: "$24",
-    lifetimePrice: "$99",
+    tagline: "Complete intelligence. Maximum discretion.",
+    monthlyPrice: "₹799",
+    lifetimePrice: "₹1,499",
     period: { monthly: "/month", lifetime: "Lifetime" },
     features: [
       "Everything in Pro",
@@ -285,13 +284,12 @@ function PricingCard({
           ? { scale: 1.02, y: -4 }
           : { y: -6 }
       }
-      className={`pricing-card-${tier.id} relative flex flex-col overflow-hidden rounded-[24px] border transition-all duration-500 ${
-        isPopular
+      className={`pricing-card-${tier.id} relative flex flex-col overflow-hidden rounded-[24px] border transition-all duration-500 ${isPopular
           ? "border-white/[0.12] bg-white/[0.06] shadow-[0_0_60px_rgba(255,255,255,0.04)]"
           : isPlus
             ? "border-white/[0.08] bg-white/[0.04] shadow-[0_0_30px_rgba(255,255,255,0.02)]"
             : "border-white/[0.05] bg-white/[0.03]"
-      }`}
+        }`}
       style={{
         backdropFilter: "blur(40px) saturate(1.2)",
         WebkitBackdropFilter: "blur(40px) saturate(1.2)",
@@ -304,9 +302,8 @@ function PricingCard({
           aria-hidden="true"
         >
           <div
-            className={`absolute -top-1/2 -left-1/4 h-[200%] w-[60%] rotate-12 bg-gradient-to-b from-white/[0.06] via-transparent to-transparent ${
-              isPopular ? "pricing-reflection-move" : "pricing-reflection-move-slow"
-            }`}
+            className={`absolute -top-1/2 -left-1/4 h-[200%] w-[60%] rotate-12 bg-gradient-to-b from-white/[0.06] via-transparent to-transparent ${isPopular ? "pricing-reflection-move" : "pricing-reflection-move-slow"
+              }`}
           />
         </div>
       )}
@@ -393,11 +390,10 @@ function PricingCard({
           {/* CTA Button */}
           <a
             href={purchaseHref(tier.name)}
-            className={`pricing-cta group relative flex items-center justify-center overflow-hidden rounded-full px-4 py-2 text-[12px] font-semibold tracking-wide transition-all duration-500 ${
-              isPopular
+            className={`pricing-cta group relative flex items-center justify-center overflow-hidden rounded-full px-4 py-2 text-[12px] font-semibold tracking-wide transition-all duration-500 ${isPopular
                 ? "bg-white text-black hover:bg-white/90 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
                 : "border border-white/10 bg-white/[0.06] text-white hover:bg-white/[0.1] hover:border-white/20"
-            }`}
+              }`}
           >
             <span className="relative z-10">{tier.cta}</span>
             {/* Magnetic hover glow */}
@@ -491,22 +487,20 @@ export function PricingSection() {
             <button
               type="button"
               onClick={() => setBillingCycle("monthly")}
-              className={`relative rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-400 ${
-                billingCycle === "monthly"
+              className={`relative rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-400 ${billingCycle === "monthly"
                   ? "bg-white/[0.1] text-white"
                   : "text-white/35 hover:text-white/50"
-              }`}
+                }`}
             >
               Monthly
             </button>
             <button
               type="button"
               onClick={() => setBillingCycle("lifetime")}
-              className={`relative flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-400 ${
-                billingCycle === "lifetime"
+              className={`relative flex items-center gap-2 rounded-full px-5 py-2 text-[13px] font-semibold tracking-wide transition-all duration-400 ${billingCycle === "lifetime"
                   ? "bg-white/[0.1] text-white"
                   : "text-white/35 hover:text-white/50"
-              }`}
+                }`}
             >
               Lifetime
               <span className="rounded-full bg-white/[0.12] px-2 py-0.5 text-[9px] font-bold tracking-widest text-white/60 uppercase">
