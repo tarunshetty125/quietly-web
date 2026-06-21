@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import { EB_Garamond, Geist, Geist_Mono } from "next/font/google";
+import { EB_Garamond, Geist, Geist_Mono, Inter_Tight } from "next/font/google";
 
 import { QUIETLY_ICON_SRC } from "@/lib/brand";
 
@@ -20,6 +20,12 @@ const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
   subsets: ["latin"],
   weight: ["500"],
+});
+
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -50,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} ${interTight.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

@@ -9,6 +9,7 @@ import { NotesSection } from "@/components/NotesSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { QuietlyAIProSection } from "@/components/QuietlyAIProSection";
+import { PricingSection } from "@/components/PricingSection";
 import { UndetectabilitySection } from "@/components/UndetectabilitySection";
 import { WhatsNewModal } from "@/components/WhatsNewModal";
 
@@ -28,6 +29,7 @@ export default function Home() {
         <div className="flex flex-col">
           <CompatibilityStatsSection />
           <QuietlyAIProSection />
+          <PricingSection />
         </div>
         <div className="flex flex-col">
           <FaqSection />

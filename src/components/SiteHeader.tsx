@@ -11,6 +11,7 @@ const navLinks: readonly {
   href: string;
   variant?: "gold";
 }[] = [
+  { label: "Pricing", href: "#pricing" },
   { label: "Undetectability", href: "#undetectability" },
   { label: "Pro", href: "/pro", variant: "gold" },
   { label: "New V2", href: "/v2", variant: "gold" },
