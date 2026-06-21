@@ -10,8 +10,10 @@ import {
   useReducedMotion,
 } from "framer-motion";
 import { ChevronDown, ArrowRight } from "lucide-react";
+import { DownloadOverlay } from "./DownloadOverlay";
 
 const VIDEO_SRC = "/images/teamsync/v2/hero-bg.mp4";
+const DOWNLOAD_URL = "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg";
 
 const entrance = (y: number, delay: number, duration = 0.6) => ({
   initial: { opacity: 0, y },
@@ -25,7 +27,7 @@ const txtSpring = { stiffness: 340, damping: 25, mass: 0.5 };
 const clamp = (v: number, min: number, max: number) =>
   Math.min(Math.max(v, min), max);
 
-function MagneticHeroCTA() {
+function MagneticHeroCTA({ onDownloadClick }: { onDownloadClick?: () => void }) {
   const prefersReduced = useReducedMotion();
   const fieldRef = useRef<HTMLDivElement>(null);
   const btnRef = useRef<HTMLAnchorElement>(null);
@@ -95,8 +97,11 @@ function MagneticHeroCTA() {
     <div ref={fieldRef} className="relative flex min-h-[52px] w-full items-center justify-center overflow-visible">
       <motion.a
         ref={btnRef}
-        href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
-        onClick={() => { if (!prefersReduced) setFlashKey((k) => k + 1); }}
+        href={DOWNLOAD_URL}
+        onClick={(e) => {
+          if (!prefersReduced) setFlashKey((k) => k + 1);
+          onDownloadClick?.();
+        }}
         whileTap={prefersReduced ? undefined : { scale: 0.97 }}
         transition={{ type: "spring", stiffness: 360, damping: 24 }}
         className="group relative inline-flex h-[40px] min-w-[190px] items-center justify-center overflow-hidden rounded-full px-5 text-[13px] font-semibold tracking-[-0.005em] outline-none transition-[filter] duration-200 ease-out"
@@ -141,6 +146,7 @@ function MagneticHeroCTA() {
    ═══════════════════════════════════════════════════════════════ */
 export function HeroSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
@@ -228,7 +234,9 @@ export function HeroSection() {
 
         {/* CTA — Magnetic Button */}
         <motion.div {...entrance(20, 0.3)}>
-          <MagneticHeroCTA />
+          <MagneticHeroCTA onDownloadClick={() => {
+            setTimeout(() => setShowDownloadOverlay(true), 1000);
+          }} />
         </motion.div>
       </motion.div>
 
@@ -276,6 +284,11 @@ export function HeroSection() {
 
       {/* ── Bottom gradient fade ─────────────────────────────────── */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-30 pointer-events-none" />
+
+      {/* ── Download install overlay ─────────────────────────────── */}
+      {showDownloadOverlay && (
+        <DownloadOverlay onClose={() => setShowDownloadOverlay(false)} />
+      )}
     </section>
   );
 }

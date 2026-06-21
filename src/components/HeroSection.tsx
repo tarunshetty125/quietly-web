@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Apple,
   ChevronDown,
@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import { QUIETLY_ICON_SRC } from "@/lib/brand";
+import { DownloadOverlay } from "@/components/v2/DownloadOverlay";
 
 const dockIcons = [
   {
@@ -60,18 +61,21 @@ function WindowsLogo() {
 function PlatformCta({
   platform,
   href,
+  onClick,
 }: Readonly<{
   platform: "mac" | "windows";
   href: string;
+  onClick?: () => void;
 }>) {
   const isMac = platform === "mac";
 
   return (
     <a
       href={href}
+      onClick={() => onClick?.()}
       className={
         isMac
-          ? "cluely-gradient-button cluely-magnetic-button"
+          ? "cluely-gradient-button min-w-[190px] cluely-magnetic-button"
           : "cluely-gradient-button min-w-[190px] cluely-magnetic-button"
       }
     >
@@ -354,6 +358,8 @@ function HeroMountainBackground() {
 }
 
 export function HeroSection() {
+  const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
+
   return (
     <section
       id="top"
@@ -416,7 +422,11 @@ export function HeroSection() {
               </p>
             </div>
             <div className="cluely-hero-cta flex flex-wrap justify-center gap-3">
-              <PlatformCta platform="mac" href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg" />
+              <PlatformCta
+                platform="mac"
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
+                onClick={() => setTimeout(() => setShowDownloadOverlay(true), 1000)}
+              />
               <PlatformCta
                 platform="windows"
                 href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-Setup-2.7.0.exe"
@@ -427,6 +437,9 @@ export function HeroSection() {
 
         <HeroDemo />
       </div>
+      {showDownloadOverlay && (
+        <DownloadOverlay onClose={() => setShowDownloadOverlay(false)} />
+      )}
     </section>
   );
 }

@@ -1,9 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ui/ScrollReveal";
+import { DownloadOverlay } from "./DownloadOverlay";
+
+const DOWNLOAD_URL =
+  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg";
 
 export function CtaSection() {
+  const [showOverlay, setShowOverlay] = useState(false);
+
   return (
     <section className="min-h-[60vh] flex items-center justify-center v2-section text-center" id="download">
       <div className="max-w-2xl mx-auto">
@@ -17,7 +24,10 @@ export function CtaSection() {
 
           <div className="flex flex-col items-center gap-3">
             <motion.a
-              href="#"
+              href={DOWNLOAD_URL}
+              onClick={() => {
+                setTimeout(() => setShowOverlay(true), 1000);
+              }}
               className="bg-white text-black rounded-full px-8 py-3.5 text-base font-medium inline-flex items-center gap-2 v2-cta-glow"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
@@ -40,6 +50,10 @@ export function CtaSection() {
           </div>
         </ScrollReveal>
       </div>
+
+      {showOverlay && (
+        <DownloadOverlay onClose={() => setShowOverlay(false)} />
+      )}
     </section>
   );
 }

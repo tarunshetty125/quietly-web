@@ -1,9 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { Apple } from "lucide-react";
 
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { DownloadOverlay } from "@/components/v2/DownloadOverlay";
+
+const DOWNLOAD_URL =
+  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg";
 
 export function CtaSection() {
+  const [showOverlay, setShowOverlay] = useState(false);
+
   return (
     <section id="download" className="relative z-20 overflow-x-hidden bg-[linear-gradient(180deg,#FFFFFF_0%,#DDE2EE_37.04%)] pt-32 pb-16 text-black md:pt-[174px] md:pb-[160px] lg:pb-[210px] xl:pt-[220px]">
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 md:px-8">
@@ -15,7 +24,8 @@ export function CtaSection() {
             Try Quietly AI on your next meeting today.
           </p>
           <a
-            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
+            href={DOWNLOAD_URL}
+            onClick={() => setTimeout(() => setShowOverlay(true), 1000)}
             className="cluely-gradient-button cluely-magnetic-button mt-8 w-auto min-w-[156px]"
           >
             <span className="absolute top-0 left-0 z-20 h-full w-full blur-[1px]" aria-hidden="true">
@@ -73,6 +83,10 @@ export function CtaSection() {
           quality={100}
         />
       </ScrollReveal>
+
+      {showOverlay && (
+        <DownloadOverlay onClose={() => setShowOverlay(false)} />
+      )}
     </section>
   );
 }

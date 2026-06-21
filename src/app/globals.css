@@ -212,7 +212,7 @@
       20px 20px 24px rgba(148, 172, 243, 0.4),
       inset -3px -3px 4px rgba(191, 229, 251, 0.4),
       inset 4px 4px 4px rgba(19, 26, 228, 0.1);
-    transition: transform 160ms ease-out;
+    transition: transform 120ms ease-out;
   }
 
   @media (min-width: 768px) {
@@ -230,7 +230,7 @@
     background: radial-gradient(101.79% 101.79% at 65.61% 81.79%, rgba(255, 255, 255, 0.6) 0%);
     mix-blend-mode: overlay;
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 150ms ease-out;
   }
 
   .cluely-gradient-button .blurred-border {
@@ -322,7 +322,7 @@
     background-blend-mode: overlay, normal;
     filter: blur(0.3px);
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 150ms ease-out;
   }
 
   .cluely-blue-gradient-button:hover .inner-button-hover-gradient {
@@ -343,7 +343,7 @@
   }
 
   .cluely-magnetic-button {
-    transition: transform 160ms ease-out;
+    transition: transform 120ms ease-out;
   }
 
   .cluely-magnetic-button:hover {

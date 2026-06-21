@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type React from "react";
+import { DownloadOverlay } from "@/components/v2/DownloadOverlay";
 
 /* ── Types ── */
 interface Feature {
@@ -733,7 +734,8 @@ function MagneticCTA({
 
   const handleClick = () => {
     if (!prefersReducedMotion) setFlashKey((k) => k + 1);
-    onClose();
+    // Don't close immediately — let the download start, then show overlay
+    setTimeout(() => onClose(), 200);
   };
 
   return (
@@ -812,6 +814,7 @@ const STORAGE_KEY = "quietly-whats-new-2.7-dismissed";
 
 export function WhatsNewModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -823,7 +826,12 @@ export function WhatsNewModal() {
     setIsOpen(false);
   };
 
-  return (
+  const handleDownloadClose = () => {
+    setIsOpen(false);
+    setTimeout(() => setShowDownloadOverlay(true), 1000);
+  };
+
+  return (<>
     <AnimatePresence>
       {isOpen && (
         <motion.div
@@ -1030,7 +1038,7 @@ export function WhatsNewModal() {
 
               {/* CTA */}
               <MagneticCTA
-                onClose={handleClose}
+                onClose={handleDownloadClose}
                 href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
               />
             </motion.div>
@@ -1038,6 +1046,10 @@ export function WhatsNewModal() {
         </motion.div>
       )}
     </AnimatePresence>
-  );
+
+    {showDownloadOverlay && (
+      <DownloadOverlay onClose={() => setShowDownloadOverlay(false)} />
+    )}
+  </>);
 }
 
