@@ -160,7 +160,7 @@ export function PersonaSection() {
           </div>
 
           {/* Right — slider */}
-          <ScrollReveal delay={0.15}>
+          <ScrollReveal delay={0}>
             <ProfileSlider />
           </ScrollReveal>
         </div>
