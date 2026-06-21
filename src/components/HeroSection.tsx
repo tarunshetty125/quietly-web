@@ -361,6 +361,7 @@ function HeroMountainBackground() {
 export function HeroSection() {
   const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
   const [showWinDownloadOverlay, setShowWinDownloadOverlay] = useState(false);
+  const [showIntelOverlay, setShowIntelOverlay] = useState(false);
 
   return (
     <section
@@ -369,7 +370,7 @@ export function HeroSection() {
     >
       <HeroMountainBackground />
       <div className="relative z-10 w-full max-w-[1425px]">
-        <div className="flex h-[452px] items-start justify-center px-3 pt-20 text-center lg:pt-32">
+        <div className="flex h-[500px] items-start justify-center px-3 pt-20 text-center lg:pt-32">
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-4">
               <Link
@@ -423,17 +424,27 @@ export function HeroSection() {
                 all while completely undetectable
               </p>
             </div>
-            <div className="cluely-hero-cta flex flex-wrap justify-center gap-3">
-              <PlatformCta
-                platform="mac"
-                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
-                onClick={() => setTimeout(() => setShowDownloadOverlay(true), 1000)}
-              />
-              <PlatformCta
-                platform="windows"
-                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
-                onClick={() => setTimeout(() => setShowWinDownloadOverlay(true), 1000)}
-              />
+            <div className="cluely-hero-cta flex flex-col items-center gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
+                <PlatformCta
+                  platform="mac"
+                  href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
+                  onClick={() => setTimeout(() => setShowDownloadOverlay(true), 1000)}
+                />
+                <PlatformCta
+                  platform="windows"
+                  href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
+                  onClick={() => setTimeout(() => setShowWinDownloadOverlay(true), 1000)}
+                />
+              </div>
+              <a
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1.dmg"
+                className="text-[13px] font-semibold text-violet-400 underline underline-offset-2 decoration-violet-400/70 transition-colors hover:text-violet-300 hover:decoration-violet-300"
+                style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+                onClick={() => setTimeout(() => setShowIntelOverlay(true), 1000)}
+              >
+                Using Apple Intel chip?
+              </a>
             </div>
           </div>
         </div>
@@ -442,6 +453,12 @@ export function HeroSection() {
       </div>
       {showDownloadOverlay && (
         <DownloadOverlay onClose={() => setShowDownloadOverlay(false)} />
+      )}
+      {showIntelOverlay && (
+        <DownloadOverlay
+          onClose={() => setShowIntelOverlay(false)}
+          downloadUrl="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1.dmg"
+        />
       )}
       {showWinDownloadOverlay && (
         <WindowsDownloadOverlay onClose={() => setShowWinDownloadOverlay(false)} />

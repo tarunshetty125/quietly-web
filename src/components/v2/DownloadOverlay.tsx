@@ -269,7 +269,8 @@ function StepCard({ step, index, isLast }: { step: Step; index: number; isLast: 
 
 /* ───────────────────────── overlay component ───────────────────────── */
 
-export function DownloadOverlay({ onClose }: { onClose: () => void }) {
+export function DownloadOverlay({ onClose, downloadUrl }: { onClose: () => void; downloadUrl?: string }) {
+  const retryUrl = downloadUrl || DOWNLOAD_URL;
   return (
     <AnimatePresence>
       {/* Backdrop */}
@@ -353,7 +354,7 @@ export function DownloadOverlay({ onClose }: { onClose: () => void }) {
             <p className="text-[12px] text-white/25">
               Download didn&apos;t start?{" "}
               <a
-                href={DOWNLOAD_URL}
+                href={retryUrl}
                 className="font-semibold text-blue-400/60 underline underline-offset-2 transition-colors hover:text-blue-400"
               >
                 Try again

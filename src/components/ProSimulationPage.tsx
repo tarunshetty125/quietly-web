@@ -131,9 +131,9 @@ const panels = {
     engine: "Local Engine",
     mode: "Ollama Mode",
     input: "Ask anything on screen or conversation...",
-    eyebrowClassName: "text-slate-400",
+    eyebrowClassName: "text-white/40",
     backgroundClassName: "quietly-pro-pane-free",
-    glowClassName: "-top-12 -left-12 bg-yellow-400/5 blur-[100px]",
+    glowClassName: "-top-12 -left-12 bg-white/[0.02] blur-[100px]",
   },
   pro: {
     tier: "Premium License",
@@ -142,9 +142,9 @@ const panels = {
     engine: "Cloud Max Engine",
     mode: "Quietly AI API",
     input: "Ask anything - Quietly AI knows your resume and this company...",
-    eyebrowClassName: "text-indigo-500/80",
+    eyebrowClassName: "text-violet-400/80",
     backgroundClassName: "quietly-pro-pane-paid",
-    glowClassName: "-right-16 -bottom-16 bg-indigo-500/5 blur-[120px]",
+    glowClassName: "-right-16 -bottom-16 bg-violet-500/[0.06] blur-[120px]",
   },
 } satisfies Record<Pane, PanelCopy>;
 
@@ -200,7 +200,7 @@ function SendButton({ tone }: Readonly<{ tone: Pane }>) {
     <div
       className={cn(
         "flex size-5 shrink-0 items-center justify-center rounded-full",
-        tone === "pro" ? "bg-indigo-100 text-indigo-500" : "bg-slate-200 text-slate-400",
+        tone === "pro" ? "bg-violet-500/20 text-violet-400" : "bg-white/[0.08] text-white/40",
       )}
     >
       <ChevronRight className="size-3" aria-hidden="true" />
@@ -220,10 +220,10 @@ function Chip({
       className={cn(
         "rounded-full border px-2.5 py-1 text-[9.5px] leading-none font-medium transition-all duration-200",
         active && pane === "pro"
-          ? "border-indigo-500/30 bg-indigo-500 text-white shadow-[0_8px_20px_rgba(99,102,241,0.22)]"
+          ? "border-violet-500/30 bg-violet-500 text-white shadow-[0_8px_20px_rgba(139,92,246,0.22)]"
           : active
-            ? "border-slate-400/40 bg-slate-800 text-white"
-            : "border-slate-200 bg-white text-slate-500",
+            ? "border-white/20 bg-white/10 text-white"
+            : "border-white/[0.08] bg-white/[0.04] text-white/50",
       )}
     >
       {copy.chips[chip]}
@@ -235,7 +235,7 @@ function ContextStrip({ visible }: Readonly<{ visible: boolean }>) {
   return (
     <div
       className={cn(
-        "grid grid-cols-2 gap-1.5 border-b border-indigo-100 bg-indigo-50/45 px-3 py-2 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]",
+        "grid grid-cols-2 gap-1.5 border-b border-violet-500/10 bg-violet-500/[0.04] px-3 py-2 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]",
         visible
           ? "max-h-24 opacity-100"
           : "max-h-0 overflow-hidden border-b-0 py-0 opacity-0",
@@ -243,7 +243,7 @@ function ContextStrip({ visible }: Readonly<{ visible: boolean }>) {
     >
       {copy.context.map((item) => (
         <span
-          className="rounded-full border border-indigo-100 bg-white/80 px-2 py-1 text-[9px] font-semibold text-indigo-500 shadow-[0_4px_12px_rgba(99,102,241,0.04)]"
+          className="rounded-full border border-violet-500/15 bg-violet-500/[0.06] px-2 py-1 text-[9px] font-semibold text-violet-300/80 shadow-[0_4px_12px_rgba(139,92,246,0.04)]"
           key={item}
         >
           {item}
@@ -259,7 +259,7 @@ function MessageBubble({
 }: Readonly<{ message: SimMessage; pane: Pane }>) {
   if (message.kind === "thinking") {
     return (
-      <div className="quietly-pro-message-in w-fit rounded-2xl border border-slate-200 bg-white px-3.5 py-3 shadow-sm">
+      <div className="quietly-pro-message-in w-fit rounded-2xl border border-white/[0.08] bg-white/[0.04] px-3.5 py-3 shadow-sm">
         <ThinkingDots />
       </div>
     );
@@ -267,7 +267,7 @@ function MessageBubble({
 
   if (message.kind === "user") {
     return (
-      <div className="quietly-pro-message-in ml-auto max-w-[82%] rounded-2xl bg-slate-900 px-3.5 py-2 text-[12px] leading-relaxed font-medium text-white shadow-[0_10px_24px_rgba(15,23,42,0.16)]">
+      <div className="quietly-pro-message-in ml-auto max-w-[82%] rounded-2xl bg-white/[0.1] px-3.5 py-2 text-[12px] leading-relaxed font-medium text-white shadow-[0_10px_24px_rgba(0,0,0,0.2)]">
         {message.text}
       </div>
     );
@@ -277,18 +277,18 @@ function MessageBubble({
     return (
       <div
         className={cn(
-          "quietly-pro-message-in max-w-[92%] rounded-[18px] border bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]",
-          pane === "pro" ? "border-indigo-100" : "border-slate-200",
+          "quietly-pro-message-in max-w-[92%] rounded-[18px] border bg-white/[0.03] p-3.5 shadow-[0_12px_30px_rgba(0,0,0,0.15)]",
+          pane === "pro" ? "border-violet-500/15" : "border-white/[0.08]",
         )}
       >
-        <div className="mb-2 flex items-center gap-2 text-[10px] font-bold text-slate-500">
-          <Sparkles className="size-3 text-indigo-500" aria-hidden="true" />
+        <div className="mb-2 flex items-center gap-2 text-[10px] font-bold text-white/50">
+          <Sparkles className="size-3 text-violet-400" aria-hidden="true" />
           {pane === "pro" ? "Follow-up questions - Stripe-tailored" : "Follow-up questions"}
         </div>
         <div className="space-y-2">
           {(message.followups ?? []).map((followup) => (
             <div
-              className="rounded-xl border border-slate-100 bg-slate-50/70 px-3 py-2 text-[11px] leading-snug font-medium text-slate-700"
+              className="rounded-xl border border-white/[0.06] bg-white/[0.03] px-3 py-2 text-[11px] leading-snug font-medium text-white/70"
               key={followup}
             >
               {followup}
@@ -301,24 +301,24 @@ function MessageBubble({
 
   if (message.kind === "negotiation") {
     return (
-      <div className="quietly-pro-message-in max-w-[94%] overflow-hidden rounded-[20px] border border-indigo-100 bg-white shadow-[0_18px_42px_rgba(79,70,229,0.12)]">
-        <div className="flex items-center justify-between border-b border-indigo-50 bg-indigo-50/70 px-3.5 py-2.5">
+      <div className="quietly-pro-message-in max-w-[94%] overflow-hidden rounded-[20px] border border-violet-500/15 bg-white/[0.03] shadow-[0_18px_42px_rgba(139,92,246,0.08)]">
+        <div className="flex items-center justify-between border-b border-violet-500/10 bg-violet-500/[0.05] px-3.5 py-2.5">
           <div>
-            <p className="text-[10px] font-bold text-indigo-500">Negotiation copilot - Stripe L5</p>
-            <p className="mt-0.5 text-[9px] font-semibold text-slate-400">Live - Mar 2026</p>
+            <p className="text-[10px] font-bold text-violet-400">Negotiation copilot - Stripe L5</p>
+            <p className="mt-0.5 text-[9px] font-semibold text-white/30">Live - Mar 2026</p>
           </div>
-          <span className="rounded-full bg-emerald-100 px-2 py-1 text-[9px] font-bold text-emerald-600">
+          <span className="rounded-full bg-emerald-500/15 px-2 py-1 text-[9px] font-bold text-emerald-400">
             Live
           </span>
         </div>
         <div className="p-3.5">
-          <p className="text-[12px] leading-relaxed font-semibold text-slate-800">
+          <p className="text-[12px] leading-relaxed font-semibold text-white/90">
             {message.text}
           </p>
           <div className="mt-3 grid grid-cols-3 gap-1.5">
             {(message.citations ?? []).map((citation) => (
               <span
-                className="rounded-xl bg-indigo-50 px-2 py-1.5 text-center text-[9px] leading-tight font-bold text-indigo-500"
+                className="rounded-xl bg-violet-500/[0.08] px-2 py-1.5 text-center text-[9px] leading-tight font-bold text-violet-300/80"
                 key={citation}
               >
                 {citation}
@@ -333,25 +333,25 @@ function MessageBubble({
   return (
     <div
       className={cn(
-        "quietly-pro-message-in max-w-[92%] rounded-[18px] border bg-white/92 p-3.5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]",
-        pane === "pro" ? "border-indigo-100" : "border-slate-200",
+        "quietly-pro-message-in max-w-[92%] rounded-[18px] border bg-white/[0.03] p-3.5 shadow-[0_12px_30px_rgba(0,0,0,0.15)]",
+        pane === "pro" ? "border-violet-500/15" : "border-white/[0.08]",
       )}
     >
-      <div className="mb-1.5 flex items-center gap-2 text-[10px] font-bold text-slate-500">
+      <div className="mb-1.5 flex items-center gap-2 text-[10px] font-bold text-white/50">
         <Sparkles
-          className={cn("size-3", pane === "pro" ? "text-indigo-500" : "text-slate-400")}
+          className={cn("size-3", pane === "pro" ? "text-violet-400" : "text-white/40")}
           aria-hidden="true"
         />
         {pane === "pro" ? "Say this - tailored to Stripe" : "Say this"}
       </div>
-      <p className="text-[12px] leading-relaxed font-medium text-slate-700">
+      <p className="text-[12px] leading-relaxed font-medium text-white/70">
         {message.text}
       </p>
       {message.citations ? (
         <div className="mt-3 flex flex-wrap gap-1.5">
           {message.citations.map((citation) => (
             <span
-              className="rounded-full border border-indigo-100 bg-indigo-50 px-2 py-1 text-[9px] font-semibold text-indigo-500"
+              className="rounded-full border border-violet-500/15 bg-violet-500/[0.06] px-2 py-1 text-[9px] font-semibold text-violet-300/80"
               key={citation}
             >
               {citation}
@@ -409,14 +409,14 @@ function PanelFrame({
           >
             {panel.tier}
           </p>
-          <h2 className="mt-1 text-[20px] font-bold text-slate-800">{panel.title}</h2>
+          <h2 className="mt-1 text-[20px] font-bold text-white">{panel.title}</h2>
         </div>
         <span
           className={cn(
             "rounded-full border px-3 py-1 text-[11px] font-bold",
             isPro
-              ? "border-indigo-500/20 bg-indigo-500/10 text-indigo-600 shadow-[0_0_15px_rgba(99,102,241,0.06)]"
-              : "border-slate-300/40 bg-slate-200/80 text-slate-600",
+              ? "border-violet-500/20 bg-violet-500/10 text-violet-400 shadow-[0_0_15px_rgba(139,92,246,0.06)]"
+              : "border-white/[0.1] bg-white/[0.06] text-white/50",
           )}
         >
           {panel.badge}
@@ -425,50 +425,50 @@ function PanelFrame({
 
       <div
         className={cn(
-          "relative z-10 mx-auto flex min-h-[360px] max-w-[480px] flex-col justify-between overflow-hidden rounded-[24px] border bg-white/75 shadow-2xl backdrop-blur-xl md:max-h-[380px]",
-          isPro ? "border-indigo-200/60 bg-white/80" : "border-slate-200/60 shadow-xl",
+          "relative z-10 mx-auto flex min-h-[360px] max-w-[480px] flex-col justify-between overflow-hidden rounded-[24px] border bg-white/[0.03] shadow-2xl backdrop-blur-xl md:max-h-[380px]",
+          isPro ? "border-violet-500/15 bg-white/[0.04]" : "border-white/[0.08] shadow-xl",
         )}
       >
         {isPro ? (
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute top-0 right-0 left-0 h-[1.5px] bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent"
+            className="pointer-events-none absolute top-0 right-0 left-0 h-[1.5px] bg-gradient-to-r from-transparent via-violet-500/40 to-transparent"
           />
         ) : null}
 
-        <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50/50 px-4 py-3">
+        <div className="flex items-center justify-between border-b border-white/[0.06] bg-white/[0.02] px-4 py-3">
           <div className="flex items-center gap-2">
             <div
               className={cn(
                 "size-2 rounded-full",
-                isPro ? "bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.7)]" : "bg-rose-500",
+                isPro ? "bg-violet-500 shadow-[0_0_8px_rgba(139,92,246,0.7)]" : "bg-rose-500",
               )}
             />
             <span
               className={cn(
                 "text-[11px] font-semibold",
-                isPro ? "text-indigo-600" : "text-slate-500",
+                isPro ? "text-violet-400" : "text-white/50",
               )}
             >
               {panel.mode}
             </span>
           </div>
-          <span className="font-mono text-[10px] text-slate-400">{panel.engine}</span>
+          <span className="font-mono text-[10px] text-white/30">{panel.engine}</span>
         </div>
 
         {isPro ? <ContextStrip visible={contextVisible} /> : null}
 
-        <div className="flex items-center gap-2.5 border-b border-slate-50 bg-slate-50/20 px-4 py-2 text-slate-600">
+        <div className="flex items-center gap-2.5 border-b border-white/[0.04] bg-white/[0.01] px-4 py-2 text-white/60">
           <div
             className={cn(
               "size-2 rounded-full transition-colors duration-300",
-              listening ? "bg-emerald-400" : "bg-slate-300",
+              listening ? "bg-emerald-400" : "bg-white/20",
             )}
           />
           <p
             className={cn(
               "truncate text-[11px] font-light italic",
-              listening ? "text-slate-600" : "text-slate-400",
+              listening ? "text-white/60" : "text-white/30",
             )}
           >
             {listening || copy.listening}
@@ -484,17 +484,17 @@ function PanelFrame({
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-1.5 border-t border-slate-100 bg-slate-50/50 p-3">
+        <div className="flex flex-wrap justify-center gap-1.5 border-t border-white/[0.06] bg-white/[0.02] p-3">
           {chipOrder.map((chip) => (
             <Chip activeChip={activeChip} chip={chip} key={chip} pane={pane} />
           ))}
         </div>
 
-        <div className="flex items-center justify-between border-t border-slate-100 bg-slate-50/40 p-3">
+        <div className="flex items-center justify-between border-t border-white/[0.06] bg-white/[0.02] p-3">
           <span
             className={cn(
               "max-w-[80%] truncate text-[11px] font-light italic",
-              isPro ? "text-indigo-500/60" : "text-slate-400",
+              isPro ? "text-violet-400/60" : "text-white/30",
             )}
           >
             {panel.input}
@@ -521,28 +521,28 @@ function EndOverlay({
   return (
     <div
       className={cn(
-        "quietly-pro-end-card absolute inset-0 z-30 flex flex-col justify-center bg-white/95 p-6 backdrop-blur-2xl",
-        isPro ? "bg-indigo-50/95" : "bg-white/95",
+        "quietly-pro-end-card absolute inset-0 z-30 flex flex-col justify-center bg-black/90 p-6 backdrop-blur-2xl",
+        isPro ? "bg-[#0a0812]/95" : "bg-black/90",
       )}
     >
       <div className="mx-auto max-w-[340px]">
         <p
           className={cn(
             "mb-2 text-[11px] font-bold uppercase",
-            isPro ? "text-indigo-500" : "text-slate-400",
+            isPro ? "text-violet-400" : "text-white/40",
           )}
         >
           {data.eyebrow}
         </p>
-        <h3 className="text-2xl leading-tight font-bold text-slate-900">{data.title}</h3>
-        <p className="mt-3 text-[13px] leading-relaxed text-slate-500">{data.body}</p>
+        <h3 className="text-2xl leading-tight font-bold text-white">{data.title}</h3>
+        <p className="mt-3 text-[13px] leading-relaxed text-white/50">{data.body}</p>
         <div className="mt-5 space-y-2">
           {data.features.map((feature) => (
-            <div className="flex items-center gap-2 text-[12px] font-semibold text-slate-700" key={feature}>
+            <div className="flex items-center gap-2 text-[12px] font-semibold text-white/70" key={feature}>
               <span
                 className={cn(
                   "flex size-4 items-center justify-center rounded-full",
-                  isPro ? "bg-indigo-500 text-white" : "bg-slate-200 text-slate-600",
+                  isPro ? "bg-violet-500 text-white" : "bg-white/[0.1] text-white/60",
                 )}
               >
                 <Check className="size-2.5" aria-hidden="true" />
@@ -555,14 +555,14 @@ function EndOverlay({
           <a
             className={cn(
               "inline-flex h-10 items-center justify-center rounded-full px-4 text-[12px] font-bold transition-transform duration-200 hover:scale-[1.02]",
-              isPro ? "bg-indigo-600 text-white shadow-[0_12px_30px_rgba(79,70,229,0.28)]" : "bg-slate-900 text-white",
+              isPro ? "bg-violet-600 text-white shadow-[0_12px_30px_rgba(139,92,246,0.28)]" : "bg-white text-black",
             )}
-            href={isPro ? lifetimePurchaseHref : "#"}
+            href={isPro ? lifetimePurchaseHref : "/"}
           >
             {data.button}
           </a>
           <button
-            className="inline-flex h-10 items-center gap-2 rounded-full border border-slate-200 bg-white px-4 text-[12px] font-bold text-slate-500 transition-transform duration-200 hover:scale-[1.02]"
+            className="inline-flex h-10 items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.05] px-4 text-[12px] font-bold text-white/50 transition-transform duration-200 hover:scale-[1.02]"
             onClick={restartDemo}
             type="button"
           >
@@ -570,7 +570,7 @@ function EndOverlay({
             Replay
           </button>
         </div>
-        <p className="mt-4 text-[10px] font-medium text-slate-400">{data.note}</p>
+        <p className="mt-4 text-[10px] font-medium text-white/25">{data.note}</p>
       </div>
     </div>
   );
@@ -584,13 +584,13 @@ function MobileSwitch({
   setActivePanel: Dispatch<SetStateAction<Pane>>;
 }>) {
   return (
-    <div className="relative z-20 flex w-full bg-[#FAF9F5] px-4 pt-4 md:hidden">
-      <div className="flex w-full rounded-xl bg-slate-200/60 p-1">
+    <div className="relative z-20 flex w-full bg-black px-4 pt-4 md:hidden">
+      <div className="flex w-full rounded-xl bg-white/[0.06] p-1">
         {(["free", "pro"] satisfies readonly Pane[]).map((pane) => (
           <button
             className={cn(
               "flex-1 rounded-lg py-2 text-center text-xs font-bold transition-all duration-300",
-              activePanel === pane ? "bg-white text-slate-900 shadow-sm" : "text-slate-500",
+              activePanel === pane ? "bg-white/[0.1] text-white shadow-sm" : "text-white/40",
             )}
             key={pane}
             onClick={() => setActivePanel(pane)}
@@ -861,59 +861,55 @@ export function ProSimulationPage() {
   }, [proMessages]);
 
   return (
-    <div className="min-h-screen bg-[#FAF9F5] text-slate-900">
+    <div className="min-h-screen bg-black text-white">
       <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col px-4 pt-16 pb-16 md:px-8 md:pt-24">
         <section className="quietly-pro-hero-copy mx-auto mb-10 flex max-w-2xl flex-col items-center text-center">
           <div className="mb-4">
-            <span className="relative inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 px-3.5 py-1.5 text-[10px] font-bold text-white shadow-[0_4px_12px_rgba(99,102,241,0.2),inset_0_1px_2px_rgba(255,255,255,0.4)]">
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute top-0.5 right-1 left-1 h-[45%] rounded-full bg-gradient-to-b from-white/50 to-white/5 blur-[0.3px]"
-              />
+            <span className="relative inline-flex items-center gap-1.5 overflow-hidden rounded-full border border-violet-500/20 bg-violet-500/10 px-3.5 py-1.5 text-[10px] font-bold text-violet-300 shadow-[0_4px_12px_rgba(139,92,246,0.1)]">
               <Zap className="relative z-10 size-3" aria-hidden="true" />
-              <span className="relative z-10 drop-shadow-sm uppercase">{copy.badge}</span>
+              <span className="relative z-10 uppercase">{copy.badge}</span>
             </span>
           </div>
-          <h1 className="mb-4 text-3xl leading-[1.04] font-bold text-slate-900 sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-3xl leading-[1.04] font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
             {copy.title}
           </h1>
-          <p className="text-sm leading-relaxed text-slate-500 md:text-base">{copy.intro}</p>
+          <p className="text-sm leading-relaxed text-white/50 md:text-base">{copy.intro}</p>
         </section>
 
         <section className="quietly-pro-frame w-full" aria-label="Quietly AI Pro live simulation">
-          <div className="relative flex w-full flex-col items-center overflow-hidden rounded-[36px] border border-black/5 bg-[#FAF9F5] shadow-2xl">
-            <div className="relative z-20 flex w-full flex-col items-center justify-between gap-4 border-b border-black/5 bg-white px-6 py-5 md:flex-row md:px-10">
+          <div className="relative flex w-full flex-col items-center overflow-hidden rounded-[36px] border border-white/[0.06] bg-black shadow-2xl">
+            <div className="relative z-20 flex w-full flex-col items-center justify-between gap-4 border-b border-white/[0.06] bg-white/[0.02] px-6 py-5 md:flex-row md:px-10">
               <div className="flex w-full items-center gap-3 md:w-auto">
-                <div className="size-2.5 shrink-0 rounded-full bg-[#C1440E] motion-safe:animate-pulse" />
+                <div className="size-2.5 shrink-0 rounded-full bg-rose-500 motion-safe:animate-pulse" />
                 <div className="flex min-w-0 flex-col">
-                  <span className="text-[10px] leading-none font-bold text-[#C1440E] uppercase">
+                  <span className="text-[10px] leading-none font-bold text-rose-400 uppercase">
                     {copy.interviewer}
                   </span>
-                  <p className="mt-1 line-clamp-1 max-w-[340px] text-[14px] font-semibold text-slate-800 md:max-w-[480px] md:text-[15px]">
+                  <p className="mt-1 line-clamp-1 max-w-[340px] text-[14px] font-semibold text-white/90 md:max-w-[480px] md:text-[15px]">
                     {announcement}
                   </p>
                 </div>
               </div>
               <div className="flex w-full shrink-0 items-center justify-between gap-4 md:w-auto md:justify-end">
                 {action ? (
-                  <span className="hidden rounded-full bg-indigo-50 px-3 py-1 text-[10px] font-bold text-indigo-500 md:inline-flex">
+                  <span className="hidden rounded-full bg-violet-500/10 border border-violet-500/20 px-3 py-1 text-[10px] font-bold text-violet-300 md:inline-flex">
                     {action}
                   </span>
                 ) : null}
                 <button
-                  className="shrink-0 text-[12px] font-bold text-slate-500 uppercase transition-colors hover:text-slate-900"
+                  className="shrink-0 text-[12px] font-bold text-white/40 uppercase transition-colors hover:text-white"
                   onClick={skipDemo}
                   type="button"
                 >
                   {copy.skip}
                 </button>
-                <div className="text-[12px] font-semibold text-slate-400">{timeLabel}</div>
+                <div className="text-[12px] font-semibold text-white/30">{timeLabel}</div>
               </div>
             </div>
 
-            <div className="relative z-20 h-1 w-full overflow-hidden bg-slate-100">
+            <div className="relative z-20 h-1 w-full overflow-hidden bg-white/[0.06]">
               <div
-                className="absolute top-0 bottom-0 left-0 bg-indigo-600 transition-[width] duration-700 ease-[cubic-bezier(.22,1,.36,1)]"
+                className="absolute top-0 bottom-0 left-0 bg-gradient-to-r from-violet-600 to-blue-500 transition-[width] duration-700 ease-[cubic-bezier(.22,1,.36,1)]"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -921,9 +917,9 @@ export function ProSimulationPage() {
             <MobileSwitch activePanel={activePanel} setActivePanel={setActivePanel} />
 
             <div className="relative grid min-h-[520px] w-full grid-cols-1 overflow-hidden md:grid-cols-2">
-              <div className="pointer-events-none absolute top-0 bottom-0 left-1/2 z-30 hidden w-px -translate-x-1/2 bg-slate-200 md:block">
-                <div className="absolute top-1/2 left-1/2 flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-indigo-500 bg-indigo-600 shadow-lg">
-                  <span className="text-[10px] font-bold text-white uppercase">VS</span>
+              <div className="pointer-events-none absolute top-0 bottom-0 left-1/2 z-30 hidden w-px -translate-x-1/2 bg-white/[0.06] md:block">
+                <div className="absolute top-1/2 left-1/2 flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/[0.1] bg-white/[0.06] shadow-lg backdrop-blur-xl">
+                  <span className="text-[10px] font-bold text-white/60 uppercase">VS</span>
                 </div>
               </div>
 
