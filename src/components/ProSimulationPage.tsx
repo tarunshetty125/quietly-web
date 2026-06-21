@@ -19,6 +19,7 @@ import {
 
 import { lifetimePurchaseHref } from "@/lib/purchase";
 import { cn } from "@/lib/utils";
+import { FadingVideo } from "@/components/pro/FadingVideo";
 
 type Pane = "free" | "pro";
 type ChipKey = "what" | "shorten" | "recap" | "fup" | "answer";
@@ -132,7 +133,7 @@ const panels = {
     mode: "Ollama Mode",
     input: "Ask anything on screen or conversation...",
     eyebrowClassName: "text-white/40",
-    backgroundClassName: "quietly-pro-pane-free",
+    backgroundClassName: "",
     glowClassName: "-top-12 -left-12 bg-white/[0.02] blur-[100px]",
   },
   pro: {
@@ -143,7 +144,7 @@ const panels = {
     mode: "Quietly AI API",
     input: "Ask anything - Quietly AI knows your resume and this company...",
     eyebrowClassName: "text-violet-400/80",
-    backgroundClassName: "quietly-pro-pane-paid",
+    backgroundClassName: "",
     glowClassName: "-right-16 -bottom-16 bg-violet-500/[0.06] blur-[120px]",
   },
 } satisfies Record<Pane, PanelCopy>;
@@ -220,10 +221,10 @@ function Chip({
       className={cn(
         "rounded-full border px-2.5 py-1 text-[9.5px] leading-none font-medium transition-all duration-200",
         active && pane === "pro"
-          ? "border-violet-500/30 bg-violet-500 text-white shadow-[0_8px_20px_rgba(139,92,246,0.22)]"
+          ? "liquid-glass-strong border-violet-500/30 text-white shadow-[0_8px_20px_rgba(139,92,246,0.22)]"
           : active
-            ? "border-white/20 bg-white/10 text-white"
-            : "border-white/[0.08] bg-white/[0.04] text-white/50",
+            ? "liquid-glass border-white/20 text-white"
+            : "liquid-glass border-white/[0.08] text-white/50",
       )}
     >
       {copy.chips[chip]}
@@ -390,7 +391,7 @@ function PanelFrame({
   return (
     <div
       className={cn(
-        "relative w-full overflow-hidden p-6 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] md:block md:p-10",
+        "relative w-full overflow-hidden p-6 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)] md:block md:p-10 bg-black/40 backdrop-blur-md",
         activePanel === pane ? "block" : "hidden",
         panel.backgroundClassName,
       )}
@@ -415,8 +416,8 @@ function PanelFrame({
           className={cn(
             "rounded-full border px-3 py-1 text-[11px] font-bold",
             isPro
-              ? "border-violet-500/20 bg-violet-500/10 text-violet-400 shadow-[0_0_15px_rgba(139,92,246,0.06)]"
-              : "border-white/[0.1] bg-white/[0.06] text-white/50",
+              ? "liquid-glass border-violet-500/20 text-violet-400"
+              : "liquid-glass border-white/[0.1] text-white/50",
           )}
         >
           {panel.badge}
@@ -425,8 +426,8 @@ function PanelFrame({
 
       <div
         className={cn(
-          "relative z-10 mx-auto flex min-h-[360px] max-w-[480px] flex-col justify-between overflow-hidden rounded-[24px] border bg-white/[0.03] shadow-2xl backdrop-blur-xl md:max-h-[380px]",
-          isPro ? "border-violet-500/15 bg-white/[0.04]" : "border-white/[0.08] shadow-xl",
+          "relative z-10 mx-auto flex min-h-[360px] max-w-[480px] flex-col justify-between rounded-[1.25rem] bg-black/60 shadow-2xl backdrop-blur-2xl md:max-h-[380px]",
+          isPro ? "border border-violet-500/15" : "border border-white/[0.08]",
         )}
       >
         {isPro ? (
@@ -436,7 +437,7 @@ function PanelFrame({
           />
         ) : null}
 
-        <div className="flex items-center justify-between border-b border-white/[0.06] bg-white/[0.02] px-4 py-3">
+        <div className="flex items-center justify-between border-b border-white/[0.06] px-4 py-3">
           <div className="flex items-center gap-2">
             <div
               className={cn(
@@ -484,13 +485,13 @@ function PanelFrame({
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-1.5 border-t border-white/[0.06] bg-white/[0.02] p-3">
+        <div className="flex flex-wrap justify-center gap-1.5 border-t border-white/[0.06] p-3">
           {chipOrder.map((chip) => (
             <Chip activeChip={activeChip} chip={chip} key={chip} pane={pane} />
           ))}
         </div>
 
-        <div className="flex items-center justify-between border-t border-white/[0.06] bg-white/[0.02] p-3">
+        <div className="flex items-center justify-between border-t border-white/[0.06] p-3">
           <span
             className={cn(
               "max-w-[80%] truncate text-[11px] font-light italic",
@@ -520,10 +521,7 @@ function EndOverlay({
 
   return (
     <div
-      className={cn(
-        "quietly-pro-end-card absolute inset-0 z-30 flex flex-col justify-center bg-black/90 p-6 backdrop-blur-2xl",
-        isPro ? "bg-[#0a0812]/95" : "bg-black/90",
-      )}
+      className="quietly-pro-end-card absolute inset-0 z-30 flex flex-col justify-center bg-black/85 p-6 backdrop-blur-2xl"
     >
       <div className="mx-auto max-w-[340px]">
         <p
@@ -555,14 +553,14 @@ function EndOverlay({
           <a
             className={cn(
               "inline-flex h-10 items-center justify-center rounded-full px-4 text-[12px] font-bold transition-transform duration-200 hover:scale-[1.02]",
-              isPro ? "bg-violet-600 text-white shadow-[0_12px_30px_rgba(139,92,246,0.28)]" : "bg-white text-black",
+              isPro ? "liquid-glass-strong text-white" : "bg-white text-black",
             )}
             href={isPro ? lifetimePurchaseHref : "/"}
           >
             {data.button}
           </a>
           <button
-            className="inline-flex h-10 items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.05] px-4 text-[12px] font-bold text-white/50 transition-transform duration-200 hover:scale-[1.02]"
+            className="liquid-glass inline-flex h-10 items-center gap-2 rounded-full px-4 text-[12px] font-bold text-white/50 transition-transform duration-200 hover:scale-[1.02]"
             onClick={restartDemo}
             type="button"
           >
@@ -585,12 +583,12 @@ function MobileSwitch({
 }>) {
   return (
     <div className="relative z-20 flex w-full bg-black px-4 pt-4 md:hidden">
-      <div className="flex w-full rounded-xl bg-white/[0.06] p-1">
+      <div className="flex w-full rounded-xl p-1">
         {(["free", "pro"] satisfies readonly Pane[]).map((pane) => (
           <button
             className={cn(
               "flex-1 rounded-lg py-2 text-center text-xs font-bold transition-all duration-300",
-              activePanel === pane ? "bg-white/[0.1] text-white shadow-sm" : "text-white/40",
+              activePanel === pane ? "liquid-glass text-white shadow-sm" : "text-white/40",
             )}
             key={pane}
             onClick={() => setActivePanel(pane)}
@@ -634,9 +632,9 @@ function appendFollowup(
     messages.map((message) =>
       message.id === id
         ? {
-            ...message,
-            followups: [...(message.followups ?? []), followup],
-          }
+          ...message,
+          followups: [...(message.followups ?? []), followup],
+        }
         : message,
     ),
   );
@@ -861,24 +859,41 @@ export function ProSimulationPage() {
   }, [proMessages]);
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col px-4 pt-16 pb-16 md:px-8 md:pt-24">
-        <section className="quietly-pro-hero-copy mx-auto mb-10 flex max-w-2xl flex-col items-center text-center">
-          <div className="mb-4">
-            <span className="relative inline-flex items-center gap-1.5 overflow-hidden rounded-full border border-violet-500/20 bg-violet-500/10 px-3.5 py-1.5 text-[10px] font-bold text-violet-300 shadow-[0_4px_12px_rgba(139,92,246,0.1)]">
+    <div className="relative min-h-screen bg-black text-white">
+      {/* Background video */}
+      <FadingVideo
+        src="/videos/pro-hero-bg.mp4"
+        className="absolute inset-0 z-0 h-full w-full object-cover"
+      />
+      <main className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-1 flex-col px-4 pt-16 pb-16 md:px-8 md:pt-24">
+        <section className="quietly-pro-hero-copy mb-10 flex flex-col items-start text-left">
+          <div className="mb-6">
+            <span className="liquid-glass relative inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[10px] font-bold text-violet-300">
               <Zap className="relative z-10 size-3" aria-hidden="true" />
               <span className="relative z-10 uppercase">{copy.badge}</span>
             </span>
           </div>
-          <h1 className="mb-4 text-3xl leading-[1.04] font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
-            {copy.title}
+          <h1
+            className="mb-3 text-5xl leading-tight font-medium tracking-[-2px] text-white md:text-7xl md:leading-[1.15]"
+            style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+          >
+            Built to get
+            <br />
+            <span className="italic font-normal" style={{ fontFamily: "'Instrument Serif', serif" }}>
+              the offer.
+            </span>
           </h1>
-          <p className="text-sm leading-relaxed text-white/50 md:text-base">{copy.intro}</p>
+          <p
+            className="max-w-xl text-lg leading-6 font-normal opacity-90"
+            style={{ color: "hsl(210 17% 95%)", fontFamily: "'Instrument Sans', sans-serif" }}
+          >
+            {copy.intro}
+          </p>
         </section>
 
         <section className="quietly-pro-frame w-full" aria-label="Quietly AI Pro live simulation">
-          <div className="relative flex w-full flex-col items-center overflow-hidden rounded-[36px] border border-white/[0.06] bg-black shadow-2xl">
-            <div className="relative z-20 flex w-full flex-col items-center justify-between gap-4 border-b border-white/[0.06] bg-white/[0.02] px-6 py-5 md:flex-row md:px-10">
+          <div className="relative flex w-full flex-col items-center overflow-hidden rounded-[1.25rem] bg-black/50 shadow-2xl backdrop-blur-xl border border-white/[0.06]">
+            <div className="relative z-20 flex w-full flex-col items-center justify-between gap-4 border-b border-white/[0.06] px-6 py-5 md:flex-row md:px-10">
               <div className="flex w-full items-center gap-3 md:w-auto">
                 <div className="size-2.5 shrink-0 rounded-full bg-rose-500 motion-safe:animate-pulse" />
                 <div className="flex min-w-0 flex-col">
@@ -892,7 +907,7 @@ export function ProSimulationPage() {
               </div>
               <div className="flex w-full shrink-0 items-center justify-between gap-4 md:w-auto md:justify-end">
                 {action ? (
-                  <span className="hidden rounded-full bg-violet-500/10 border border-violet-500/20 px-3 py-1 text-[10px] font-bold text-violet-300 md:inline-flex">
+                  <span className="liquid-glass hidden rounded-full px-3 py-1 text-[10px] font-bold text-violet-300 md:inline-flex">
                     {action}
                   </span>
                 ) : null}
@@ -918,7 +933,7 @@ export function ProSimulationPage() {
 
             <div className="relative grid min-h-[520px] w-full grid-cols-1 overflow-hidden md:grid-cols-2">
               <div className="pointer-events-none absolute top-0 bottom-0 left-1/2 z-30 hidden w-px -translate-x-1/2 bg-white/[0.06] md:block">
-                <div className="absolute top-1/2 left-1/2 flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/[0.1] bg-white/[0.06] shadow-lg backdrop-blur-xl">
+                <div className="liquid-glass-strong absolute top-1/2 left-1/2 flex size-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full shadow-lg">
                   <span className="text-[10px] font-bold text-white/60 uppercase">VS</span>
                 </div>
               </div>
