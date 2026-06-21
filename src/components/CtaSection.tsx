@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { DownloadOverlay } from "@/components/v2/DownloadOverlay";
 
 const DOWNLOAD_URL =
-  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg";
+  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg";
 
 export function CtaSection() {
   const [showOverlay, setShowOverlay] = useState(false);

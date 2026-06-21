@@ -17,6 +17,7 @@ import {
 
 import { QUIETLY_ICON_SRC } from "@/lib/brand";
 import { DownloadOverlay } from "@/components/v2/DownloadOverlay";
+import { WindowsDownloadOverlay } from "@/components/v2/WindowsDownloadOverlay";
 
 const dockIcons = [
   {
@@ -289,7 +290,7 @@ function HeroMacWallpaper() {
         loop
         muted
         playsInline
-        poster="/images/cluely/wallpaper-2x.b7df867c.png"
+        poster=""
         preload="auto"
       >
         <source
@@ -304,7 +305,7 @@ function HeroMacWallpaper() {
         loop
         muted
         playsInline
-        poster="/images/cluely/wallpaper-2x.b7df867c.png"
+        poster=""
         preload="auto"
       >
         <source
@@ -359,6 +360,7 @@ function HeroMountainBackground() {
 
 export function HeroSection() {
   const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
+  const [showWinDownloadOverlay, setShowWinDownloadOverlay] = useState(false);
 
   return (
     <section
@@ -424,12 +426,13 @@ export function HeroSection() {
             <div className="cluely-hero-cta flex flex-wrap justify-center gap-3">
               <PlatformCta
                 platform="mac"
-                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
                 onClick={() => setTimeout(() => setShowDownloadOverlay(true), 1000)}
               />
               <PlatformCta
                 platform="windows"
-                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-Setup-2.7.0.exe"
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
+                onClick={() => setTimeout(() => setShowWinDownloadOverlay(true), 1000)}
               />
             </div>
           </div>
@@ -439,6 +442,9 @@ export function HeroSection() {
       </div>
       {showDownloadOverlay && (
         <DownloadOverlay onClose={() => setShowDownloadOverlay(false)} />
+      )}
+      {showWinDownloadOverlay && (
+        <WindowsDownloadOverlay onClose={() => setShowWinDownloadOverlay(false)} />
       )}
     </section>
   );

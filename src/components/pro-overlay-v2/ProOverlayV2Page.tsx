@@ -31,6 +31,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { DownloadOverlay } from "@/components/v2/DownloadOverlay";
+import { WindowsDownloadOverlay } from "@/components/v2/WindowsDownloadOverlay";
 
 /* ═══════════════════════════════════════════════════════════════════════════ */
 /* ═══ Hooks                                                             ═══ */
@@ -296,7 +297,7 @@ function RevealWrapper({
 /* ═══ Hero Section                                                      ═══ */
 /* ═══════════════════════════════════════════════════════════════════════════ */
 
-function HeroSection({ onDownloadClick }: { onDownloadClick?: () => void }) {
+function HeroSection({ onDownloadClick, onWinDownloadClick }: { onDownloadClick?: () => void; onWinDownloadClick?: () => void }) {
   return (
     <section className="relative flex min-h-[100dvh] items-center overflow-hidden px-4 py-20 md:px-8">
       {/* Background */}
@@ -362,7 +363,7 @@ function HeroSection({ onDownloadClick }: { onDownloadClick?: () => void }) {
         <RevealWrapper delay={240}>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
+              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
               onClick={() => onDownloadClick?.()}
               className="group inline-flex h-12 items-center gap-3 rounded-full bg-white px-6 text-[13px] font-bold text-black transition-all duration-200 hover:shadow-[0_12px_40px_rgba(255,255,255,0.12)]"
               style={{ transitionTimingFunction: EASE }}
@@ -373,9 +374,10 @@ function HeroSection({ onDownloadClick }: { onDownloadClick?: () => void }) {
               </span>
             </a>
             <a
-              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-Setup-2.7.0.exe"
+              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
               className="inline-flex h-12 items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-6 text-[13px] font-semibold text-white/70 backdrop-blur-xl transition-all duration-200 hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
               style={{ transitionTimingFunction: EASE }}
+              onClick={() => onWinDownloadClick?.()}
             >
               <Monitor size={15} className="text-white/45" />
               Windows
@@ -742,7 +744,7 @@ function StealthSection() {
 /* ═══ Final CTA                                                         ═══ */
 /* ═══════════════════════════════════════════════════════════════════════════ */
 
-function FinalCTA({ onDownloadClick }: { onDownloadClick?: () => void }) {
+function FinalCTA({ onDownloadClick, onWinDownloadClick }: { onDownloadClick?: () => void; onWinDownloadClick?: () => void }) {
   return (
     <section className="relative overflow-hidden bg-[#050608] px-4 py-24 md:px-8 md:py-32">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_100%,rgba(96,165,250,0.1),transparent_56%)]" />
@@ -760,7 +762,7 @@ function FinalCTA({ onDownloadClick }: { onDownloadClick?: () => void }) {
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-2.7.0-arm64.dmg"
+            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
             onClick={() => onDownloadClick?.()}
             className="group inline-flex h-12 items-center gap-3 rounded-full bg-white px-6 text-[13px] font-bold text-black transition-all duration-200 hover:shadow-[0_12px_40px_rgba(255,255,255,0.12)]"
             style={{ transitionTimingFunction: EASE }}
@@ -771,9 +773,10 @@ function FinalCTA({ onDownloadClick }: { onDownloadClick?: () => void }) {
             </span>
           </a>
           <a
-            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.0/Quietly-Setup-2.7.0.exe"
+            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
             className="inline-flex h-12 items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-6 text-[13px] font-semibold text-white/70 backdrop-blur-xl transition-all duration-200 hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
             style={{ transitionTimingFunction: EASE }}
+            onClick={() => onWinDownloadClick?.()}
           >
             Windows
           </a>
@@ -978,24 +981,32 @@ function SystemDesignSection() {
 
 export function ProOverlayV2Page() {
   const [showDownloadOverlay, setShowDownloadOverlay] = useState(false);
+  const [showWinDownloadOverlay, setShowWinDownloadOverlay] = useState(false);
 
   const handleDownloadClick = () => {
     setTimeout(() => setShowDownloadOverlay(true), 1000);
   };
 
+  const handleWinDownloadClick = () => {
+    setTimeout(() => setShowWinDownloadOverlay(true), 1000);
+  };
+
   return (
     <main className="min-h-screen overflow-hidden bg-[#040506] text-white">
-      <HeroSection onDownloadClick={handleDownloadClick} />
+      <HeroSection onDownloadClick={handleDownloadClick} onWinDownloadClick={handleWinDownloadClick} />
       <StatsStrip />
       <FeaturesSection />
       <SystemDesignSection />
       <ProductShowcase />
       <CapabilitiesSection />
       <StealthSection />
-      <FinalCTA onDownloadClick={handleDownloadClick} />
+      <FinalCTA onDownloadClick={handleDownloadClick} onWinDownloadClick={handleWinDownloadClick} />
 
       {showDownloadOverlay && (
         <DownloadOverlay onClose={() => setShowDownloadOverlay(false)} />
+      )}
+      {showWinDownloadOverlay && (
+        <WindowsDownloadOverlay onClose={() => setShowWinDownloadOverlay(false)} />
       )}
     </main>
   );
