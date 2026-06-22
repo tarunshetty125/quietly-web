@@ -209,8 +209,8 @@ export const STATS: StatItem[] = [
 ];
 
 export const COMPARISON: CompetitorRow[] = [
-  { feature: "12-month cost", quietly: "~$99", cluely: "$1,800", finalRound: "$300–500", lockedIn: "$576–792" },
-  { feature: "Meeting Modes", quietly: "11", cluely: "1", finalRound: "1", lockedIn: "2" },
+  { feature: "12-month cost", quietly: "₹1,499", cluely: "$269", finalRound: "$300–500", lockedIn: "$576–792" },
+  { feature: "Meeting Modes", quietly: "11", cluely: "6", finalRound: "1", lockedIn: "2" },
   { feature: "Smart Actions", quietly: "51", cluely: false, finalRound: false, lockedIn: false },
   { feature: "AI Brains", quietly: "8", cluely: false, finalRound: false, lockedIn: "Basic" },
   { feature: "Phone Mirror", quietly: true, cluely: false, finalRound: false, lockedIn: false },
