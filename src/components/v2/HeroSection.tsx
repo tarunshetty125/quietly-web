@@ -13,7 +13,7 @@ import { ChevronDown, ArrowRight } from "lucide-react";
 import { DownloadOverlay } from "./DownloadOverlay";
 
 const VIDEO_SRC = "/images/teamsync/v2/hero-bg.mp4";
-const DOWNLOAD_URL = "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg";
+const DOWNLOAD_URL = "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2-arm64.dmg";
 
 const entrance = (y: number, delay: number, duration = 0.6) => ({
   initial: { opacity: 0, y },

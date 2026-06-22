@@ -8,7 +8,7 @@ import { ArrowRight, X, FolderOpen, ShieldCheck, MonitorDown, Rocket, Sparkles, 
 /* ───────────────────────── constants ───────────────────────── */
 
 const DOWNLOAD_URL =
-  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe";
+  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-Setup-2.7.2.exe";
 const ICON_SRC = "/images/quietly/iconq-transparent.png";
 
 /* ───────────────────────── step data ───────────────────────── */
@@ -61,7 +61,7 @@ function FileExplorerIllustration() {
         </div>
         <div>
           <p className="text-[10px] font-semibold leading-tight text-white/80">
-            Quietly-Setup-2.7.1.exe
+            Quietly-Setup-2.7.2.exe
           </p>
           <p className="mt-0.5 text-[8px] font-medium text-emerald-400/60">684 MB</p>
         </div>
@@ -160,7 +160,7 @@ const winSteps: Step[] = [
     glowColor: "rgba(96,165,250,0.08)",
     titleIcon: <FolderOpen size={14} className="text-blue-400" />,
     title: "Run the Installer",
-    desc: "Open Quietly-Setup-2.7.1.exe from your Downloads.",
+    desc: "Open Quietly-Setup-2.7.2.exe from your Downloads.",
     illustration: <FileExplorerIllustration />,
   },
   {

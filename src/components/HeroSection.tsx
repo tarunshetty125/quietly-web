@@ -428,17 +428,17 @@ export function HeroSection() {
               <div className="flex flex-wrap justify-center gap-3">
                 <PlatformCta
                   platform="mac"
-                  href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
+                  href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2-arm64.dmg"
                   onClick={() => setTimeout(() => setShowDownloadOverlay(true), 1000)}
                 />
                 <PlatformCta
                   platform="windows"
-                  href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
+                  href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-Setup-2.7.2.exe"
                   onClick={() => setTimeout(() => setShowWinDownloadOverlay(true), 1000)}
                 />
               </div>
               <a
-                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1.dmg"
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2.dmg"
                 className="text-[13px] font-semibold text-violet-400 underline underline-offset-2 decoration-violet-400/70 transition-colors hover:text-violet-300 hover:decoration-violet-300"
                 style={{ fontFamily: "'Instrument Sans', sans-serif" }}
                 onClick={() => setTimeout(() => setShowIntelOverlay(true), 1000)}
@@ -457,7 +457,7 @@ export function HeroSection() {
       {showIntelOverlay && (
         <DownloadOverlay
           onClose={() => setShowIntelOverlay(false)}
-          downloadUrl="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1.dmg"
+          downloadUrl="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2.dmg"
         />
       )}
       {showWinDownloadOverlay && (

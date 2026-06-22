@@ -363,7 +363,7 @@ function HeroSection({ onDownloadClick, onWinDownloadClick }: { onDownloadClick?
         <RevealWrapper delay={240}>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
+              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2-arm64.dmg"
               onClick={() => onDownloadClick?.()}
               className="group inline-flex h-12 items-center gap-3 rounded-full bg-white px-6 text-[13px] font-bold text-black transition-all duration-200 hover:shadow-[0_12px_40px_rgba(255,255,255,0.12)]"
               style={{ transitionTimingFunction: EASE }}
@@ -374,7 +374,7 @@ function HeroSection({ onDownloadClick, onWinDownloadClick }: { onDownloadClick?
               </span>
             </a>
             <a
-              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
+              href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-Setup-2.7.2.exe"
               className="inline-flex h-12 items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-6 text-[13px] font-semibold text-white/70 backdrop-blur-xl transition-all duration-200 hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
               style={{ transitionTimingFunction: EASE }}
               onClick={() => onWinDownloadClick?.()}
@@ -762,7 +762,7 @@ function FinalCTA({ onDownloadClick, onWinDownloadClick }: { onDownloadClick?: (
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-2.7.1-arm64.dmg"
+            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2-arm64.dmg"
             onClick={() => onDownloadClick?.()}
             className="group inline-flex h-12 items-center gap-3 rounded-full bg-white px-6 text-[13px] font-bold text-black transition-all duration-200 hover:shadow-[0_12px_40px_rgba(255,255,255,0.12)]"
             style={{ transitionTimingFunction: EASE }}
@@ -773,7 +773,7 @@ function FinalCTA({ onDownloadClick, onWinDownloadClick }: { onDownloadClick?: (
             </span>
           </a>
           <a
-            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.1/Quietly-Setup-2.7.1.exe"
+            href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-Setup-2.7.2.exe"
             className="inline-flex h-12 items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-6 text-[13px] font-semibold text-white/70 backdrop-blur-xl transition-all duration-200 hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
             style={{ transitionTimingFunction: EASE }}
             onClick={() => onWinDownloadClick?.()}
