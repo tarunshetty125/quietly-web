@@ -320,7 +320,7 @@ function HeroMacWallpaper() {
 function HeroDemo() {
   return (
     <div className="cluely-hero-stage relative flex h-fit w-full items-start justify-center px-3 pt-10 sm:px-12 sm:pt-12 lg:pt-16 xl:pt-[74px]">
-      <div className="cluely-hero-frame relative h-[400px] w-full max-w-6xl rounded-[13px] bg-[#F2B56A] sm:h-[512px] lg:aspect-[1.7] lg:h-auto">
+      <div className="cluely-hero-frame relative h-[400px] w-full max-w-6xl rounded-[13px] sm:h-[512px] lg:aspect-[1.7] lg:h-auto">
         <HeroMacWallpaper />
 
         <div className="absolute inset-0 flex items-center justify-center rounded-[13px]">
