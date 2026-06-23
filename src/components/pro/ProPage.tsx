@@ -301,7 +301,7 @@ function HeroSection({
           </Reveal>
           <Reveal delay={400}>
             <a
-              href="https://quietly.ai/downloads/Quietly-2.7.2.dmg"
+              href="https://quietly.ai/downloads/Quietly-2.7.3.dmg"
               className="mt-4 inline-block font-[family-name:var(--font-body)] text-[13px] font-medium text-violet-400 underline underline-offset-4 transition-colors hover:text-violet-300"
             >
               Using Apple Intel chip?
@@ -661,7 +661,7 @@ function FinalCTA({
         </Reveal>
         <Reveal delay={300}>
           <a
-            href="https://quietly.ai/downloads/Quietly-2.7.2.dmg"
+            href="https://quietly.ai/downloads/Quietly-2.7.3.dmg"
             className="mt-6 inline-block font-[family-name:var(--font-body)] text-[13px] font-medium text-violet-400 underline underline-offset-4 transition-colors hover:text-violet-300"
           >
             Using Apple Intel chip?

@@ -1039,7 +1039,7 @@ export function WhatsNewModal() {
               {/* CTA */}
               <MagneticCTA
                 onClose={handleDownloadClose}
-                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2-arm64.dmg"
+                href="https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.3/Quietly-2.7.3-arm64.dmg"
               />
             </motion.div>
           </motion.div>

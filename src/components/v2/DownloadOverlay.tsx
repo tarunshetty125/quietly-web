@@ -8,7 +8,7 @@ import { Check, Copy, ArrowRight, X, FolderOpen, FolderInput, ShieldCheck, Termi
 /* ───────────────────────── constants ───────────────────────── */
 
 const DOWNLOAD_URL =
-  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.2/Quietly-2.7.2-arm64.dmg";
+  "https://github.com/tarunshetty125/TeamSync/releases/download/v2.7.3/Quietly-2.7.3-arm64.dmg";
 const ICON_SRC = "/images/quietly/iconq-transparent.png";
 const TERMINAL_CMD = "xattr -cr /Applications/Quietly.app";
 
@@ -51,7 +51,7 @@ function FinderIllustration() {
         </div>
         <div>
           <p className="text-[11px] font-semibold leading-tight text-white/80">
-            Quietly-2.7.2-arm64.dmg
+            Quietly-2.7.3-arm64.dmg
           </p>
           <p className="mt-0.5 text-[9px] font-medium text-emerald-400/60">148 MB</p>
         </div>
